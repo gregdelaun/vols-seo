@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T18:07:30.174Z",
+  "generatedAt": "2026-11-01T18:27:51.023Z",
   "count": 272,
   "withPrice": 187,
   "routes": [
@@ -105,6 +105,21 @@
       "iso3": "IRL",
       "lat": 53.4213,
       "lon": -6.27007,
+      "priceFrom": 14.99,
+      "bestDate": "2026-12-10"
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "EDI",
+      "destSeo": "edinburgh",
+      "destCity": "Edinburgh",
+      "country": "United Kingdom",
+      "iso3": "GBR",
+      "lat": 55.95,
+      "lon": -3.3725,
       "priceFrom": 14.99,
       "bestDate": "2026-12-10"
     },
@@ -848,21 +863,6 @@
       "originCity": "Charleroi",
       "originName": "Bruxelles-Charleroi",
       "originSlug": "charleroi",
-      "dest": "EDI",
-      "destSeo": "edinburgh",
-      "destCity": "Edinburgh",
-      "country": "United Kingdom",
-      "iso3": "GBR",
-      "lat": 55.95,
-      "lon": -3.3725,
-      "priceFrom": 15.99,
-      "bestDate": "2026-12-10"
-    },
-    {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
       "dest": "IAS",
       "destSeo": "iasi",
       "destCity": "IASI",
@@ -934,6 +934,21 @@
       "bestDate": "2026-11-28"
     },
     {
+      "origin": "NRN",
+      "originCity": "Weeze",
+      "originName": "Weeze (Düsseldorf)",
+      "originSlug": "weeze",
+      "dest": "TFS",
+      "destSeo": "tenerife-south",
+      "destCity": "Tenerife",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 28.0445,
+      "lon": -16.5725,
+      "priceFrom": 15.99,
+      "bestDate": "2026-12-06"
+    },
+    {
       "origin": "CRL",
       "originCity": "Charleroi",
       "originName": "Bruxelles-Charleroi",
@@ -962,6 +977,51 @@
       "lon": -7.96591,
       "priceFrom": 16.99,
       "bestDate": "2026-12-31"
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "KRK",
+      "destSeo": "krakow",
+      "destCity": "Krakow",
+      "country": "Poland",
+      "iso3": "POL",
+      "lat": 50.0777,
+      "lon": 19.7848,
+      "priceFrom": 16.99,
+      "bestDate": "2026-11-07"
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "SDR",
+      "destSeo": "santander",
+      "destCity": "Santander",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 43.4271,
+      "lon": -3.82001,
+      "priceFrom": 16.99,
+      "bestDate": "2026-11-09"
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "ZAZ",
+      "destSeo": "zaragoza",
+      "destCity": "Zaragoza",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 41.6662,
+      "lon": -1.04155,
+      "priceFrom": 16.99,
+      "bestDate": "2026-11-09"
     },
     {
       "origin": "BVA",
@@ -998,21 +1058,6 @@
       "originCity": "Paris",
       "originName": "Paris-Beauvais",
       "originSlug": "paris-beauvais",
-      "dest": "OUD",
-      "destSeo": "oujda",
-      "destCity": "Oujda",
-      "country": "Morocco",
-      "iso3": "MAR",
-      "lat": 34.7872,
-      "lon": -1.92399,
-      "priceFrom": 16.99,
-      "bestDate": "2026-11-30"
-    },
-    {
-      "origin": "BVA",
-      "originCity": "Paris",
-      "originName": "Paris-Beauvais",
-      "originSlug": "paris-beauvais",
       "dest": "TNG",
       "destSeo": "tangier",
       "destCity": "Tangier",
@@ -1021,7 +1066,22 @@
       "lat": 35.7269,
       "lon": -5.91689,
       "priceFrom": 16.99,
-      "bestDate": "2026-11-24"
+      "bestDate": "2026-11-30"
+    },
+    {
+      "origin": "LUX",
+      "originCity": "Luxembourg",
+      "originName": "Luxembourg",
+      "originSlug": "luxembourg",
+      "dest": "MRS",
+      "destSeo": "marseille",
+      "destCity": "Marseille",
+      "country": "France",
+      "iso3": "FRA",
+      "lat": 43.4393,
+      "lon": 5.22142,
+      "priceFrom": 16.99,
+      "bestDate": "2026-11-09"
     },
     {
       "origin": "LUX",
@@ -1088,21 +1148,6 @@
       "originCity": "Weeze",
       "originName": "Weeze (Düsseldorf)",
       "originSlug": "weeze",
-      "dest": "TFS",
-      "destSeo": "tenerife-south",
-      "destCity": "Tenerife",
-      "country": "Spain",
-      "iso3": "ESP",
-      "lat": 28.0445,
-      "lon": -16.5725,
-      "priceFrom": 16.99,
-      "bestDate": "2026-11-22"
-    },
-    {
-      "origin": "NRN",
-      "originCity": "Weeze",
-      "originName": "Weeze (Düsseldorf)",
-      "originSlug": "weeze",
       "dest": "ZAG",
       "destSeo": "zagreb",
       "destCity": "Zagreb",
@@ -1111,22 +1156,7 @@
       "lat": 45.7431,
       "lon": 16.0689,
       "priceFrom": 16.99,
-      "bestDate": "2026-11-07"
-    },
-    {
-      "origin": "LUX",
-      "originCity": "Luxembourg",
-      "originName": "Luxembourg",
-      "originSlug": "luxembourg",
-      "dest": "MRS",
-      "destSeo": "marseille",
-      "destCity": "Marseille",
-      "country": "France",
-      "iso3": "FRA",
-      "lat": 43.4393,
-      "lon": 5.22142,
-      "priceFrom": 17.3,
-      "bestDate": "2026-11-18"
+      "bestDate": "2026-11-12"
     },
     {
       "origin": "NRN",
@@ -1142,21 +1172,6 @@
       "lon": 16.7606,
       "priceFrom": 17.34,
       "bestDate": "2026-11-08"
-    },
-    {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
-      "dest": "KRK",
-      "destSeo": "krakow",
-      "destCity": "Krakow",
-      "country": "Poland",
-      "iso3": "POL",
-      "lat": 50.0777,
-      "lon": 19.7848,
-      "priceFrom": 17.55,
-      "bestDate": "2026-11-07"
     },
     {
       "origin": "CRL",
@@ -1231,7 +1246,7 @@
       "lat": 31.3918,
       "lon": -9.6757,
       "priceFrom": 17.99,
-      "bestDate": "2026-12-31"
+      "bestDate": "2026-11-29"
     },
     {
       "origin": "CRL",
@@ -1261,7 +1276,7 @@
       "lat": 38.7813,
       "lon": -9.13592,
       "priceFrom": 17.99,
-      "bestDate": "2026-11-25"
+      "bestDate": "2026-11-24"
     },
     {
       "origin": "CRL",
@@ -1322,21 +1337,6 @@
       "lon": -13.8638,
       "priceFrom": 17.99,
       "bestDate": "2026-11-30"
-    },
-    {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
-      "dest": "ZAZ",
-      "destSeo": "zaragoza",
-      "destCity": "Zaragoza",
-      "country": "Spain",
-      "iso3": "ESP",
-      "lat": 41.6662,
-      "lon": -1.04155,
-      "priceFrom": 18.15,
-      "bestDate": "2026-11-09"
     },
     {
       "origin": "CRL",
@@ -1442,21 +1442,6 @@
       "lon": 2.07846,
       "priceFrom": 18.99,
       "bestDate": "2026-12-03"
-    },
-    {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
-      "dest": "SDR",
-      "destSeo": "santander",
-      "destCity": "Santander",
-      "country": "Spain",
-      "iso3": "ESP",
-      "lat": 43.4271,
-      "lon": -3.82001,
-      "priceFrom": 19.86,
-      "bestDate": "2026-11-09"
     },
     {
       "origin": "CRL",
@@ -1594,6 +1579,36 @@
       "bestDate": "2026-12-01"
     },
     {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "SOF",
+      "destSeo": "sofia",
+      "destCity": "Sofia",
+      "country": "Bulgaria",
+      "iso3": "BGR",
+      "lat": 42.42,
+      "lon": 23.2,
+      "priceFrom": 19.99,
+      "bestDate": "2027-01-17"
+    },
+    {
+      "origin": "BVA",
+      "originCity": "Paris",
+      "originName": "Paris-Beauvais",
+      "originSlug": "paris-beauvais",
+      "dest": "BCN",
+      "destSeo": "barcelona-el-prat",
+      "destCity": "Barcelona",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 41.2971,
+      "lon": 2.07846,
+      "priceFrom": 19.99,
+      "bestDate": "2026-11-28"
+    },
+    {
       "origin": "BVA",
       "originCity": "Paris",
       "originName": "Paris-Beauvais",
@@ -1607,6 +1622,21 @@
       "lon": -3.3725,
       "priceFrom": 19.99,
       "bestDate": "2026-11-23"
+    },
+    {
+      "origin": "BVA",
+      "originCity": "Paris",
+      "originName": "Paris-Beauvais",
+      "originSlug": "paris-beauvais",
+      "dest": "FCO",
+      "destSeo": "rome-fiumicino",
+      "destCity": "Rome",
+      "country": "Italy",
+      "iso3": "ITA",
+      "lat": 41.8045,
+      "lon": 12.2508,
+      "priceFrom": 19.99,
+      "bestDate": "2026-12-05"
     },
     {
       "origin": "BVA",
@@ -1637,6 +1667,21 @@
       "lon": -5.89311,
       "priceFrom": 19.99,
       "bestDate": "2027-01-01"
+    },
+    {
+      "origin": "BVA",
+      "originCity": "Paris",
+      "originName": "Paris-Beauvais",
+      "originSlug": "paris-beauvais",
+      "dest": "WMI",
+      "destSeo": "warsaw-modlin",
+      "destCity": "Warsaw",
+      "country": "Poland",
+      "iso3": "POL",
+      "lat": 52.4511,
+      "lon": 20.6517,
+      "priceFrom": 19.99,
+      "bestDate": "2026-12-10"
     },
     {
       "origin": "BVA",
@@ -1756,7 +1801,7 @@
       "lat": 34.0515,
       "lon": -6.75152,
       "priceFrom": 19.99,
-      "bestDate": "2026-11-23"
+      "bestDate": "2027-01-15"
     },
     {
       "origin": "NRN",
@@ -1772,36 +1817,6 @@
       "lon": -5.91689,
       "priceFrom": 19.99,
       "bestDate": "2027-01-03"
-    },
-    {
-      "origin": "BVA",
-      "originCity": "Paris",
-      "originName": "Paris-Beauvais",
-      "originSlug": "paris-beauvais",
-      "dest": "WMI",
-      "destSeo": "warsaw-modlin",
-      "destCity": "Warsaw",
-      "country": "Poland",
-      "iso3": "POL",
-      "lat": 52.4511,
-      "lon": 20.6517,
-      "priceFrom": 20.28,
-      "bestDate": "2027-01-18"
-    },
-    {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
-      "dest": "SOF",
-      "destSeo": "sofia",
-      "destCity": "Sofia",
-      "country": "Bulgaria",
-      "iso3": "BGR",
-      "lat": 42.42,
-      "lon": 23.2,
-      "priceFrom": 20.49,
-      "bestDate": "2027-01-29"
     },
     {
       "origin": "BVA",
@@ -1913,6 +1928,21 @@
       "originCity": "Charleroi",
       "originName": "Bruxelles-Charleroi",
       "originSlug": "charleroi",
+      "dest": "BZR",
+      "destSeo": "beziers",
+      "destCity": "Beziers",
+      "country": "France",
+      "iso3": "FRA",
+      "lat": 43.3235,
+      "lon": 3.3539,
+      "priceFrom": 21.99,
+      "bestDate": "2026-12-04"
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
       "dest": "SKG",
       "destSeo": "thessaloniki",
       "destCity": "Thessaloniki",
@@ -1943,21 +1973,6 @@
       "originCity": "Paris",
       "originName": "Paris-Beauvais",
       "originSlug": "paris-beauvais",
-      "dest": "BCN",
-      "destSeo": "barcelona-el-prat",
-      "destCity": "Barcelona",
-      "country": "Spain",
-      "iso3": "ESP",
-      "lat": 41.2971,
-      "lon": 2.07846,
-      "priceFrom": 21.99,
-      "bestDate": "2027-01-16"
-    },
-    {
-      "origin": "BVA",
-      "originCity": "Paris",
-      "originName": "Paris-Beauvais",
-      "originSlug": "paris-beauvais",
       "dest": "BUD",
       "destSeo": "budapest",
       "destCity": "Budapest",
@@ -1967,21 +1982,6 @@
       "lon": 19.2556,
       "priceFrom": 21.99,
       "bestDate": "2027-01-24"
-    },
-    {
-      "origin": "BVA",
-      "originCity": "Paris",
-      "originName": "Paris-Beauvais",
-      "originSlug": "paris-beauvais",
-      "dest": "FCO",
-      "destSeo": "rome-fiumicino",
-      "destCity": "Rome",
-      "country": "Italy",
-      "iso3": "ITA",
-      "lat": 41.8045,
-      "lon": 12.2508,
-      "priceFrom": 21.99,
-      "bestDate": "2027-01-15"
     },
     {
       "origin": "BVA",
@@ -2116,7 +2116,7 @@
       "lat": 28.9455,
       "lon": -13.6052,
       "priceFrom": 21.99,
-      "bestDate": "2026-11-25"
+      "bestDate": "2026-11-29"
     },
     {
       "origin": "NRN",
@@ -2134,19 +2134,19 @@
       "bestDate": "2027-01-04"
     },
     {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
-      "dest": "BZR",
-      "destSeo": "beziers",
-      "destCity": "Beziers",
-      "country": "France",
-      "iso3": "FRA",
-      "lat": 43.3235,
-      "lon": 3.3539,
-      "priceFrom": 22.34,
-      "bestDate": "2026-12-04"
+      "origin": "NRN",
+      "originCity": "Weeze",
+      "originName": "Weeze (Düsseldorf)",
+      "originSlug": "weeze",
+      "dest": "OUD",
+      "destSeo": "oujda",
+      "destCity": "Oujda",
+      "country": "Morocco",
+      "iso3": "MAR",
+      "lat": 34.7872,
+      "lon": -1.92399,
+      "priceFrom": 21.99,
+      "bestDate": "2026-11-29"
     },
     {
       "origin": "CRL",
@@ -2177,6 +2177,21 @@
       "lon": 14.4775,
       "priceFrom": 22.99,
       "bestDate": "2026-11-27"
+    },
+    {
+      "origin": "BVA",
+      "originCity": "Paris",
+      "originName": "Paris-Beauvais",
+      "originSlug": "paris-beauvais",
+      "dest": "OUD",
+      "destSeo": "oujda",
+      "destCity": "Oujda",
+      "country": "Morocco",
+      "iso3": "MAR",
+      "lat": 34.7872,
+      "lon": -1.92399,
+      "priceFrom": 22.99,
+      "bestDate": "2027-01-11"
     },
     {
       "origin": "EIN",
@@ -2228,21 +2243,6 @@
       "originCity": "Weeze",
       "originName": "Weeze (Düsseldorf)",
       "originSlug": "weeze",
-      "dest": "OUD",
-      "destSeo": "oujda",
-      "destCity": "Oujda",
-      "country": "Morocco",
-      "iso3": "MAR",
-      "lat": 34.7872,
-      "lon": -1.92399,
-      "priceFrom": 22.99,
-      "bestDate": "2026-11-29"
-    },
-    {
-      "origin": "NRN",
-      "originCity": "Weeze",
-      "originName": "Weeze (Düsseldorf)",
-      "originSlug": "weeze",
       "dest": "PFO",
       "destSeo": "paphos",
       "destCity": "Paphos",
@@ -2250,8 +2250,53 @@
       "iso3": "CYP",
       "lat": 34.718,
       "lon": 32.4857,
-      "priceFrom": 23.99,
+      "priceFrom": 22.99,
       "bestDate": "2026-11-29"
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "LPA",
+      "destSeo": "gran-canaria",
+      "destCity": "Gran Canaria",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 27.9319,
+      "lon": -15.3866,
+      "priceFrom": 23.99,
+      "bestDate": "2026-11-18"
+    },
+    {
+      "origin": "BVA",
+      "originCity": "Paris",
+      "originName": "Paris-Beauvais",
+      "originSlug": "paris-beauvais",
+      "dest": "RAK",
+      "destSeo": "marrakesh",
+      "destCity": "Marrakesh",
+      "country": "Morocco",
+      "iso3": "MAR",
+      "lat": 31.6069,
+      "lon": -8.0363,
+      "priceFrom": 23.99,
+      "bestDate": "2026-12-05"
+    },
+    {
+      "origin": "EIN",
+      "originCity": "Eindhoven",
+      "originName": "Eindhoven",
+      "originSlug": "eindhoven",
+      "dest": "BLQ",
+      "destSeo": "bologna",
+      "destCity": "Bologna",
+      "country": "Italy",
+      "iso3": "ITA",
+      "lat": 44.5354,
+      "lon": 11.2887,
+      "priceFrom": 23.99,
+      "bestDate": "2026-11-21"
     },
     {
       "origin": "CRL",
@@ -2297,21 +2342,6 @@
       "lon": 24.9633,
       "priceFrom": 24.99,
       "bestDate": "2026-11-14"
-    },
-    {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
-      "dest": "LPA",
-      "destSeo": "gran-canaria",
-      "destCity": "Gran Canaria",
-      "country": "Spain",
-      "iso3": "ESP",
-      "lat": 27.9319,
-      "lon": -15.3866,
-      "priceFrom": 24.99,
-      "bestDate": "2026-11-18"
     },
     {
       "origin": "CRL",
@@ -2378,21 +2408,6 @@
       "originCity": "Paris",
       "originName": "Paris-Beauvais",
       "originSlug": "paris-beauvais",
-      "dest": "RAK",
-      "destSeo": "marrakesh",
-      "destCity": "Marrakesh",
-      "country": "Morocco",
-      "iso3": "MAR",
-      "lat": 31.6069,
-      "lon": -8.0363,
-      "priceFrom": 24.99,
-      "bestDate": "2026-12-05"
-    },
-    {
-      "origin": "BVA",
-      "originCity": "Paris",
-      "originName": "Paris-Beauvais",
-      "originSlug": "paris-beauvais",
       "dest": "SKG",
       "destSeo": "thessaloniki",
       "destCity": "Thessaloniki",
@@ -2432,21 +2447,6 @@
       "lon": 9.70417,
       "priceFrom": 24.99,
       "bestDate": "2026-12-02"
-    },
-    {
-      "origin": "EIN",
-      "originCity": "Eindhoven",
-      "originName": "Eindhoven",
-      "originSlug": "eindhoven",
-      "dest": "BLQ",
-      "destSeo": "bologna",
-      "destCity": "Bologna",
-      "country": "Italy",
-      "iso3": "ITA",
-      "lat": 44.5354,
-      "lon": 11.2887,
-      "priceFrom": 24.99,
-      "bestDate": "2026-11-21"
     },
     {
       "origin": "EIN",
@@ -2506,7 +2506,7 @@
       "lat": 32.6942,
       "lon": -16.7781,
       "priceFrom": 25.99,
-      "bestDate": "2026-11-30"
+      "bestDate": "2026-11-23"
     },
     {
       "origin": "NRN",
@@ -2584,6 +2584,21 @@
       "bestDate": "2026-12-02"
     },
     {
+      "origin": "BVA",
+      "originCity": "Paris",
+      "originName": "Paris-Beauvais",
+      "originSlug": "paris-beauvais",
+      "dest": "RBA",
+      "destSeo": "rabat",
+      "destCity": "Rabat",
+      "country": "Morocco",
+      "iso3": "MAR",
+      "lat": 34.0515,
+      "lon": -6.75152,
+      "priceFrom": 27.99,
+      "bestDate": "2026-11-26"
+    },
+    {
       "origin": "EIN",
       "originCity": "Eindhoven",
       "originName": "Eindhoven",
@@ -2629,21 +2644,6 @@
       "bestDate": "2027-01-25"
     },
     {
-      "origin": "BVA",
-      "originCity": "Paris",
-      "originName": "Paris-Beauvais",
-      "originSlug": "paris-beauvais",
-      "dest": "RBA",
-      "destSeo": "rabat",
-      "destCity": "Rabat",
-      "country": "Morocco",
-      "iso3": "MAR",
-      "lat": 34.0515,
-      "lon": -6.75152,
-      "priceFrom": 29.99,
-      "bestDate": "2026-12-10"
-    },
-    {
       "origin": "EIN",
       "originCity": "Eindhoven",
       "originName": "Eindhoven",
@@ -2678,21 +2678,6 @@
       "originCity": "Eindhoven",
       "originName": "Eindhoven",
       "originSlug": "eindhoven",
-      "dest": "ALC",
-      "destSeo": "alicante",
-      "destCity": "Alicante",
-      "country": "Spain",
-      "iso3": "ESP",
-      "lat": 38.2822,
-      "lon": -0.558156,
-      "priceFrom": 31.85,
-      "bestDate": "2026-11-24"
-    },
-    {
-      "origin": "EIN",
-      "originCity": "Eindhoven",
-      "originName": "Eindhoven",
-      "originSlug": "eindhoven",
       "dest": "SVQ",
       "destSeo": "seville",
       "destCity": "Seville",
@@ -2702,6 +2687,21 @@
       "lon": -5.89311,
       "priceFrom": 31.99,
       "bestDate": "2026-11-30"
+    },
+    {
+      "origin": "EIN",
+      "originCity": "Eindhoven",
+      "originName": "Eindhoven",
+      "originSlug": "eindhoven",
+      "dest": "ALC",
+      "destSeo": "alicante",
+      "destCity": "Alicante",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 38.2822,
+      "lon": -0.558156,
+      "priceFrom": 32.22,
+      "bestDate": "2026-11-24"
     },
     {
       "origin": "EIN",
