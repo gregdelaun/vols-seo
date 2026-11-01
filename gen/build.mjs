@@ -41,7 +41,7 @@ const T = {
     htmlLang: "fr", other: "nl", otherLabel: "NL",
     tag: "Vols pas chers au départ de Belgique & frontières",
     home: "Accueil", updated: "Mis à jour le", untracked: " · ⚠️ liens non trackés",
-    disclaimer: `${NAME} compare les prix et renvoie vers les sites de réservation partenaires. Les prix "dès X€" sont des tarifs aller simple relevés automatiquement via Ryanair et peuvent évoluer ; vérifie toujours le prix final sur le site de réservation (bagages non inclus).`,
+    disclaimer: `${NAME} compare les prix et renvoie vers les sites de réservation partenaires. Les prix "dès X€" sont des tarifs aller-retour indicatifs (vols les moins chers trouvés automatiquement via Ryanair pour des dates précises) et évoluent constamment ; vérifie toujours le prix final sur le site de réservation (bagages non inclus).`,
     from: "dès", toVerify: "prix à vérifier", since: "depuis", eg: "ex.",
     seeFlights: (a, b) => `✈️ Voir les vols ${a} → ${b}`, hotels: (c) => `🏨 Hôtels à ${c}`,
     routeTitle: (a, b, p) => `Vol ${a} → ${b} pas cher ${p ? `dès ${p}€` : ""} | ${NAME}`.replace(/\s+\|/, " |"),
@@ -49,10 +49,10 @@ const T = {
     routeH1: (a, b) => `Vol ${a} → ${b} pas cher`, atDeparture: "au départ de",
     inBrief: (c) => `${c} en bref`, bestSeason: "Meilleure saison",
     practical: "Infos pratiques", dep: "Départ", arr: "Arrivée", indicPrice: "Prix indicatif",
-    oneway: "l'aller", verify: "à vérifier", egDate: "Exemple de date",
+    ar: "aller-retour", oneLeg: "l'aller", verify: "à vérifier", egDates: "Dates (exemple)",
     faqTitle: "Questions fréquentes",
     faqQ1: (a, b) => `Combien coûte un vol ${a} ${b} ?`,
-    faqA1: (a, b, p, date) => p ? `Les vols ${a}–${b} démarrent autour de ${p}€ l'aller simple${date ? ` (par ex. le ${date})` : ""}. Les prix varient selon la date : compare via le bouton ci-dessus.` : `Compare les dates via le bouton ci-dessus pour trouver le tarif le plus bas sur la ligne ${a}–${b}.`,
+    faqA1: (a, b, p, tl) => p ? `Les vols ${a}–${b} démarrent autour de ${p}€ ${tl}. Les prix varient selon la date : compare les dates via le bouton ci-dessus pour retrouver ce tarif.` : `Compare les dates via le bouton ci-dessus pour trouver le tarif le plus bas sur la ligne ${a}–${b}.`,
     faqQ2: (c) => `Quelle est la meilleure période pour partir à ${c} ?`,
     faqA2: (c, s) => s ? `La meilleure saison pour ${c} est en général ${s}.` : `${c} se visite toute l'année ; les tarifs sont souvent plus bas hors vacances scolaires et hors week-ends.`,
     otherDepartsTo: (c) => `Autres départs vers ${c}`, otherDealsFrom: (c) => `Autres bons plans depuis ${c}`,
@@ -73,7 +73,7 @@ const T = {
     htmlLang: "nl", other: "fr", otherLabel: "FR",
     tag: "Goedkope vluchten vanuit België & grensstreek",
     home: "Home", updated: "Bijgewerkt op", untracked: " · ⚠️ niet-getrackte links",
-    disclaimer: `${NAME} vergelijkt prijzen en verwijst naar de boekingssites van partners. De prijzen "vanaf X€" zijn enkele-reistarieven, automatisch opgehaald via Ryanair en kunnen wijzigen; controleer altijd de eindprijs op de boekingssite (bagage niet inbegrepen).`,
+    disclaimer: `${NAME} vergelijkt prijzen en verwijst naar de boekingssites van partners. De prijzen "vanaf X€" zijn indicatieve retourtarieven (goedkoopste vluchten automatisch gevonden via Ryanair voor specifieke data) en wijzigen voortdurend; controleer altijd de eindprijs op de boekingssite (bagage niet inbegrepen).`,
     from: "vanaf", toVerify: "prijs te checken", since: "vanuit", eg: "bijv.",
     seeFlights: (a, b) => `✈️ Bekijk vluchten ${a} → ${b}`, hotels: (c) => `🏨 Hotels in ${c}`,
     routeTitle: (a, b, p) => `Goedkope vlucht ${a} → ${b} ${p ? `vanaf ${p}€` : ""} | ${NAME}`.replace(/\s+\|/, " |"),
@@ -81,10 +81,10 @@ const T = {
     routeH1: (a, b) => `Goedkope vlucht ${a} → ${b}`, atDeparture: "vanuit",
     inBrief: (c) => `${c} in het kort`, bestSeason: "Beste reisperiode",
     practical: "Praktische info", dep: "Vertrek", arr: "Aankomst", indicPrice: "Richtprijs",
-    oneway: "enkele reis", verify: "te checken", egDate: "Voorbeelddatum",
+    ar: "heen en terug", oneLeg: "enkele reis", verify: "te checken", egDates: "Data (voorbeeld)",
     faqTitle: "Veelgestelde vragen",
     faqQ1: (a, b) => `Hoeveel kost een vlucht ${a} ${b}?`,
-    faqA1: (a, b, p, date) => p ? `Vluchten ${a}–${b} starten rond ${p}€ enkele reis${date ? ` (bijv. op ${date})` : ""}. Prijzen variëren per datum: vergelijk via de knop hierboven.` : `Vergelijk de data via de knop hierboven voor het laagste tarief op de lijn ${a}–${b}.`,
+    faqA1: (a, b, p, tl) => p ? `Vluchten ${a}–${b} starten rond ${p}€ ${tl}. Prijzen variëren per datum: vergelijk de data via de knop hierboven om dit tarief terug te vinden.` : `Vergelijk de data via de knop hierboven voor het laagste tarief op de lijn ${a}–${b}.`,
     faqQ2: (c) => `Wat is de beste periode om naar ${c} te reizen?`,
     faqA2: (c, s) => s ? `De beste reisperiode voor ${c} is meestal ${s}.` : `${c} is het hele jaar te bezoeken; tarieven zijn vaak lager buiten de schoolvakanties en weekends.`,
     otherDepartsTo: (c) => `Andere vertrekpunten naar ${c}`, otherDealsFrom: (c) => `Andere deals vanuit ${c}`,
@@ -125,8 +125,6 @@ function write(relDir, html) {
   writeFileSync(join(dir, "index.html"), html);
   urls.add(abs(relDir));
 }
-
-const retourOf = (iso) => { if (!iso) return null; const d = new Date(iso); d.setDate(d.getDate() + 5); return d.toISOString().slice(0, 10); };
 
 function layout(L, { path, altPath, title, desc, body, jsonld, breadcrumb }) {
   const t = T[L];
@@ -176,10 +174,13 @@ ${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script
 </html>`;
 }
 
-const priceBadge = (L, p) => p == null ? `<span class="price na">${esc(T[L].toVerify)}</span>` : `<span class="price">${esc(T[L].from)} ${euro(p)}€</span>`;
+const priceBadge = (L, p, rt) => p == null
+  ? `<span class="price na">${esc(T[L].toVerify)}</span>`
+  : `<span class="price">${esc(T[L].from)} ${euro(p)}€${rt ? ` <small>A/R</small>` : ""}</span>`;
+const tripLabel = (L, r) => (r.roundTrip ? T[L].ar : T[L].oneLeg);
 
 function ctaButtons(L, r) {
-  const f = flightLink(r.origin, r.dest, r.bestDate, retourOf(r.bestDate));
+  const f = flightLink(r.origin, r.dest, r.departDate, r.returnDate);
   const h = hotelLink(cityName(L, r));
   return `<div class="cta">
   <a class="btn btn-primary" href="${esc(f)}" rel="sponsored nofollow" target="_blank">${esc(T[L].seeFlights(r.originCity, cityName(L, r)))}</a>
@@ -188,15 +189,16 @@ function ctaButtons(L, r) {
 }
 
 function routeCard(L, r) {
+  const badge = priceBadge(L, r.priceFrom, r.roundTrip);
   const img = hasPhoto(r.dest)
-    ? `<span class="card-img" style="background-image:url('${photoUrl(r.dest)}')">${priceBadge(L, r.priceFrom)}</span>`
-    : `<span class="card-img card-img-ph">${priceBadge(L, r.priceFrom)}</span>`;
+    ? `<span class="card-img" style="background-image:url('${photoUrl(r.dest)}')">${badge}</span>`
+    : `<span class="card-img card-img-ph">${badge}</span>`;
   return `<a class="card" href="${abs(routePath(L, r))}">
   ${img}
   <span class="card-body">
     <span class="card-city">${esc(cityName(L, r))}</span>
     <span class="card-country">${esc(countryName(L, r))}</span>
-    <span class="card-from">${esc(T[L].since)} ${esc(r.originCity)}${r.bestDate ? ` · ${esc(T[L].eg)} ${esc(dShort(L, r.bestDate))}` : ""}</span>
+    <span class="card-from">${esc(T[L].since)} ${esc(r.originCity)}${r.departDate ? ` · ${esc(T[L].eg)} ${esc(dShort(L, r.departDate))}` : ""}</span>
   </span>
 </a>`;
 }
@@ -241,7 +243,7 @@ for (const L of LOCALES) {
     const otherOrigins = (byDest.get(r.dest) || []).filter((x) => x.origin !== r.origin);
     const season = blurbSeason(L, r.dest);
     const faq = [
-      { q: t.faqQ1(r.originCity, city), a: t.faqA1(r.originCity, city, r.priceFrom ? euro(r.priceFrom) : 0, r.bestDate ? dLong(L, r.bestDate) : "") },
+      { q: t.faqQ1(r.originCity, city), a: t.faqA1(r.originCity, city, r.priceFrom ? euro(r.priceFrom) : 0, tripLabel(L, r)) },
       { q: t.faqQ2(city), a: t.faqA2(city, season) },
     ];
     const jsonld = { "@context": "https://schema.org", "@type": "FAQPage",
@@ -251,7 +253,7 @@ for (const L of LOCALES) {
 <nav class="crumbs"><a href="${abs(homePath(L))}">${esc(t.home)}</a> › <a href="${abs(departPath(L, r.origin))}">${esc(r.originCity)}</a> › ${esc(city)}</nav>
 <section class="hero"${heroBg(r.dest)}>
   <h1>${esc(t.routeH1(r.originCity, city))}</h1>
-  <p class="sub">${esc(country)} · ${esc(t.atDeparture)} ${esc(r.originName)} ${priceBadge(L, r.priceFrom)}</p>
+  <p class="sub">${esc(country)} · ${esc(t.atDeparture)} ${esc(r.originName)} ${priceBadge(L, r.priceFrom, r.roundTrip)}</p>
   ${ctaButtons(L, r)}
 </section>
 ${bt ? `<section class="prose"><h2>${esc(t.inBrief(city))}</h2><p>${esc(bt)}</p>
@@ -262,8 +264,8 @@ ${bt ? `<section class="prose"><h2>${esc(t.inBrief(city))}</h2><p>${esc(bt)}</p>
   <table class="info"><tbody>
     <tr><td>${esc(t.dep)}</td><td>${esc(r.originName)} (${esc(r.origin)})</td></tr>
     <tr><td>${esc(t.arr)}</td><td>${esc(city)} (${esc(r.dest)})</td></tr>
-    <tr><td>${esc(t.indicPrice)}</td><td>${r.priceFrom ? `${esc(t.from)} ${euro(r.priceFrom)}€ ${esc(t.oneway)}` : esc(t.verify)}</td></tr>
-    ${r.bestDate ? `<tr><td>${esc(t.egDate)}</td><td>${esc(dLong(L, r.bestDate))}</td></tr>` : ""}
+    <tr><td>${esc(t.indicPrice)}</td><td>${r.priceFrom ? `${esc(t.from)} ${euro(r.priceFrom)}€ ${esc(tripLabel(L, r))}` : esc(t.verify)}</td></tr>
+    ${r.departDate ? `<tr><td>${esc(t.egDates)}</td><td>${esc(dLong(L, r.departDate))}${r.returnDate ? ` → ${esc(dLong(L, r.returnDate))}` : ""}</td></tr>` : ""}
   </tbody></table>
 </section>
 <section class="prose"><h2>${esc(t.faqTitle)}</h2>
@@ -281,12 +283,13 @@ ${related.length ? `<section class="prose"><h2>${esc(t.otherDealsFrom(r.originCi
   // --- PAGE DESTINATION ---
   for (const [dest, list] of byDest) {
     const r0 = list[0]; const city = cityName(L, r0); const country = countryName(L, r0);
-    const best = list.reduce((m, x) => (x.priceFrom != null && (m == null || x.priceFrom < m) ? x.priceFrom : m), null);
+    const bestRoute = list.filter((x) => x.priceFrom != null).sort((a, b) => a.priceFrom - b.priceFrom)[0];
+    const best = bestRoute?.priceFrom ?? null;
     const bt = blurbText(L, dest);
     const body = `
 <nav class="crumbs"><a href="${abs(homePath(L))}">${esc(t.home)}</a> › ${esc(city)}</nav>
 <section class="hero"${heroBg(dest)}><h1>${esc(t.destH1(city))}</h1>
-  <p class="sub">${esc(country)} ${best ? priceBadge(L, best) : ""}</p></section>
+  <p class="sub">${esc(country)} ${best ? priceBadge(L, best, bestRoute.roundTrip) : ""}</p></section>
 ${bt ? `<section class="prose"><p>${esc(bt)}</p></section>` : ""}
 <section class="prose"><h2>${esc(t.whichAirport)}</h2>
   <div class="grid">${list.slice().sort((a, b) => (a.priceFrom ?? 9e9) - (b.priceFrom ?? 9e9)).map((x) => routeCard(L, x)).join("")}</div></section>`;
@@ -382,6 +385,7 @@ main{max-width:980px;margin:0 auto;padding:20px}
 .price{display:inline-block;background:#dcfce7;color:var(--green);font-weight:800;padding:3px 10px;border-radius:8px;font-size:15px}
 .hero .price{background:#fff;color:var(--brand)}
 .price.na{background:#eef0f5;color:var(--muted);font-weight:600}
+.price small{font-weight:700;opacity:.7;font-size:.72em;letter-spacing:.3px}
 .btn{display:inline-block;padding:13px 18px;border-radius:12px;font-weight:700;font-size:15px}
 .btn-primary{background:#fff;color:var(--brand)}
 .btn-ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.5)}

@@ -20,8 +20,9 @@ export function flightLink(origin, dest, depart, retour) {
   const path = retour
     ? `${origin}${ddmm(depart)}${dest}${ddmm(retour)}1`
     : `${origin}${ddmm(depart)}${dest}1`;
-  const base = `https://www.aviasales.com/search/${path}`;
-  return MARKER ? `${base}?marker=${MARKER}` : base;
+  const qs = new URLSearchParams({ currency: "eur" });
+  if (MARKER) qs.set("marker", MARKER);
+  return `https://www.aviasales.com/search/${path}?${qs}`;
 }
 
 // Lien de recherche d'hôtels Hotellook (tracké).
