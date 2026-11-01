@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T19:29:17.496Z",
+  "generatedAt": "2026-11-01T19:41:38.472Z",
   "count": 272,
   "withPrice": 187,
   "routes": [
@@ -395,23 +395,6 @@
       "roundTrip": true
     },
     {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
-      "dest": "CDT",
-      "destSeo": "castellon",
-      "destCity": "Castellon",
-      "country": "Spain",
-      "iso3": "ESP",
-      "lat": 39.999,
-      "lon": 0.026,
-      "priceFrom": 32.98,
-      "departDate": "2026-12-11",
-      "returnDate": "2026-12-13",
-      "roundTrip": true
-    },
-    {
       "origin": "LUX",
       "originCity": "Luxembourg",
       "originName": "Luxembourg",
@@ -443,6 +426,23 @@
       "priceFrom": 33.73,
       "departDate": "2026-11-09",
       "returnDate": "2026-11-18",
+      "roundTrip": true
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "CDT",
+      "destSeo": "castellon",
+      "destCity": "Castellon",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 39.999,
+      "lon": 0.026,
+      "priceFrom": 33.98,
+      "departDate": "2026-12-06",
+      "returnDate": "2026-12-13",
       "roundTrip": true
     },
     {
@@ -1500,23 +1500,6 @@
       "roundTrip": true
     },
     {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
-      "dest": "MAD",
-      "destSeo": "madrid",
-      "destCity": "Madrid",
-      "country": "Spain",
-      "iso3": "ESP",
-      "lat": 40.4722,
-      "lon": -3.5608,
-      "priceFrom": 43.98,
-      "departDate": "2026-12-01",
-      "returnDate": "2026-12-09",
-      "roundTrip": true
-    },
-    {
       "origin": "BVA",
       "originCity": "Paris",
       "originName": "Paris-Beauvais",
@@ -1616,6 +1599,23 @@
       "priceFrom": 43.98,
       "departDate": "2026-11-20",
       "returnDate": "2026-11-27",
+      "roundTrip": true
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "MAD",
+      "destSeo": "madrid",
+      "destCity": "Madrid",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 40.4722,
+      "lon": -3.5608,
+      "priceFrom": 44.3,
+      "departDate": "2026-12-01",
+      "returnDate": "2026-12-09",
       "roundTrip": true
     },
     {
@@ -1767,23 +1767,6 @@
       "lat": 39.5517,
       "lon": 2.73881,
       "priceFrom": 45.46,
-      "departDate": "2026-12-07",
-      "returnDate": "2026-12-14",
-      "roundTrip": true
-    },
-    {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
-      "dest": "PRG",
-      "destSeo": "prague",
-      "destCity": "Prague",
-      "country": "Czech Republic",
-      "iso3": "CZE",
-      "lat": 50.1008,
-      "lon": 14.26,
-      "priceFrom": 45.73,
       "departDate": "2026-12-07",
       "returnDate": "2026-12-14",
       "roundTrip": true
@@ -2058,6 +2041,23 @@
       "priceFrom": 48.48,
       "departDate": "2027-01-15",
       "returnDate": "2027-01-17",
+      "roundTrip": true
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "PRG",
+      "destSeo": "prague",
+      "destCity": "Prague",
+      "country": "Czech Republic",
+      "iso3": "CZE",
+      "lat": 50.1008,
+      "lon": 14.26,
+      "priceFrom": 48.73,
+      "departDate": "2026-12-07",
+      "returnDate": "2026-12-14",
       "roundTrip": true
     },
     {
@@ -2469,23 +2469,6 @@
       "roundTrip": true
     },
     {
-      "origin": "NRN",
-      "originCity": "Weeze",
-      "originName": "Weeze (Düsseldorf)",
-      "originSlug": "weeze",
-      "dest": "TFS",
-      "destSeo": "tenerife-south",
-      "destCity": "Tenerife",
-      "country": "Spain",
-      "iso3": "ESP",
-      "lat": 28.0445,
-      "lon": -16.5725,
-      "priceFrom": 54.18,
-      "departDate": "2026-12-06",
-      "returnDate": "2026-12-15",
-      "roundTrip": true
-    },
-    {
       "origin": "CRL",
       "originCity": "Charleroi",
       "originName": "Bruxelles-Charleroi",
@@ -2651,8 +2634,25 @@
       "lat": 34.7872,
       "lon": -1.92399,
       "priceFrom": 55.98,
-      "departDate": "2026-11-29",
-      "returnDate": "2026-12-04",
+      "departDate": "2026-12-06",
+      "returnDate": "2026-12-13",
+      "roundTrip": true
+    },
+    {
+      "origin": "NRN",
+      "originCity": "Weeze",
+      "originName": "Weeze (Düsseldorf)",
+      "originSlug": "weeze",
+      "dest": "TFS",
+      "destSeo": "tenerife-south",
+      "destCity": "Tenerife",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 28.0445,
+      "lon": -16.5725,
+      "priceFrom": 56.58,
+      "departDate": "2026-12-06",
+      "returnDate": "2026-12-15",
       "roundTrip": true
     },
     {
@@ -3085,23 +3085,6 @@
       "originCity": "Charleroi",
       "originName": "Bruxelles-Charleroi",
       "originSlug": "charleroi",
-      "dest": "FNC",
-      "destSeo": "funchal",
-      "destCity": "Funchal",
-      "country": "Portugal",
-      "iso3": "PRT",
-      "lat": 32.6942,
-      "lon": -16.7781,
-      "priceFrom": 72.28,
-      "departDate": "2027-01-25",
-      "returnDate": "2027-01-29",
-      "roundTrip": true
-    },
-    {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
       "dest": "NAP",
       "destSeo": "naples",
       "destCity": "Naples",
@@ -3112,6 +3095,23 @@
       "priceFrom": 72.98,
       "departDate": "2027-01-24",
       "returnDate": "2027-01-28",
+      "roundTrip": true
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "FNC",
+      "destSeo": "funchal",
+      "destCity": "Funchal",
+      "country": "Portugal",
+      "iso3": "PRT",
+      "lat": 32.6942,
+      "lon": -16.7781,
+      "priceFrom": 74.08,
+      "departDate": "2027-01-25",
+      "returnDate": "2027-01-29",
       "roundTrip": true
     },
     {
