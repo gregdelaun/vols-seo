@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T18:53:58.231Z",
+  "generatedAt": "2026-11-01T18:56:17.130Z",
   "count": 272,
   "withPrice": 187,
   "routes": [
@@ -2095,23 +2095,6 @@
       "roundTrip": true
     },
     {
-      "origin": "BVA",
-      "originCity": "Paris",
-      "originName": "Paris-Beauvais",
-      "originSlug": "paris-beauvais",
-      "dest": "ZAG",
-      "destSeo": "zagreb",
-      "destCity": "Zagreb",
-      "country": "Croatia",
-      "iso3": "HRV",
-      "lat": 45.7431,
-      "lon": 16.0689,
-      "priceFrom": 48.98,
-      "departDate": "2026-11-13",
-      "returnDate": "2026-11-20",
-      "roundTrip": true
-    },
-    {
       "origin": "LUX",
       "originCity": "Luxembourg",
       "originName": "Luxembourg",
@@ -2279,6 +2262,23 @@
       "priceFrom": 49.98,
       "departDate": "2026-12-04",
       "returnDate": "2026-12-11",
+      "roundTrip": true
+    },
+    {
+      "origin": "BVA",
+      "originCity": "Paris",
+      "originName": "Paris-Beauvais",
+      "originSlug": "paris-beauvais",
+      "dest": "ZAG",
+      "destSeo": "zagreb",
+      "destCity": "Zagreb",
+      "country": "Croatia",
+      "iso3": "HRV",
+      "lat": 45.7431,
+      "lon": 16.0689,
+      "priceFrom": 50.24,
+      "departDate": "2026-11-20",
+      "returnDate": "2026-11-29",
       "roundTrip": true
     },
     {
