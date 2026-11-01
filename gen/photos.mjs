@@ -87,8 +87,7 @@ async function hiRes(p) {
   } catch { /* fallback */ }
   return p.url;
 }
-async function download(iata, url) {
-  const dest = join(IMG, `${iata}.jpg`);
+async function dl1(url, dest) {
   try { const r = await fetch(url); if (!r.ok) return false; writeFileSync(dest, Buffer.from(await r.arrayBuffer())); return true; }
   catch { return false; }
 }
@@ -107,8 +106,13 @@ await pool(todo, 3, async (c) => {
 });
 writeFileSync(OUT, JSON.stringify(photos, null, 2));
 
-// (re)télécharge les JPG HAUTE RÉSOLUTION de toutes les villes en cache
+// 2 tailles : img/{iata}.jpg = vignette 640px (cartes, léger) ; img/hero/{iata}.jpg = 1280px (grand hero seulement)
+mkdirSync(join(IMG, "hero"), { recursive: true });
 let dl = 0;
-await pool(Object.entries(photos), 6, async ([iata, p]) => { const url = await hiRes(p); if (await download(iata, url)) dl++; });
+await pool(Object.entries(photos), 6, async ([iata, p]) => {
+  const okCard = await dl1(p.url, join(IMG, `${iata}.jpg`));            // 640px (webformat)
+  await dl1(await hiRes(p), join(IMG, "hero", `${iata}.jpg`));          // 1280px (large)
+  if (okCard) dl++;
+});
 writeFileSync(OUT, JSON.stringify(photos, null, 2)); // sauve les URLs 'large' récupérées
-console.log(`Photos validées : ${ok} · rejetées : ${rejected} · images HD téléchargées : ${dl}.`);
+console.log(`Photos validées : ${ok} · rejetées : ${rejected} · vignettes 640 + heros 1280 téléchargées : ${dl}.`);

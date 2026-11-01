@@ -222,7 +222,8 @@ function routeCard(L, r) {
 </a>`;
 }
 
-const heroBg = (iata) => hasPhoto(iata) ? ` style="background-image:url('${photoUrl(iata)}')"` : "";
+const heroUrl = (iata) => `${BASE}/img/hero/${iata}.jpg`; // 1280px, grand hero
+const heroBg = (iata) => hasPhoto(iata) ? ` style="background-image:url('${heroUrl(iata)}')"` : "";
 
 function spread(all, n) {
   const priced = all.filter((r) => r.priceFrom != null).sort((a, b) => a.priceFrom - b.priceFrom);
@@ -412,13 +413,15 @@ writeFileSync(join(SITE, ".nojekyll"), "");
 const IKEY = process.env.INDEXNOW_KEY || "";
 if (IKEY) writeFileSync(join(SITE, `${IKEY}.txt`), IKEY);
 if (existsSync(IMGDIR)) {
-  const dst = join(SITE, "img"); mkdirSync(dst, { recursive: true });
+  const dst = join(SITE, "img"); mkdirSync(join(dst, "hero"), { recursive: true });
   let n = 0;
   for (const f of readdirSync(IMGDIR)) if (f.endsWith(".jpg")) { copyFileSync(join(IMGDIR, f), join(dst, f)); n++; }
-  // image de partage social : réutilise une belle photo
-  const og = readdirSync(dst).find((f) => f.endsWith(".jpg"));
-  if (og) copyFileSync(join(dst, og), join(SITE, "og.jpg"));
-  console.log(`Photos copiées : ${n}`);
+  const heroSrc = join(IMGDIR, "hero");
+  if (existsSync(heroSrc)) for (const f of readdirSync(heroSrc)) if (f.endsWith(".jpg")) copyFileSync(join(heroSrc, f), join(dst, "hero", f));
+  // image de partage social (OG) : un hero HD si dispo
+  const ogSrc = existsSync(join(dst, "hero", "TSF.jpg")) ? join(dst, "hero", "TSF.jpg") : join(dst, (readdirSync(dst).find((f) => f.endsWith(".jpg")) || ""));
+  if (existsSync(ogSrc)) copyFileSync(ogSrc, join(SITE, "og.jpg"));
+  console.log(`Vignettes copiées : ${n} (+ heros HD)`);
 }
 if (process.env.SITE_DOMAIN) writeFileSync(join(SITE, "CNAME"), process.env.SITE_DOMAIN.trim() + "\n");
 writeFileSync(join(SITE, "style.css"), CSS());
