@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T18:06:55.132Z",
+  "generatedAt": "2026-11-01T18:07:30.174Z",
   "count": 272,
   "withPrice": 187,
   "routes": [
@@ -241,7 +241,7 @@
       "lat": 42.4317,
       "lon": 14.1811,
       "priceFrom": 14.99,
-      "bestDate": "2026-12-06"
+      "bestDate": "2026-11-15"
     },
     {
       "origin": "CRL",
