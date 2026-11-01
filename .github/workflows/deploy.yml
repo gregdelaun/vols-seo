@@ -40,12 +40,19 @@ jobs:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: node gen/photos.mjs
 
+      - name: Traduction NL (Gemini, caché)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node gen/translate.mjs
+
       - name: Génère le site
         env:
           TRAVELPAYOUTS_MARKER: ${{ secrets.TRAVELPAYOUTS_MARKER }}
           SITE_BASE_URL: ${{ vars.SITE_BASE_URL }}
           SITE_NAME: ${{ vars.SITE_NAME }}
           SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
+          SITE_GA_ID: ${{ vars.SITE_GA_ID }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: node gen/build.mjs
 
       - name: Commit du cache (prix + blurbs)
@@ -68,3 +75,16 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Ping moteurs (IndexNow + sitemap)
+        if: ${{ vars.SITE_BASE_URL != '' }}
+        run: |
+          BASE="${{ vars.SITE_BASE_URL }}"
+          KEY="${{ secrets.INDEXNOW_KEY }}"
+          # IndexNow (Bing, Yandex...) : resoumet la home -> recrawl du sitemap
+          if [ -n "$KEY" ]; then
+            curl -s "https://api.indexnow.org/indexnow?url=${BASE}/&key=${KEY}&keyLocation=${BASE}/${KEY}.txt" || true
+          fi
+          # notifie Bing du sitemap
+          curl -s "https://www.bing.com/ping?sitemap=${BASE}/sitemap.xml" || true
+          echo "ping envoyé"

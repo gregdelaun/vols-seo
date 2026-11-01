@@ -1,0 +1,1278 @@
+{
+  "AOI": {
+    "cityNl": "Ancona",
+    "countryNl": "Italië",
+    "blurb": "Vaak slechts een doorgangspunt, maar Ancona verdient zeker een pauze! Verken de antieke haven, de majestueuze Duomo met een adembenemend uitzicht, en de middeleeuwse straatjes van de Duomo-wijk voor een authentieke onderdompeling ver weg van de drukte.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bezoek de Duomo",
+      "Wandel door de haven",
+      "Proef de moscioli"
+    ]
+  },
+  "BGY": {
+    "cityNl": "Bergamo",
+    "countryNl": "Italië",
+    "blurb": "Bergamo, dat zijn twee steden in één: de moderne 'Città Bassa' en de middeleeuwse 'Città Alta', bereikbaar met de kabelbaan. Mis zeker niet om te slenteren over de Piazza Vecchia en de Cappella Colleoni, een architectonisch meesterwerk, te bewonderen.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "Neem de kabelbaan",
+      "Verken Città Alta",
+      "Proef de polenta e osei"
+    ]
+  },
+  "BLQ": {
+    "cityNl": "Bologna",
+    "countryNl": "Italië",
+    "blurb": "Bologna, ook wel 'de Vette' genoemd, is een paradijs voor fijnproevers en een dynamische studentenstad. Verdwaal onder de kilometerslange portieken en beklim de Asinelli-torens voor een adembenemend uitzicht over de rode stad.",
+    "bestSeason": "April, mei, september",
+    "todo": [
+      "Beklim de Asinelli-toren",
+      "Eet tagliatelle",
+      "Slenter onder de portieken"
+    ]
+  },
+  "CDT": {
+    "cityNl": "Castellón de la Plana",
+    "countryNl": "Spanje",
+    "blurb": "Minder bekend dan haar buren, biedt Castellón een perfecte balans tussen mediterrane stranden en erfgoed. Geniet van de zon op het Pinar-strand en ontdek de modernistische architectuur van de Mercat Central voor een lokale ervaring.",
+    "bestSeason": "Juni tot september",
+    "todo": [
+      "Strand van Pinar",
+      "Bezoek de Fadrí",
+      "Centrale Markt"
+    ]
+  },
+  "CLJ": {
+    "cityNl": "Cluj-Napoca",
+    "countryNl": "Roemenië",
+    "blurb": "Cluj, het bruisende hart van Transsylvanië, is een jonge en hippe stad die middeleeuwse geschiedenis combineert met een levendig nachtleven. Mis zeker het Unirii-plein en de imposante Sint-Michielskerk niet, emblemen van haar rijke verleden.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Unirii-plein",
+      "Botanische Tuin",
+      "Levendig nachtleven"
+    ]
+  },
+  "CTA": {
+    "cityNl": "Catania",
+    "countryNl": "Italië",
+    "blurb": "Catania, aan de voet van de Etna, is een uitbundige stad, herbouwd met lavasteen na de uitbarstingen. Duik in de unieke sfeer van de markt La Pescheria en bewonder de Piazza del Duomo, gedomineerd door de lavasteen-olifant.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "Markt La Pescheria",
+      "Piazza Duomo",
+      "De Etna zien"
+    ]
+  },
+  "DUB": {
+    "cityNl": "Dublin",
+    "countryNl": "Ierland",
+    "blurb": "Dublin wacht op je met zijn warme sfeer, historische pubs en rijke literaire erfgoed. Geniet van een pint Guinness in Temple Bar, maar vergeet niet de authentiekere wijk Portobello te verkennen voor zijn cafés en boetieks.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bezoek de Guinness Storehouse",
+      "Slenter door Temple Bar",
+      "Verken Trinity College"
+    ]
+  },
+  "FEZ": {
+    "cityNl": "Fez",
+    "countryNl": "Marokko",
+    "blurb": "Fez, de oudste van de keizerlijke steden, dompelt je onder in een middeleeuws labyrint waar de tijd stil lijkt te staan. Verdwaal in de steegjes van Fès el Bali, de UNESCO-medina, en ontdek de beroemde Chouara-leerlooierijen.",
+    "bestSeason": "Maart tot mei, oktober",
+    "todo": [
+      "Medina Fès el Bali",
+      "Chouara-leerlooierijen",
+      "Bab Bou Jeloud-poort"
+    ]
+  },
+  "GRO": {
+    "cityNl": "Girona",
+    "countryNl": "Spanje",
+    "blurb": "Girona, met zijn kleurrijke huizen langs de Onyar en zijn goed bewaarde Joodse wijk, is een juweel van Catalonië. Beklim de trappen van de Kathedraal voor een adembenemend uitzicht en verken El Call, het doolhof van historische straatjes.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "Kathedraal van Girona",
+      "Eiffeltoren-brug",
+      "Joodse wijk El Call"
+    ]
+  },
+  "MAN": {
+    "cityNl": "Manchester",
+    "countryNl": "Verenigd Koninkrijk",
+    "blurb": "Manchester, ooit een industriële hoofdstad, is vandaag een dynamisch cultureel en muzikaal centrum. Verken de Boheemse wijk Northern Quarter voor zijn graffiti en onafhankelijke boetieks, en ontdek zijn legendarische muziekscene.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Northern Quarter",
+      "Wetenschapsmuseum",
+      "Voetbalwedstrijd"
+    ]
+  },
+  "MLA": {
+    "cityNl": "Malta",
+    "countryNl": "Malta",
+    "blurb": "Malta, een mediterrane archipel op het kruispunt van beschavingen, biedt je megalithische tempels en geheime baaien. Verken de versterkte straten van Valletta, de UNESCO-hoofdstad, en zwem in het blauwe water van de Blauwe Grot.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "Versterkt Valletta",
+      "Blauwe Grot",
+      "Eiland Gozo"
+    ]
+  },
+  "MRS": {
+    "cityNl": "Marseille",
+    "countryNl": "Frankrijk",
+    "blurb": "Marseille, de oudste stad van Frankrijk, is een bruisende smeltkroes tussen de Middellandse Zee en de Provençaalse heuvels. Slenter over de Vieux-Port en verdwaal vervolgens in de kleurrijke straatjes van Le Panier voor een authentieke onderdompeling.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Vieux-Port",
+      "Wijk Le Panier",
+      "Calanques per boot"
+    ]
+  },
+  "ORK": {
+    "cityNl": "Cork",
+    "countryNl": "Ierland",
+    "blurb": "Verken Cork, een bruisende stad met een gerenommeerde culinaire scène. Mis de English Market zeker niet voor z'n lokale producten en levendige sfeer, een waar feest voor de zintuigen.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bezoek de English Market",
+      "Proef een lokaal biertje",
+      "Verken de wijk Shandon"
+    ]
+  },
+  "PMO": {
+    "cityNl": "Palermo",
+    "countryNl": "Italië",
+    "blurb": "Duik in de georganiseerde chaos van Palermo, waar Normandische, Arabische en barokke geschiedenis samenkomen. Slenter over de Ballarò-markt voor een totale onderdompeling in de Siciliaanse sfeer en smaken.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "Ontdek het Normandisch Paleis",
+      "Verdwaal in Ballarò",
+      "Proef de streetfood"
+    ]
+  },
+  "PSA": {
+    "cityNl": "Pisa",
+    "countryNl": "Italië",
+    "blurb": "Pisa, veel meer dan z'n beroemde scheve toren! Verken de Piazza dei Miracoli en z'n architecturale wonderen. Verdwaal daarna in de middeleeuwse straatjes van Borgo Stretto voor een andere kant van de stad.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bewonder de Toren van Pisa",
+      "Bezoek de Duomo",
+      "Slenter langs de Arno"
+    ]
+  },
+  "PSR": {
+    "cityNl": "Pescara",
+    "countryNl": "Italië",
+    "blurb": "Pescara wacht op je met z'n fijne zandstranden en levendige nachtleven, perfect voor een ontspannen en feestelijk verblijf aan de Adriatische kust. Mis de Ponte del Mare zeker niet, een modern symbool dat prachtige uitzichten biedt.",
+    "bestSeason": "Juni tot augustus",
+    "todo": [
+      "Geniet van de stranden",
+      "Wandel over de Ponte del Mare",
+      "Proef de Arrosticini"
+    ]
+  },
+  "SUF": {
+    "cityNl": "Lamezia Terme",
+    "countryNl": "Italië",
+    "blurb": "Poort naar Calabrië, Lamezia Terme is een ideaal startpunt om de verborgen schatten van de regio te verkennen. Vergeet zeker niet het Castello Normanno Swabevo te bezoeken voor een vleugje middeleeuwse geschiedenis.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "Verken het Castello Normanno",
+      "Bezoek de Abdij van Sant'Eufemia",
+      "Ontdek het omliggende Calabrië"
+    ]
+  },
+  "TIA": {
+    "cityNl": "Tirana",
+    "countryNl": "Albanië",
+    "blurb": "Tirana, een bruisende hoofdstad die zichzelf opnieuw heeft uitgevonden met kleurrijke gebouwen en een aanstekelijke energie. Verken de trendy wijk Blloku, vroeger voorbehouden aan de communistische elite, voor z'n cafés en nachtleven.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "Bezoek het Skanderbegplein",
+      "Verken de wijk Blloku",
+      "Beklim de Dajti-berg"
+    ]
+  },
+  "TRN": {
+    "cityNl": "Turijn",
+    "countryNl": "Italië",
+    "blurb": "Turijn, de elegante hoofdstad van Piemonte, zal je verrassen met z'n barokke architectuur, eindeloze arcades en rijk koninklijk verleden. Mis een bezoek aan de Mole Antonelliana zeker niet, het symbool van de stad en de thuisbasis van het Filmmuseum.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bewonder de Mole Antonelliana",
+      "Proef een bicerin",
+      "Slenter onder de arcades"
+    ]
+  },
+  "TRS": {
+    "cityNl": "Triëst",
+    "countryNl": "Italië",
+    "blurb": "Triëst, een unieke havenstad waar de Oostenrijkse invloed zich vermengt met de Italiaanse dolce vita. Drink een historische koffie zoals in Caffè San Marco en geniet van de kosmopolitische sfeer op de Piazza Unità d'Italia.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bezoek het Kasteel van Miramare",
+      "Drink een historische koffie",
+      "Wandel over de Piazza Unità"
+    ]
+  },
+  "TSF": {
+    "cityNl": "Venetië",
+    "countryNl": "Italië",
+    "blurb": "Laat je betoveren door de tijdloze magie van Venetië, z'n romantische kanalen en geheime steegjes. Vermijd de drukte van het San Marcoplein en verken de wijk Cannaregio voor een authentiekere sfeer.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "Vaar in een gondel",
+      "Bezoek het Dogenpaleis",
+      "Verdwaal in Cannaregio"
+    ]
+  },
+  "TTU": {
+    "cityNl": "Tétouan",
+    "countryNl": "Marokko",
+    "blurb": "Tétouan, de \"Witte Duif\", nodigt je uit om z'n UNESCO-geklasseerde medina te ontdekken, een authentiek labyrint van steegjes en ambachtelijke ateliers. Mis de kleurrijke souks zeker niet voor een unieke zintuiglijke onderdompeling.",
+    "bestSeason": "Maart tot juni",
+    "todo": [
+      "Verken de UNESCO-medina",
+      "Bezoek de Kunstschool",
+      "Proef een lokale tajine"
+    ]
+  },
+  "VIE": {
+    "cityNl": "Wenen",
+    "countryNl": "Oostenrijk",
+    "blurb": "Wenen zal je betoveren met z'n keizerlijke grandeur, weelderige paleizen en rijke culturele scène. Breng een middag door in het Schönbrunn Paleis, zomerresidentie van de Habsburgers, om je onder te dompelen in de Oostenrijkse geschiedenis.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bezoek Schönbrunn",
+      "Woon een concert bij",
+      "Proef de Sachertorte"
+    ]
+  },
+  "VIT": {
+    "cityNl": "Vitoria-Gasteiz",
+    "countryNl": "Spanje",
+    "blurb": "Vitoria-Gasteiz, Europese Groene Hoofdstad, combineert duurzame moderniteit met een charmant middeleeuws historisch centrum. Verken de wijk Almendra Medieval, met z'n smalle straatjes en oude paleizen, voor een tijdloze wandeling.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Ontdek de Kathedraal van Santa María",
+      "Wandel door de Almendra",
+      "Geniet van de groene ruimtes"
+    ]
+  },
+  "VLC": {
+    "cityNl": "Valencia",
+    "countryNl": "Spanje",
+    "blurb": "Duik in de mediterrane sfeer van Valencia, de stad van zon en smaken! Mis zeker niet de kans om een authentieke Valenciaanse paella te proeven, vaak bereid met konijn en sperziebonen.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "De Stad van Kunsten en Wetenschappen verkennen",
+      "Slenteren over de Centrale Markt",
+      "Ontspannen op Malvarrosa"
+    ]
+  },
+  "WAW": {
+    "cityNl": "Warschau",
+    "countryNl": "Polen",
+    "blurb": "Ontdek Warschau, een veerkrachtige hoofdstad waar geschiedenis en moderniteit samenkomen. Wandel door de heropgebouwde Oude Stad, UNESCO-werelderfgoed, en bewonder de kleurrijke gevels.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Het Koninklijk Kasteel bezoeken",
+      "Museum van de Opstand van Warschau",
+      "Wandeling in het Łazienki Park"
+    ]
+  },
+  "WRO": {
+    "cityNl": "Wrocław",
+    "countryNl": "Polen",
+    "blurb": "Laat je charmeren door Wrocław, het \"Poolse Venetië\", met zijn vele bruggen en eilanden. Ga op dwergenjacht, die kleine beeldjes die overal in de stad verstopt zitten, plezier gegarandeerd!",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De dwergen van Wrocław zoeken",
+      "Ostrów Tumski ontdekken",
+      "Een biertje drinken op de Rynek"
+    ]
+  },
+  "ZAG": {
+    "cityNl": "Zagreb",
+    "countryNl": "Kroatië",
+    "blurb": "Verken Zagreb, een charmante hoofdstad waar de Oostenrijks-Hongaarse sfeer voelbaar is. Neem de kortste kabelbaan ter wereld om de Bovenstad en haar kleurrijke daken te bereiken.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "Naar de Bovenstad gaan",
+      "Het Museum van Verbroken Relaties bezoeken",
+      "Slenteren over de Dolac-markt"
+    ]
+  },
+  "ALC": {
+    "cityNl": "Alicante",
+    "countryNl": "Spanje",
+    "blurb": "Geniet van de zon in Alicante, een levendige kuststad met prachtige stranden. Mis zeker niet de beklimming naar het Kasteel van Santa Barbara voor een adembenemend uitzicht over de Middellandse Zee.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "Kasteel van Santa Barbara",
+      "Strand van Postiguet",
+      "Wandeling over de Explanada"
+    ]
+  },
+  "BHX": {
+    "cityNl": "Birmingham",
+    "countryNl": "Verenigd Koninkrijk",
+    "blurb": "Ontdek Birmingham, een dynamische stad met een getransformeerd industrieel verleden. Verken de juwelierswijk, de \"Jewellery Quarter\", met zijn historische ateliers en unieke boetieks.",
+    "bestSeason": "Juni tot september",
+    "todo": [
+      "De Jewellery Quarter bezoeken",
+      "Kanalen van Brindleyplace",
+      "Museum van de Custard Factory"
+    ]
+  },
+  "BRI": {
+    "cityNl": "Bari",
+    "countryNl": "Italië",
+    "blurb": "Duik in de authenticiteit van Bari, de hoofdstad van Puglia, met zijn labyrintische straatjes. Verdwaal in Bari Vecchia, de oude wijk, en observeer de vrouwen die orecchiette bereiden voor hun deur.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "Slenteren door Bari Vecchia",
+      "Orecchiette proeven",
+      "Basiliek van San Nicola"
+    ]
+  },
+  "CAG": {
+    "cityNl": "Cagliari",
+    "countryNl": "Italië",
+    "blurb": "Laat je verleiden door Cagliari, de parel van Sardinië, met zijn panoramische uitzichten over de zee. Beklim de Castello, de historische wijk op de heuvel, om de Golf van de Engelen te bewonderen.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "De wijk Castello verkennen",
+      "Strand van Poetto",
+      "De roze flamingo's zien"
+    ]
+  },
+  "MAD": {
+    "cityNl": "Madrid",
+    "countryNl": "Spanje",
+    "blurb": "Bezoek Madrid, een bruisende hoofdstad waar kunst en nachtleven samenkomen. Dompel je onder in de sfeer van de wijk La Latina, perfect voor tapas en drankjes op een terras.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "Prado Museum",
+      "Slenteren door La Latina",
+      "Retiro Park"
+    ]
+  },
+  "NAP": {
+    "cityNl": "Napels",
+    "countryNl": "Italië",
+    "blurb": "Voel de unieke energie van Napels, de bakermat van de pizza en een stad met duizend verborgen schatten. Proef een authentieke Napolitaanse pizza in een trattoria in Spaccanapoli.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "Een Napolitaanse pizza proeven",
+      "Spaccanapoli verkennen",
+      "Het Archeologisch Museum bezoeken"
+    ]
+  },
+  "POZ": {
+    "cityNl": "Poznań",
+    "countryNl": "Polen",
+    "blurb": "Ontdek Poznań, een studentenstad en historische stad in het hart van Groot-Polen. Kijk elke middag naar het spektakel van de mechanische bokken die vechten op de klok van het stadhuis.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De bokken om twaalf uur zien",
+      "Slenteren over het Marktplein",
+      "Kathedraal van Poznań"
+    ]
+  },
+  "STN": {
+    "cityNl": "Londen",
+    "countryNl": "Verenigd Koninkrijk",
+    "blurb": "Duik in de dynamiek van Londen, een metropool met vele facetten en unieke wijken. Verken de kleurrijke wijk Notting Hill, met zijn Victoriaanse huizen en de Portobello-markt.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Het British Museum bezoeken",
+      "Slenteren door Notting Hill",
+      "Big Ben bewonderen"
+    ]
+  },
+  "BDS": {
+    "cityNl": "Brindisi",
+    "countryNl": "Italië",
+    "blurb": "Brindisi, de poort naar Puglia, nodigt je uit om haar havencharme en rijke Romeinse verleden te ontdekken. Mis het Monumento al Marinaio d'Italia niet voor een adembenemend uitzicht over de haven.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De Duomo bezoeken",
+      "Slenteren over de Lungomare",
+      "Orecchiette proeven"
+    ]
+  },
+  "AGP": {
+    "cityNl": "Malaga",
+    "countryNl": "Spanje",
+    "blurb": "Zonnig Malaga is een levendige mix van geschiedenis en moderniteit, de geboorteplaats van Picasso. Verken de smalle straatjes van het historische centrum en beklim het Alcazaba voor maritieme panorama's.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "Het Alcazaba verkennen",
+      "Het Picasso Museum bezoeken",
+      "Tapas proeven"
+    ]
+  },
+  "OPO": {
+    "cityNl": "Porto",
+    "countryNl": "Portugal",
+    "blurb": "Laat je betoveren door de geplaveide straatjes van Porto, de azulejos en de spectaculaire uitzichten over de Douro. Steek de Dom Luís I-brug over en proef een glaasje port in een kelder in Vila Nova de Gaia.",
+    "bestSeason": "Maart tot oktober",
+    "todo": [
+      "Een portkelder bezoeken",
+      "De Livraria Lello bewonderen",
+      "Slenteren langs de Douro"
+    ]
+  },
+  "PMI": {
+    "cityNl": "Palma de Mallorca",
+    "countryNl": "Spanje",
+    "blurb": "Palma, de hoofdstad van de Balearen, is een elegante stad waar geschiedenis de Middellandse Zee ontmoet. De majestueuze Kathedraal La Seu, die uitkijkt over de zee, is een meesterwerk dat je niet mag missen.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De Kathedraal La Seu bewonderen",
+      "Verdwalen in de Casco Antiguo",
+      "Ensaimada proeven"
+    ]
+  },
+  "SVQ": {
+    "cityNl": "Sevilla",
+    "countryNl": "Spanje",
+    "blurb": "Sevilla betovert je met haar gepassioneerde flamenco, sinaasappelbomen en Moorse architectuur. Mis het Alcázar niet, een weelderig paleis dat je meeneemt naar een sprookje van Duizend-en-één-nacht.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "Het Koninklijk Alcázar bezoeken",
+      "Een flamencoshow bijwonen",
+      "Slenteren door Triana"
+    ]
+  },
+  "BIQ": {
+    "cityNl": "Biarritz",
+    "countryNl": "Frankrijk",
+    "blurb": "Elegant en sportief Biarritz biedt je het beste van de Baskische Kust, tussen surfen en keizerlijk erfgoed. Wandel over de Grande Plage en bewonder de Rocher de la Vierge bij zonsondergang.",
+    "bestSeason": "Juni tot september",
+    "todo": [
+      "Leren surfen",
+      "Het Zeemuseum bezoeken",
+      "Wandelen in de Oude Haven"
+    ]
+  },
+  "EDI": {
+    "cityNl": "Edinburgh",
+    "countryNl": "Verenigd Koninkrijk",
+    "blurb": "Edinburgh, een stad vol mysteries en geschiedenis, zal je betoveren met haar middeleeuwse kastelen en geplaveide straatjes. Verken de Royal Mile die het kasteel verbindt met Holyrood Palace, een Schotse must-see.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Edinburgh Castle bezoeken",
+      "Arthur's Seat beklimmen",
+      "De Oude Stad verkennen"
+    ]
+  },
+  "IAS": {
+    "cityNl": "Iași",
+    "countryNl": "Roemenië",
+    "blurb": "Iași, het culturele en historische centrum van Roemeens Moldavië, barst van de kloosters en tuinen. Bewonder het Paleis van Cultuur, een indrukwekkend neogotisch gebouw dat de stad domineert.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Het Paleis van Cultuur bezoeken",
+      "Wandelen in de Botanische Tuin",
+      "De kerken ontdekken"
+    ]
+  },
+  "NDR": {
+    "cityNl": "Nador",
+    "countryNl": "Marokko",
+    "blurb": "Nador, gelegen aan de lagune van Mar Chica, nodigt je uit voor een authentieke onderdompeling in de Rif. Geniet van de levendige markten en stranden voor een Marokkaanse ervaring ver weg van de gebruikelijke drukte.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "De Mar Chica lagune verkennen",
+      "Slenteren over de soek",
+      "De lokale keuken proeven"
+    ]
+  },
+  "RAK": {
+    "cityNl": "Marrakech",
+    "countryNl": "Marokko",
+    "blurb": "De okerkleurige stad Marrakech is een explosie van kleuren, geluiden en smaken. Verdwaal in de soeks van de Medina en laat je betoveren door de unieke sfeer van het Jemaa el-Fna plein.",
+    "bestSeason": "Maart tot mei",
+    "todo": [
+      "Afdingen op de soek",
+      "De Jardin Majorelle bezoeken",
+      "Dineren op het Jemaa el-Fna plein"
+    ]
+  },
+  "CIA": {
+    "cityNl": "Rome",
+    "countryNl": "Italië",
+    "blurb": "Eeuwig en majestueus Rome is een openluchtmuseum waar elke straat geschiedenis fluistert. Gooi een muntje in de Trevifontein en verzeker jezelf van een terugkeer naar deze ongelofelijke stad.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "Het Colosseum bezoeken",
+      "Een muntje in de Trevifontein gooien",
+      "De echte carbonara proeven"
+    ]
+  },
+  "FAO": {
+    "cityNl": "Faro",
+    "countryNl": "Portugal",
+    "blurb": "Faro, de toegangspoort tot de Algarve, zal je verleiden met haar discrete charme en historische centrum. Mis de sublieme Capela dos Ossos en de ooievaars die op de daken van de oude stad nestelen niet.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De Cidade Velha verkennen",
+      "De Capela dos Ossos bezoeken",
+      "Een excursie naar Ria Formosa maken"
+    ]
+  },
+  "OUD": {
+    "cityNl": "Oujda",
+    "countryNl": "Marokko",
+    "blurb": "Oujda, de poort van het Marokkaanse Oosten, biedt je een authentieke onderdompeling ver weg van de drukte. Mis zeker de souk El Hout niet, waar lokale ambachtslieden je zullen verwonderen met hun traditionele vakmanschap.",
+    "bestSeason": "Lente of herfst",
+    "todo": [
+      "De medina verkennen",
+      "Harcha proeven",
+      "Park Lalla Aïcha bezoeken"
+    ]
+  },
+  "TNG": {
+    "cityNl": "Tanger",
+    "countryNl": "Marokko",
+    "blurb": "Tanger, een legendarische stad op het kruispunt van continenten, nodigt je uit om te slenteren door haar geschiedenisrijke steegjes. Drink een muntthee in het beroemde Café Hafa terwijl je de Straat van Gibraltar bewondert.",
+    "bestSeason": "Lente, vroege herfst",
+    "todo": [
+      "De Kasbah ontdekken",
+      "Wandelen langs de Corniche",
+      "De grotten van Hercules bezoeken"
+    ]
+  },
+  "TFS": {
+    "cityNl": "Tenerife",
+    "countryNl": "Spanje",
+    "blurb": "Tenerife, het eiland van de eeuwige lente, biedt je unieke maanlandschappen en vulkanische stranden. Aarzel niet om de Teide te beklimmen voor een adembenemend panorama, de hoogste top van Spanje.",
+    "bestSeason": "Het hele jaar door",
+    "todo": [
+      "De Teide beklimmen",
+      "Duiken bij Los Cristianos",
+      "Het Anaga plattelandspark verkennen"
+    ]
+  },
+  "KRK": {
+    "cityNl": "Krakau",
+    "countryNl": "Polen",
+    "blurb": "Krakau, de voormalige Poolse hoofdstad, zal je verleiden met haar middeleeuwse charme en fascinerende geschiedenis. Slenter over de Grote Markt Rynek Główny, een van de grootste van Europa, en bezoek de Joodse wijk Kazimierz.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Het Wawel kasteel bezoeken",
+      "Kazimierz verkennen",
+      "De Grote Markt ontdekken"
+    ]
+  },
+  "BTS": {
+    "cityNl": "Bratislava",
+    "countryNl": "Slowakije",
+    "blurb": "Bratislava, de Slowaakse hoofdstad, zal je verrassen met haar compacte historische centrum en ontspannen sfeer. Geniet van een prachtig uitzicht over de stad vanaf de Burcht van Bratislava, gelegen op een heuvel.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De Burcht bezoeken",
+      "Slenteren door de oude stad",
+      "Lokaal bier drinken"
+    ]
+  },
+  "ACE": {
+    "cityNl": "Lanzarote",
+    "countryNl": "Spanje",
+    "blurb": "Lanzarote, het vulkanische eiland met maanlandschappen, is een natuurlijk en architectonisch kunstwerk. Verken het Nationaal Park Timanfaya voor surrealistische uitzichten en ontdek de creaties van César Manrique.",
+    "bestSeason": "Het hele jaar door",
+    "todo": [
+      "Timanfaya ontdekken",
+      "Jameos del Agua bezoeken",
+      "Zwemmen bij Papagayo"
+    ]
+  },
+  "ESU": {
+    "cityNl": "Essaouira",
+    "countryNl": "Marokko",
+    "blurb": "Essaouira, de 'stad van de winden', zal je betoveren met haar UNESCO-geklasseerde medina en ontspannen sfeer. Mis zeker de levendige vissershaven niet, waar je verse vis van de dag kunt proeven.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "Slenteren door de medina",
+      "Verse vis eten",
+      "Kitesurfen"
+    ]
+  },
+  "FUE": {
+    "cityNl": "Fuerteventura",
+    "countryNl": "Spanje",
+    "blurb": "Fuerteventura, het eiland met 150 stranden, is het paradijs voor watersportliefhebbers en zonaanbidders. De duinen van Corralejo zullen je het gevoel geven midden in de woestijn te zijn, met de oceaan binnen handbereik.",
+    "bestSeason": "Het hele jaar door",
+    "todo": [
+      "De duinen van Corralejo bewonderen",
+      "Windsurfen",
+      "Ontspannen in Cofete"
+    ]
+  },
+  "LIS": {
+    "cityNl": "Lissabon",
+    "countryNl": "Portugal",
+    "blurb": "Lissabon, de stad van de zeven heuvels, zal je bekoren met haar steile straatjes, gele trams en melancholische sfeer. Neem tram 28 voor een totale onderdompeling in historische wijken zoals Alfama.",
+    "bestSeason": "April tot juni, september",
+    "todo": [
+      "Naar Fado luisteren",
+      "Tram 28 nemen",
+      "De Toren van Belém bezoeken"
+    ]
+  },
+  "TLS": {
+    "cityNl": "Toulouse",
+    "countryNl": "Frankrijk",
+    "blurb": "Toulouse, de 'Roze Stad', verwelkomt je met haar karakteristieke baksteenarchitectuur en vrolijke sfeer. Wandel langs de Garonne of verken de Cité de l'espace voor een onvergetelijk intergalactisch avontuur.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Slenteren over het Capitoolplein",
+      "Cité de l'espace bezoeken",
+      "Cassoulet proeven"
+    ]
+  },
+  "PFO": {
+    "cityNl": "Paphos",
+    "countryNl": "Cyprus",
+    "blurb": "Paphos, de geboorteplaats van Aphrodite, is een Cypriotische stad rijk aan geschiedenis en legendes. Verken het UNESCO-geklasseerde Archeologisch Park van Kato Paphos om uitzonderlijke Romeinse mozaïeken te ontdekken.",
+    "bestSeason": "April tot juni, september",
+    "todo": [
+      "De archeologische site bezoeken",
+      "Zwemmen bij de Rots van Aphrodite",
+      "De Koningsgraven ontdekken"
+    ]
+  },
+  "ZAZ": {
+    "cityNl": "Zaragoza",
+    "countryNl": "Spanje",
+    "blurb": "Zaragoza, een stad van geschiedenis en cultuur in Aragón, zal je verrassen met haar rijke erfgoed. Bewonder de indrukwekkende Basiliek van Onze-Lieve-Vrouw van de Pilaar en haar unieke mix van Romeinse, Moorse en christelijke architectuur.",
+    "bestSeason": "Mei tot juni, september",
+    "todo": [
+      "De Basiliek bezoeken",
+      "De Aljafería verkennen",
+      "Ternasco proeven"
+    ]
+  },
+  "OTP": {
+    "cityNl": "Boekarest",
+    "countryNl": "Roemenië",
+    "blurb": "Ontdek Boekarest, een bruisende hoofdstad waar de communistische geschiedenis samengaat met een levendig nachtleven. Mis zeker het indrukwekkende Parlementspaleis niet, het op één na grootste administratieve gebouw ter wereld.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Verken het Oude Centrum",
+      "Bezoek het Parlementspaleis",
+      "Wandel in het Cișmigiu Park"
+    ]
+  },
+  "PRG": {
+    "cityNl": "Praag",
+    "countryNl": "Tsjechië",
+    "blurb": "Laat je charmeren door Praag, de 'Stad met de Honderd Torens', met zijn gotische bruggen en middeleeuwse sfeer. Een wandeling over de Karelsbrug bij zonsopgang is een onvergetelijke ervaring.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "Steek de Karelsbrug over",
+      "Bewonder de Astronomische Klok",
+      "Beklim de Praagse Burcht"
+    ]
+  },
+  "MXP": {
+    "cityNl": "Milaan",
+    "countryNl": "Italië",
+    "blurb": "Duik in de Milanese elegantie, wereldhoofdstad van mode en design, waar kunst alomtegenwoordig is. Vergeet niet omhoog te kijken en de architecturale details van de Duomo te bewonderen, van een ongeëvenaarde pracht.",
+    "bestSeason": "April, sept-okt",
+    "todo": [
+      "Bezoek de Duomo",
+      "Shop in de Quadrilatero",
+      "Bekijk Het Laatste Avondmaal"
+    ]
+  },
+  "BCN": {
+    "cityNl": "Barcelona",
+    "countryNl": "Spanje",
+    "blurb": "Barcelona wacht op je met zijn fantasierijke modernistische architectuur en ontspannen mediterrane sfeer. Laat je verwonderen door de Sagrada Família, het onafgewerkte meesterwerk van Gaudí.",
+    "bestSeason": "Mei tot juni",
+    "todo": [
+      "Ontdek de Sagrada Família",
+      "Slenter door de Gotische Wijk",
+      "Wandel in Park Güell"
+    ]
+  },
+  "SDR": {
+    "cityNl": "Santander",
+    "countryNl": "Spanje",
+    "blurb": "Verken Santander, een kustparel in het noorden van Spanje, die stedelijke elegantie combineert met spectaculaire zeegezichten. Geniet van een wandeling op het schiereiland La Magdalena voor adembenemende uitzichten.",
+    "bestSeason": "Juli tot augustus",
+    "todo": [
+      "Ontspan op het Sardinero strand",
+      "Bezoek het Palacio de la Magdalena",
+      "Proef de zeevruchten"
+    ]
+  },
+  "ARN": {
+    "cityNl": "Stockholm",
+    "countryNl": "Zweden",
+    "blurb": "Stockholm, het 'Venetië van het Noorden', zal je verleiden met zijn eilanden en strak Scandinavisch design. Verdwaal in de geplaveide straatjes van Gamla Stan, de middeleeuwse oude stad.",
+    "bestSeason": "Juni tot augustus",
+    "todo": [
+      "Verken Gamla Stan",
+      "Bezoek het Vasa Museum",
+      "Neem een ferry"
+    ]
+  },
+  "BUD": {
+    "cityNl": "Boedapest",
+    "countryNl": "Hongarije",
+    "blurb": "Boedapest nodigt je uit om zijn rijke keizerlijke verleden en ontspannende thermale bronnen te ontdekken. Mis zeker een duik in de Széchenyi baden niet voor een unieke ervaring.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Neem een bad in de thermen",
+      "Bewonder het Parlement",
+      "Beklim het Vissersbastion"
+    ]
+  },
+  "KUN": {
+    "cityNl": "Kaunas",
+    "countryNl": "Litouwen",
+    "blurb": "Kaunas, de voormalige Litouwse hoofdstad, is een schat aan Art deco architectuur en authentieke charme. Slenter door de middeleeuwse oude stad en ontdek zijn historische kasteel.",
+    "bestSeason": "Juni tot augustus",
+    "todo": [
+      "Verken de oude stad",
+      "Bezoek het Kasteel van Kaunas",
+      "Ontdek de Art deco architectuur"
+    ]
+  },
+  "NCL": {
+    "cityNl": "Newcastle",
+    "countryNl": "Verenigd Koninkrijk",
+    "blurb": "Dompel je onder in de energie van Newcastle, een bruisende stad in het noorden van Engeland, bekend om zijn nachtleven en industrieel erfgoed. Steek de Tyne Bridge over voor iconische uitzichten.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Steek de Tyne Bridge over",
+      "Ontdek het nachtleven",
+      "Bezoek het Kasteel van Newcastle"
+    ]
+  },
+  "PGF": {
+    "cityNl": "Perpignan",
+    "countryNl": "Frankrijk",
+    "blurb": "Perpignan, voormalige hoofdstad van het Koninkrijk Mallorca, biedt je een unieke mix van Catalaanse cultuur en mediterrane zon. Ontdek het Paleis van de Koningen van Mallorca, getuige van zijn glorieuze geschiedenis.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bezoek het Paleis van de Koningen",
+      "Slenter door Le Castillet",
+      "Proef de Catalaanse keuken"
+    ]
+  },
+  "RBA": {
+    "cityNl": "Rabat",
+    "countryNl": "Marokko",
+    "blurb": "Rabat, de serene hoofdstad van Marokko, zal je verleiden met zijn harmonieuze mix van moderniteit en eeuwenoude tradities. Verken de Kasbah van de Oudaya's, een blauw-wit vestingdorp aan de oceaan.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "Bezoek de Kasbah van de Oudaya's",
+      "Ontdek de Hassan Toren",
+      "Wandel door de Medina"
+    ]
+  },
+  "SOF": {
+    "cityNl": "Sofia",
+    "countryNl": "Bulgarije",
+    "blurb": "Sofia verwelkomt je met zijn duizendjarige geschiedenis, zijn gouden orthodoxe kerken en Ottomaanse invloeden. Bewonder de majestueuze Alexander Nevski Kathedraal, een symbool van de stad.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bewonder de Nevski Kathedraal",
+      "Verken het stadscentrum",
+      "Bezoek de Boyana Kerk"
+    ]
+  },
+  "WMI": {
+    "cityNl": "Warschau",
+    "countryNl": "Polen",
+    "blurb": "Warschau, de stad die uit haar as herrees, zal je verrassen met haar unieke mix van geschiedenis en moderniteit. Mis zeker geen wandeling door de Oude Stad (Stare Miasto), volledig heropgebouwd en UNESCO-werelderfgoed, voor een totale onderdompeling in haar glorieuze verleden.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De Oude Stad bezoeken",
+      "Frédéric Chopin Museum",
+      "De wijk Praga verkennen"
+    ]
+  },
+  "SKG": {
+    "cityNl": "Thessaloniki",
+    "countryNl": "Griekenland",
+    "blurb": "Ontdek Thessaloniki, een bruisende stad waar Byzantijnse geschiedenis samensmelt met een levendig nachtleven en uitzonderlijke gastronomie. Laat je betoveren door de sfeer van markten zoals Modiano en Kapani, perfect om de lokale smaken te proeven.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "De Witte Toren beklimmen",
+      "De lokale keuken proeven",
+      "Slenteren door de wijk Ladadika"
+    ]
+  },
+  "FCO": {
+    "cityNl": "Rome",
+    "countryNl": "Italië",
+    "blurb": "Rome, de Eeuwige Stad, nodigt je uit voor een tijdloze reis langs haar majestueuze ruïnes en haar dolce vita. Je zult versteld staan van het imposante Colosseum, een groots getuigenis van het Romeinse Rijk, en van de unieke sfeer van haar pleinen.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "Het Colosseum bezoeken",
+      "Muntje gooien in de Trevifontein",
+      "Het Vaticaan verkennen"
+    ]
+  },
+  "BZR": {
+    "cityNl": "Béziers",
+    "countryNl": "Frankrijk",
+    "blurb": "Béziers opent de deuren naar Zuid-Frankrijk, tussen zonovergoten wijngaarden en de vredige wateren van het Canal du Midi. Las zeker een pauze in bij de 9 sluizen van Fonseranes, een technisch meesterwerk dat een fascinerend schouwspel biedt.",
+    "bestSeason": "Juni tot september",
+    "todo": [
+      "Boottocht op het Canal du Midi",
+      "Kathedraal van Saint-Nazaire",
+      "Lokale wijnen proeven"
+    ]
+  },
+  "AGA": {
+    "cityNl": "Agadir",
+    "countryNl": "Marokko",
+    "blurb": "Agadir, de parel van de Souss, wacht op je met haar royale zon en prachtige strand. Mis de levendigheid van Souk El Had niet, een immense markt waar je kruiden, ambachten en een totale onderdompeling in het Marokkaanse leven vindt.",
+    "bestSeason": "Het hele jaar door",
+    "todo": [
+      "Ontspannen op het strand",
+      "Afdingen op Souk El Had",
+      "Uitzicht vanaf de Kasbah"
+    ]
+  },
+  "HEL": {
+    "cityNl": "Helsinki",
+    "countryNl": "Finland",
+    "blurb": "Helsinki is een schat aan design, Scandinavische architectuur en ongerepte natuur, genesteld in het hart van een archipel. Trakteer jezelf op een excursie naar het zeefort Suomenlinna, een UNESCO-site perfect voor een dagje verkennen.",
+    "bestSeason": "Juni tot augustus",
+    "todo": [
+      "Fort Suomenlinna",
+      "Finse sauna-ervaring",
+      "Havenmarkt"
+    ]
+  },
+  "LPA": {
+    "cityNl": "Gran Canaria",
+    "countryNl": "Spanje",
+    "blurb": "Gran Canaria zal je verrassen met haar diversiteit, van de gouden duinen van Maspalomas tot de vulkanische landschappen. Huur een auto om het binnenland van het eiland te verkennen en bereik de Roque Nublo, een iconische monoliet die spectaculaire uitzichten biedt.",
+    "bestSeason": "Oktober tot april",
+    "todo": [
+      "Duinen van Maspalomas",
+      "Wandeling naar Roque Nublo",
+      "Stranden van het zuiden"
+    ]
+  },
+  "RIX": {
+    "cityNl": "Riga",
+    "countryNl": "Letland",
+    "blurb": "Riga is een fascinerende Baltische hoofdstad, beroemd om haar middeleeuwse Oude Stad en haar Art Nouveau-wijk. Slenter door de straten van Alberta Iela om de versierde gevels te bewonderen, ware architectonische meesterwerken die de stad haar faam geven.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De Oude Stad ontdekken",
+      "Art Nouveau-wijk",
+      "De Centrale Markt verkennen"
+    ]
+  },
+  "CPH": {
+    "cityNl": "Kopenhagen",
+    "countryNl": "Denemarken",
+    "blurb": "Kopenhagen zal je betoveren met haar 'hygge'-concept, haar innovatieve design en haar pittoreske kanalen. Mis zeker geen kleurrijke wandeling langs Nyhavn, de oude haven met haar levendige gevels en gezellige cafés.",
+    "bestSeason": "Mei tot augustus",
+    "todo": [
+      "Nyhavn bezoeken",
+      "Tivoli Tuinen",
+      "Fietstocht maken"
+    ]
+  },
+  "VNO": {
+    "cityNl": "Vilnius",
+    "countryNl": "Litouwen",
+    "blurb": "Vilnius, de barokke hoofdstad, zal je verleiden met haar UNESCO-geklasseerde Oude Stad en haar Boheemse sfeer. Vergeet niet de brug over te steken om de Republiek Užupis te verkennen, een artistieke en onafhankelijke wijk met een eigen unieke geest.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De Oude Stad verkennen",
+      "Republiek Užupis",
+      "Gediminastoren"
+    ]
+  },
+  "FNC": {
+    "cityNl": "Funchal",
+    "countryNl": "Portugal",
+    "blurb": "Funchal, de hoofdstad van Madeira, is een drijvende tuin waar de weelderige natuur de Atlantische Oceaan ontmoet. Bezoek de Mercado dos Lavradores, een kleurrijke markt waar je exotische bloemen, tropische vruchten en verse vis vindt.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "Mercado dos Lavradores",
+      "Kabelbaan naar Monte",
+      "Wandelen over de levada's"
+    ]
+  },
+  "ATH": {
+    "cityNl": "Athene",
+    "countryNl": "Griekenland",
+    "blurb": "Athene, de bakermat van de westerse beschaving, nodigt je uit voor een fascinerende reis tussen oudheid en moderniteit. Beklim de Akropolis bij zonsopgang om het Parthenon te bewonderen en voel de duizendjarige energie van deze iconische plek.",
+    "bestSeason": "April tot juni",
+    "todo": [
+      "De Akropolis bezoeken",
+      "Verdwalen in Plaka",
+      "Nationaal Archeologisch Museum"
+    ]
+  },
+  "RVN": {
+    "cityNl": "Rovaniemi",
+    "countryNl": "Finland",
+    "blurb": "Denk aan de Kerstman, het noorderlicht en ongerepte natuur. Naast het Kerstman Dorp, verken het Arktikum museum om het arctische leven en de Sami cultuur te begrijpen.",
+    "bestSeason": "Winter (december-maart)",
+    "todo": [
+      "De Kerstman ontmoeten",
+      "Het noorderlicht spotten",
+      "Wandelen in een besneeuwd bos"
+    ]
+  },
+  "AHO": {
+    "cityNl": "Alghero",
+    "countryNl": "Italië",
+    "blurb": "Ontdek deze Sardijnse parel met Catalaanse invloeden, compleet met stadsmuren en een levendige haven. Slenter door het middeleeuwse historische centrum en proef verse zeevruchten aan het water.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De oude stad verkennen",
+      "De Grotten van Neptunus bezoeken",
+      "Zwemmen aan het Bombarde strand"
+    ]
+  },
+  "CCF": {
+    "cityNl": "Carcassonne",
+    "countryNl": "Frankrijk",
+    "blurb": "Reis terug in de tijd in deze versterkte middeleeuwse stad, UNESCO-werelderfgoed, die je terug naar de Middeleeuwen brengt. Mis zeker geen wandeling over de stadsmuren voor een adembenemend uitzicht over de stad.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "De middeleeuwse stad bezoeken",
+      "Wandelen over de stadsmuren",
+      "Een lokale cassoulet proeven"
+    ]
+  },
+  "CFU": {
+    "cityNl": "Korfoe",
+    "countryNl": "Griekenland",
+    "blurb": "Het Ionische eiland Korfoe wacht op je met zijn fijne zandstranden, pittoreske dorpjes en Venetiaans erfgoed. Verken de oude stad van Korfoe, UNESCO-werelderfgoed, voor zijn charmante straatjes.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De oude stad ontdekken",
+      "Zwemmen in Paleokastritsa",
+      "Het Achilleion Paleis bezoeken"
+    ]
+  },
+  "CHQ": {
+    "cityNl": "Chania",
+    "countryNl": "Griekenland",
+    "blurb": "Duik in de Venetiaanse sfeer van Chania, met zijn iconische oude haven en kleurrijke straatjes. Verdwaal in de wijk Topanas voor zijn unieke architectuur en restaurants.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "Slenteren door de oude haven",
+      "De overdekte markt verkennen",
+      "Wandelen door de Samariakloof"
+    ]
+  },
+  "DBV": {
+    "cityNl": "Dubrovnik",
+    "countryNl": "Kroatië",
+    "blurb": "Deze versterkte stad, bijgenaamd de 'Parel van de Adriatische Zee', is een juweel van geschiedenis en schoonheid. Wandel over de beroemde stadsmuren voor adembenemende panorama's over de zee en de daken.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Over de stadsmuren wandelen",
+      "De oude stad verkennen",
+      "De kabelbaan nemen"
+    ]
+  },
+  "FNI": {
+    "cityNl": "Nîmes",
+    "countryNl": "Frankrijk",
+    "blurb": "Dompel jezelf onder in de Romeinse oudheid in Nîmes, met zijn opmerkelijk goed bewaarde arena's en Maison Carrée. Bezoek de Jardins de la Fontaine voor een groene en historische onderbreking.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "De Arena's bezoeken",
+      "De Maison Carrée ontdekken",
+      "Slenteren door de Jardins de la Fontaine"
+    ]
+  },
+  "FSC": {
+    "cityNl": "Figari",
+    "countryNl": "Frankrijk",
+    "blurb": "Figari, de toegangspoort tot Zuid-Corsica, is het ideale vertrekpunt om Bonifacio en zijn kliffen te verkennen. Huur een auto om snel de idyllische stranden van Palombaggia of Santa Giulia te bereiken.",
+    "bestSeason": "Juni tot september",
+    "todo": [
+      "Bonifacio bezoeken",
+      "Zwemmen in Palombaggia",
+      "Wandelen in het achterland"
+    ]
+  },
+  "GOA": {
+    "cityNl": "Genua",
+    "countryNl": "Italië",
+    "blurb": "Ontdek Genua, een fascinerende havenstad met een doolhof van caruggi (smalle steegjes) en weelderige paleizen. Mis het Aquarium van Genua niet, een van de grootste van Europa.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "De caruggi verkennen",
+      "Het Aquarium bezoeken",
+      "De Palazzi dei Rolli bewonderen"
+    ]
+  },
+  "HER": {
+    "cityNl": "Heraklion",
+    "countryNl": "Griekenland",
+    "blurb": "Heraklion, de hoofdstad van Kreta, is rijk aan Minoïsche geschiedenis en een bruisend stadsleven. Verken het Paleis van Knossos, de bakermat van de Minoïsche beschaving, op slechts enkele kilometers afstand.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "Het Paleis van Knossos bezoeken",
+      "Het archeologisch museum verkennen",
+      "Slenteren door de oude Venetiaanse haven"
+    ]
+  },
+  "IBZ": {
+    "cityNl": "Ibiza",
+    "countryNl": "Spanje",
+    "blurb": "Naast zijn feestelijke reputatie biedt Ibiza geheime baaien, authentieke dorpjes en magische zonsondergangen. Verken Dalt Vila, de versterkte oude stad, UNESCO-werelderfgoed, voor zijn geschiedenis en uitzichten.",
+    "bestSeason": "Juni tot september",
+    "todo": [
+      "Dalt Vila ontdekken",
+      "Ontspannen op de stranden",
+      "De zonsondergang bewonderen"
+    ]
+  },
+  "LEI": {
+    "cityNl": "Almería",
+    "countryNl": "Spanje",
+    "blurb": "Duik in het zuiden van Spanje met Almería, zijn woestijnstranden en zijn majestueuze Alcazaba. De wijk La Chanca biedt een authentiek overzicht van de lokale architectuur.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "De Alcazaba bezoeken",
+      "Cabo de Gata verkennen",
+      "Wandelen in het centrum"
+    ]
+  },
+  "LRH": {
+    "cityNl": "La Rochelle",
+    "countryNl": "Frankrijk",
+    "blurb": "Ontdek La Rochelle, een historische havenstad waar middeleeuwse torens trots de Oude Haven bewaken. Slenter over de kades, verken de smalle straatjes en mis zeker een bezoek aan de beroemde Torens van La Rochelle niet voor een adembenemend uitzicht over de oceaan.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bezoek de Torens",
+      "Verken de Oude Haven",
+      "Excursie Île de Ré"
+    ]
+  },
+  "MAH": {
+    "cityNl": "Menorca",
+    "countryNl": "Spanje",
+    "blurb": "Ontsnap naar Menorca, het ongerepte eiland van de Balearen, bekend om zijn turquoise baaien en wilde natuur. Bereid je voor op idyllische zwempartijen in cala's zoals Macarella en op rustige avonden in het charmante Ciutadella.",
+    "bestSeason": "Juni tot september",
+    "todo": [
+      "Zwemmen in geheime baaien",
+      "Slenteren door Ciutadella",
+      "Wandelen over de Camí de Cavalls"
+    ]
+  },
+  "OLB": {
+    "cityNl": "Olbia",
+    "countryNl": "Italië",
+    "blurb": "Olbia is jouw toegangspoort tot het prachtige Sardinië, tussen droomstranden en archeologische sites. Mis de schitterende stranden van de Costa Smeralda, zoals Capriccioli, niet, of maak een uitstapje naar de archipel van La Maddalena.",
+    "bestSeason": "Juni tot september",
+    "todo": [
+      "Stranden Costa Smeralda",
+      "Archipel La Maddalena",
+      "Nuraghe-site Cabu Abbas"
+    ]
+  },
+  "PEG": {
+    "cityNl": "Perugia",
+    "countryNl": "Italië",
+    "blurb": "Duik in de middeleeuwse sfeer van Perugia, de hoofdstad van Umbrië, gelegen op een heuvel. Laat je betoveren door de steile straatjes, de panoramische uitzichten en proef de lokale chocolade, waaronder de beroemde Baci Perugina.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "Proef lokale chocolade",
+      "Verken de Rocca Paolina",
+      "Bewonder de Fontana Maggiore"
+    ]
+  },
+  "PUY": {
+    "cityNl": "Pula",
+    "countryNl": "Kroatië",
+    "blurb": "Pula nodigt je uit voor een reis terug in de tijd met zijn indrukwekkende Romeinse amfitheater, een van de best bewaarde ter wereld. Naast de geschiedenis geniet je van de Adriatische stranden en de smaken van Istrië.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bezoek het Amfitheater",
+      "Verken de Tempel van Augustus",
+      "Stranden van Verudela"
+    ]
+  },
+  "REU": {
+    "cityNl": "Reus",
+    "countryNl": "Spanje",
+    "blurb": "Reus, de geboorteplaats van Antoni Gaudí, zal je verrassen met zijn rijke modernistische erfgoed en kleurrijke gevels. Volg de Modernismroute en ontdek de unieke architectuur voordat je naar de nabijgelegen stranden van de Costa Daurada gaat.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "Modernismroute van Gaudí",
+      "Bezoek het Institut Pere Mata",
+      "Proef de lokale vermout"
+    ]
+  },
+  "RHO": {
+    "cityNl": "Rhodos",
+    "countryNl": "Griekenland",
+    "blurb": "Het eiland Rhodos wacht op je met zijn majestueuze middeleeuwse stad, UNESCO-werelderfgoed, waar de Ridders van Sint-Jan hun sporen hebben nagelaten. Voorbij de stadsmuren ontdek je de zonnige stranden en het pittoreske dorp Lindos.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "Slenter door de oude stad",
+      "Verken de Akropolis van Lindos",
+      "Zwemmen aan het Tsambika strand"
+    ]
+  },
+  "SCQ": {
+    "cityNl": "Santiago de Compostela",
+    "countryNl": "Spanje",
+    "blurb": "Voltooi je pelgrimstocht of begin je verkenning in Santiago de Compostela, de iconische stad van Galicië. Laat je verwonderen door de imposante Kathedraal en haar unieke sfeer, doordrenkt van geschiedenis en spiritualiteit.",
+    "bestSeason": "April tot oktober",
+    "todo": [
+      "Bezoek de Kathedraal",
+      "Markt van Abastos",
+      "Proef zeevruchten"
+    ]
+  },
+  "SJJ": {
+    "cityNl": "Sarajevo",
+    "countryNl": "Bosnië en Herzegovina",
+    "blurb": "Sarajevo, het 'Jeruzalem van Europa', biedt je een fascinerende mix van Ottomaanse en Oostenrijks-Hongaarse culturen. Duik in de unieke sfeer van de Oude Bazaar van Baščaršija, waar moskeeën en kerken vreedzaam naast elkaar bestaan.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Verken Baščaršija",
+      "Bezoek de Tunnel van de Hoop",
+      "Steek de Latijnse Brug over"
+    ]
+  },
+  "TGD": {
+    "cityNl": "Podgorica",
+    "countryNl": "Montenegro",
+    "blurb": "Podgorica, de Montenegrijnse hoofdstad, is het ideale vertrekpunt om de natuurlijke schatten van het land te verkennen. Op enkele kilometers afstand wacht het prachtige Nationaal Park Skadarmeer op je met adembenemende landschappen.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Bezoek het Skadarmeer",
+      "Klooster van Ostrog",
+      "Wandeling over de Millenniumbrug"
+    ]
+  },
+  "TPS": {
+    "cityNl": "Trapani",
+    "countryNl": "Italië",
+    "blurb": "Trapani, op Sicilië, zal je verleiden met zijn historische zoutpannen en windmolens, die onvergetelijke zonsondergangen bieden. Neem de kabelbaan naar Erice, een middeleeuws bergdorp, of verken de Egadische Eilanden.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "Ontdek de Zoutpannen",
+      "Kabelbaan naar Erice",
+      "Excursie Egadische Eilanden"
+    ]
+  },
+  "VOL": {
+    "cityNl": "Volos",
+    "countryNl": "Griekenland",
+    "blurb": "Volos, de toegangspoort tot de mythische berg Pilion, is een levendige stad beroemd om zijn 'tsipouradika' waar je lokale mezze proeft. Geniet van de badplaats-sfeer en verken de pittoreske dorpjes van Pilion.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "Verken Pilion",
+      "Proef tsipouradika",
+      "Archeologisch Museum"
+    ]
+  },
+  "VRN": {
+    "cityNl": "Verona",
+    "countryNl": "Italië",
+    "blurb": "Verona is meer dan alleen het balkon van Julia; het is een bruisende Romeinse stad. Slenter over het oude Forum, nu de Piazza delle Erbe, en geniet van een risotto all'Amarone.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De Arena van Verona bezoeken",
+      "Een risotto all'Amarone proeven",
+      "Verdwalen op de Piazza Erbe"
+    ]
+  },
+  "ZAD": {
+    "cityNl": "Zadar",
+    "countryNl": "Kroatië",
+    "blurb": "Zadar trakteert je op onvergetelijke zonsondergangen, versterkt door unieke kunstinstallaties. Luister naar het Zeeorgel en bewonder de Groet aan de Zon op de promenade.",
+    "bestSeason": "Juni tot augustus",
+    "todo": [
+      "Naar het Zeeorgel luisteren",
+      "De Groet aan de Zon bekijken",
+      "De oude stad verkennen"
+    ]
+  },
+  "AMM": {
+    "cityNl": "Amman",
+    "countryNl": "Jordanië",
+    "blurb": "Amman, de hoofdstad op zeven heuvels, combineert een oud verleden met bruisende moderniteit. Mis de Citadel niet voor een panoramisch uitzicht en een reis door de tijd.",
+    "bestSeason": "Maart tot mei",
+    "todo": [
+      "De Citadel bezoeken",
+      "Slenteren over de soek",
+      "Mansaf proeven"
+    ]
+  },
+  "GDN": {
+    "cityNl": "Gdańsk",
+    "countryNl": "Polen",
+    "blurb": "Gdańsk, een historische havenstad, dompelt je onder in een rijk verleden en kleurrijke architectuur. Wandel langs de Długa en ontdek de gereconstrueerde koopmanshuizen.",
+    "bestSeason": "Mei tot september",
+    "todo": [
+      "De Długa bewonderen",
+      "Het Ambermuseum bezoeken",
+      "De scheepswerf verkennen"
+    ]
+  },
+  "REG": {
+    "cityNl": "Reggio Calabria",
+    "countryNl": "Italië",
+    "blurb": "Tegenover Sicilië zal Reggio Calabria je verleiden met zijn 'mooiste kilometer van Italië', de Lungomare Falcomatà. Ontdek de Bronzen van Riace in het nationaal archeologisch museum.",
+    "bestSeason": "Juni tot september",
+    "todo": [
+      "De Bronzen van Riace bekijken",
+      "Slenteren over de Lungomare",
+      "Het Aragonese kasteel bezoeken"
+    ]
+  },
+  "CRV": {
+    "cityNl": "Crotone",
+    "countryNl": "Italië",
+    "blurb": "Crotone, de stad van Pythagoras, nodigt je uit voor een reis tussen Ionische stranden en antieke geschiedenis. Verken Cap Colonna met zijn tempel van Hera Lacinia voor een adembenemend uitzicht.",
+    "bestSeason": "Juni tot augustus",
+    "todo": [
+      "Cap Colonna ontdekken",
+      "Zwemmen op de stranden",
+      "Het historische centrum bezoeken"
+    ]
+  },
+  "KGS": {
+    "cityNl": "Kos",
+    "countryNl": "Griekenland",
+    "blurb": "Het eiland Kos, de bakermat van Hippocrates, biedt je een perfecte mix van prachtige stranden en antieke bezienswaardigheden. Mis het Asklepieion, een oud genezingscentrum, niet voor een historische onderdompeling.",
+    "bestSeason": "Mei tot oktober",
+    "todo": [
+      "Het Asklepieion bezoeken",
+      "Ontspannen op Paradise Beach",
+      "Het Kasteel van de Ridders verkennen"
+    ]
+  },
+  "SZY": {
+    "cityNl": "Olsztyn",
+    "countryNl": "Polen",
+    "blurb": "Olsztyn, genesteld in het hart van het duizendmerengebied, is een parel van Mazurië. Verken het middeleeuwse kasteel en geniet van watersportactiviteiten op het Ukielmeer.",
+    "bestSeason": "Juni tot augustus",
+    "todo": [
+      "Het kasteel van Olsztyn bezoeken",
+      "Wandelen bij het Ukielmeer",
+      "De oude stad verkennen"
+    ]
+  }
+}
