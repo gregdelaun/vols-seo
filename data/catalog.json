@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T19:21:07.499Z",
+  "generatedAt": "2026-11-01T19:29:17.496Z",
   "count": 272,
   "withPrice": 187,
   "routes": [
@@ -412,23 +412,6 @@
       "roundTrip": true
     },
     {
-      "origin": "BVA",
-      "originCity": "Paris",
-      "originName": "Paris-Beauvais",
-      "originSlug": "paris-beauvais",
-      "dest": "FEZ",
-      "destSeo": "fez",
-      "destCity": "Fez",
-      "country": "Morocco",
-      "iso3": "MAR",
-      "lat": 33.9273,
-      "lon": -4.97796,
-      "priceFrom": 32.98,
-      "departDate": "2026-12-07",
-      "returnDate": "2026-12-10",
-      "roundTrip": true
-    },
-    {
       "origin": "LUX",
       "originCity": "Luxembourg",
       "originName": "Luxembourg",
@@ -460,6 +443,23 @@
       "priceFrom": 33.73,
       "departDate": "2026-11-09",
       "returnDate": "2026-11-18",
+      "roundTrip": true
+    },
+    {
+      "origin": "BVA",
+      "originCity": "Paris",
+      "originName": "Paris-Beauvais",
+      "originSlug": "paris-beauvais",
+      "dest": "FEZ",
+      "destSeo": "fez",
+      "destCity": "Fez",
+      "country": "Morocco",
+      "iso3": "MAR",
+      "lat": 33.9273,
+      "lon": -4.97796,
+      "priceFrom": 33.98,
+      "departDate": "2026-12-02",
+      "returnDate": "2026-12-10",
       "roundTrip": true
     },
     {
@@ -1122,7 +1122,7 @@
       "lon": 12.2508,
       "priceFrom": 39.98,
       "departDate": "2026-12-05",
-      "returnDate": "2026-12-11",
+      "returnDate": "2026-12-14",
       "roundTrip": true
     },
     {
@@ -2515,7 +2515,7 @@
       "lat": 44.5722,
       "lon": 26.1022,
       "priceFrom": 54.98,
-      "departDate": "2026-11-27",
+      "departDate": "2026-11-29",
       "returnDate": "2026-12-04",
       "roundTrip": true
     },
