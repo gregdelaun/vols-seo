@@ -40,7 +40,7 @@ async function candidates(c) {
       const j = await r.json();
       for (const h of j.hits || []) {
         if (seen.has(h.id) || h.webformatWidth < h.webformatHeight) continue;
-        seen.add(h.id); out.push({ id: h.id, url: h.webformatURL, user: h.user, tags: h.tags });
+        seen.add(h.id); out.push({ id: h.id, url: h.webformatURL, large: h.largeImageURL, user: h.user, tags: h.tags });
         if (out.length >= 6) break;
       }
     } catch { /* requête suivante */ }
@@ -77,6 +77,16 @@ Réponds en JSON STRICT {"index": n} (n = meilleur index) ou {"index": -1} si au
   } catch { return 0; } // en cas d'erreur IA : garde le premier
 }
 
+// URL haute résolution (1280px) : utilise large si connu, sinon la récupère par id Pixabay.
+async function hiRes(p) {
+  if (p.large) return p.large;
+  if (!p.id) return p.url;
+  try {
+    const r = await fetch(`https://pixabay.com/api/?key=${PKEY}&id=${p.id}`);
+    if (r.ok) { const h = (await r.json()).hits?.[0]; if (h?.largeImageURL) { p.large = h.largeImageURL; return h.largeImageURL; } }
+  } catch { /* fallback */ }
+  return p.url;
+}
 async function download(iata, url) {
   const dest = join(IMG, `${iata}.jpg`);
   try { const r = await fetch(url); if (!r.ok) return false; writeFileSync(dest, Buffer.from(await r.arrayBuffer())); return true; }
@@ -97,7 +107,8 @@ await pool(todo, 3, async (c) => {
 });
 writeFileSync(OUT, JSON.stringify(photos, null, 2));
 
-// (re)télécharge les JPG de toutes les villes en cache
+// (re)télécharge les JPG HAUTE RÉSOLUTION de toutes les villes en cache
 let dl = 0;
-await pool(Object.entries(photos), 6, async ([iata, p]) => { if (await download(iata, p.url)) dl++; });
-console.log(`Photos validées : ${ok} · rejetées : ${rejected} · images téléchargées : ${dl}.`);
+await pool(Object.entries(photos), 6, async ([iata, p]) => { const url = await hiRes(p); if (await download(iata, url)) dl++; });
+writeFileSync(OUT, JSON.stringify(photos, null, 2)); // sauve les URLs 'large' récupérées
+console.log(`Photos validées : ${ok} · rejetées : ${rejected} · images HD téléchargées : ${dl}.`);

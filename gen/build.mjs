@@ -350,7 +350,8 @@ ${bt ? `<section class="prose"><p>${esc(bt)}</p></section>` : ""}
     const origins = [...byOrigin.keys()];
     const best = deals[0]?.priceFrom;
     // hero d'accueil : destination « carte postale » choisie, sinon 1re offre avec photo
-    const HERO_PREFER = ["SVQ", "VCE", "LPA", "LIS", "AGP", "FAO", "OPO", "BCN", "ATH", "TFS"];
+    const HERO_PREFER = (process.env.SITE_HERO_IATA ? [process.env.SITE_HERO_IATA] : [])
+      .concat(["TSF", "VCE", "SVQ", "LPA", "LIS", "AGP", "OPO", "BCN", "ATH", "TFS"]);
     const heroCity = HERO_PREFER.find((i) => hasPhoto(i)) || deals.find((d) => hasPhoto(d.dest))?.dest;
     const body = `
 <section class="hero hero-home"${heroCity ? heroBg(heroCity) : ""}>
