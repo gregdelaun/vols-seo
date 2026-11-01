@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T18:27:51.023Z",
+  "generatedAt": "2026-11-01T18:47:15.730Z",
   "count": 272,
   "withPrice": 187,
   "routes": [
@@ -923,21 +923,6 @@
       "originCity": "Weeze",
       "originName": "Weeze (Düsseldorf)",
       "originSlug": "weeze",
-      "dest": "RAK",
-      "destSeo": "marrakesh",
-      "destCity": "Marrakesh",
-      "country": "Morocco",
-      "iso3": "MAR",
-      "lat": 31.6069,
-      "lon": -8.0363,
-      "priceFrom": 15.99,
-      "bestDate": "2026-11-28"
-    },
-    {
-      "origin": "NRN",
-      "originCity": "Weeze",
-      "originName": "Weeze (Düsseldorf)",
-      "originSlug": "weeze",
       "dest": "TFS",
       "destSeo": "tenerife-south",
       "destCity": "Tenerife",
@@ -1142,6 +1127,21 @@
       "lon": 2.76055,
       "priceFrom": 16.99,
       "bestDate": "2027-01-31"
+    },
+    {
+      "origin": "NRN",
+      "originCity": "Weeze",
+      "originName": "Weeze (Düsseldorf)",
+      "originSlug": "weeze",
+      "dest": "RAK",
+      "destSeo": "marrakesh",
+      "destCity": "Marrakesh",
+      "country": "Morocco",
+      "iso3": "MAR",
+      "lat": 31.6069,
+      "lon": -8.0363,
+      "priceFrom": 16.99,
+      "bestDate": "2026-11-29"
     },
     {
       "origin": "NRN",
@@ -1508,21 +1508,6 @@
       "originCity": "Charleroi",
       "originName": "Bruxelles-Charleroi",
       "originSlug": "charleroi",
-      "dest": "KUN",
-      "destSeo": "kaunas",
-      "destCity": "Kaunas",
-      "country": "Lithuania",
-      "iso3": "LTU",
-      "lat": 54.9639,
-      "lon": 24.0848,
-      "priceFrom": 19.99,
-      "bestDate": "2027-01-01"
-    },
-    {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
       "dest": "NCL",
       "destSeo": "newcastle",
       "destCity": "Newcastle",
@@ -1847,6 +1832,21 @@
       "lon": 16.7606,
       "priceFrom": 20.99,
       "bestDate": "2026-11-17"
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "KUN",
+      "destSeo": "kaunas",
+      "destCity": "Kaunas",
+      "country": "Lithuania",
+      "iso3": "LTU",
+      "lat": 54.9639,
+      "lon": 24.0848,
+      "priceFrom": 20.99,
+      "bestDate": "2026-12-04"
     },
     {
       "origin": "CRL",
