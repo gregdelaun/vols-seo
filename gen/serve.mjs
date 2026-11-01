@@ -7,7 +7,8 @@ import { dirname } from "node:path";
 
 const SITE = join(dirname(fileURLToPath(import.meta.url)), "..", "site");
 const PORT = Number(process.env.PORT || 8099);
-const TYPES = { ".css": "text/css", ".xml": "application/xml", ".txt": "text/plain", ".html": "text/html" };
+const TYPES = { ".css": "text/css", ".xml": "application/xml", ".txt": "text/plain", ".html": "text/html",
+  ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp", ".svg": "image/svg+xml", ".ico": "image/x-icon" };
 
 createServer((req, res) => {
   let u = decodeURIComponent(req.url.split("?")[0]);

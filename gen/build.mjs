@@ -1,7 +1,7 @@
 // Génère le site statique dans site/ à partir de data/catalog.json (+ data/blurbs.json).
 // Pages : accueil, 1 page par aéroport de départ, 1 page par route (origine→destination),
 // 1 page par destination (toutes origines), + sitemap.xml, robots.txt, style.css.
-import { writeFileSync, mkdirSync, readFileSync, rmSync, existsSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync, rmSync, existsSync, readdirSync, copyFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { AIRPORTS } from "./airports.mjs";
@@ -13,6 +13,12 @@ const SITE = join(ROOT, "site");
 const catalog = JSON.parse(readFileSync(join(ROOT, "data", "catalog.json"), "utf8"));
 const blurbs = existsSync(join(ROOT, "data", "blurbs.json"))
   ? JSON.parse(readFileSync(join(ROOT, "data", "blurbs.json"), "utf8")) : {};
+const photos = existsSync(join(ROOT, "data", "photos.json"))
+  ? JSON.parse(readFileSync(join(ROOT, "data", "photos.json"), "utf8")) : {};
+const IMGDIR = join(ROOT, "img");
+// vrai si on a bien le JPG téléchargé pour cette destination
+const hasPhoto = (iata) => photos[iata] && existsSync(join(IMGDIR, `${iata}.jpg`));
+const photoUrl = (iata) => `${BASE}/img/${iata}.jpg`;
 
 const BASE = (process.env.SITE_BASE_URL || "https://gregdelaun.github.io/vols-seo").replace(/\/$/, "");
 const NAME = process.env.SITE_NAME || "VolsMalins";
@@ -87,12 +93,24 @@ function ctaButtons(r) {
 }
 
 function routeCard(r) {
+  const img = hasPhoto(r.dest)
+    ? `<span class="card-img" style="background-image:url('${photoUrl(r.dest)}')">${priceBadge(r.priceFrom)}</span>`
+    : `<span class="card-img card-img-ph">${priceBadge(r.priceFrom)}</span>`;
   return `<a class="card" href="${BASE}/${routeUrl(r)}/">
-  <span class="card-city">${esc(cityFr(r))}</span>
-  <span class="card-country">${esc(countryFr(r))}</span>
-  <span class="card-from">depuis ${esc(r.originCity)}${r.bestDate ? ` · ex. ${esc(frShort(r.bestDate))}` : ""}</span>
-  ${priceBadge(r.priceFrom)}
+  ${img}
+  <span class="card-body">
+    <span class="card-city">${esc(cityFr(r))}</span>
+    <span class="card-country">${esc(countryFr(r))}</span>
+    <span class="card-from">depuis ${esc(r.originCity)}${r.bestDate ? ` · ex. ${esc(frShort(r.bestDate))}` : ""}</span>
+  </span>
 </a>`;
+}
+
+// fond photo (avec dégradé lisible par-dessus) pour les hero, si on a l'image
+function heroBg(iata) {
+  return hasPhoto(iata)
+    ? ` style="background-image:linear-gradient(135deg,rgba(23,42,105,.86),rgba(37,99,235,.66)),url('${photoUrl(iata)}');background-size:cover;background-position:center"`
+    : "";
 }
 
 // Sélection variée pour l'accueil : un éventail de prix (pas 48× le même tarif plancher),
@@ -144,7 +162,7 @@ for (const r of routes) {
 
   const body = `
 <nav class="crumbs"><a href="${BASE}/">Accueil</a> › <a href="${BASE}/${departUrl(r.origin)}/">${esc(r.originCity)}</a> › ${esc(city)}</nav>
-<section class="hero">
+<section class="hero"${heroBg(r.dest)}>
   <h1>Vol ${esc(r.originCity)} → ${esc(city)} pas cher</h1>
   <p class="sub">${esc(country)} · au départ de ${esc(r.originName)} ${priceBadge(r.priceFrom)}</p>
   ${ctaButtons(r)}
@@ -181,7 +199,7 @@ for (const [dest, list] of byDest) {
   const desc = `Tous les vols pas chers vers ${city} (${country})${best ? ` à partir de ${euro(best)}€` : ""} : compare les départs et réserve au meilleur prix.`;
   const body = `
 <nav class="crumbs"><a href="${BASE}/">Accueil</a> › ${esc(city)}</nav>
-<section class="hero"><h1>Vols pas chers pour ${esc(city)}</h1>
+<section class="hero"${heroBg(r0.dest)}><h1>Vols pas chers pour ${esc(city)}</h1>
   <p class="sub">${esc(country)} ${best ? priceBadge(best) : ""}</p></section>
 ${b?.blurb ? `<section class="prose"><p>${esc(b.blurb)}</p></section>` : ""}
 <section class="prose"><h2>Au départ de quel aéroport ?</h2>
@@ -197,9 +215,10 @@ for (const [origin, list] of byOrigin) {
   const best = sorted.find((x) => x.priceFrom != null)?.priceFrom;
   const title = `Vols pas chers au départ de ${A.city} ${best ? `dès ${euro(best)}€` : ""} | ${NAME}`.replace(/\s+\|/, " |");
   const desc = `Les ${list.length} destinations les moins chères au départ de ${A.name}${best ? `, dès ${euro(best)}€` : ""}. Compare et réserve.`;
+  const oHero = sorted.find((x) => hasPhoto(x.dest))?.dest;
   const body = `
 <nav class="crumbs"><a href="${BASE}/">Accueil</a> › ${esc(A.city)}</nav>
-<section class="hero"><h1>Vols pas chers depuis ${esc(A.city)}</h1>
+<section class="hero"${oHero ? heroBg(oHero) : ""}><h1>Vols pas chers depuis ${esc(A.city)}</h1>
   <p class="sub">${esc(A.name)} · ${list.length} destinations</p></section>
 <section class="prose"><div class="grid">${sorted.map(routeCard).join("")}</div></section>`;
   write(departUrl(origin), layout({ path: departUrl(origin), title, desc, body,
@@ -211,10 +230,11 @@ for (const [origin, list] of byOrigin) {
   const deals = spread(routes, 48);
   const origins = [...byOrigin.keys()];
   const best = deals[0]?.priceFrom;
+  const heroCity = deals.find((d) => hasPhoto(d.dest))?.dest;
   const title = `${NAME} — Vols pas chers au départ de Belgique dès ${best ? euro(best) + "€" : "40€"}`;
   const desc = `Compare ${routes.length} vols pas chers au départ de Charleroi, Paris-Beauvais, Lille, Luxembourg et plus. Prix mis à jour chaque jour.`;
   const body = `
-<section class="hero hero-home">
+<section class="hero hero-home"${heroCity ? heroBg(heroCity) : ""}>
   <h1>Vols pas chers au départ de Belgique &amp; frontières</h1>
   <p class="sub">${routes.length} routes comparées, prix rafraîchis chaque jour. Choisis ton aéroport :</p>
   <div class="origins">${origins.map((o) => `<a class="chip" href="${BASE}/${departUrl(o)}/">${esc(AIRPORTS[o].city)}</a>`).join("")}</div>
@@ -237,6 +257,13 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 writeFileSync(join(SITE, "sitemap.xml"), sitemap);
 writeFileSync(join(SITE, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${BASE}/sitemap.xml\n`);
 writeFileSync(join(SITE, ".nojekyll"), "");
+// copie des photos de destination dans site/img
+if (existsSync(IMGDIR)) {
+  const dst = join(SITE, "img"); mkdirSync(dst, { recursive: true });
+  let n = 0;
+  for (const f of readdirSync(IMGDIR)) if (f.endsWith(".jpg")) { copyFileSync(join(IMGDIR, f), join(dst, f)); n++; }
+  console.log(`Photos copiées : ${n}`);
+}
 // Domaine perso GitHub Pages : écrit le fichier CNAME si SITE_DOMAIN est défini.
 if (process.env.SITE_DOMAIN) writeFileSync(join(SITE, "CNAME"), process.env.SITE_DOMAIN.trim() + "\n");
 writeFileSync(join(SITE, "style.css"), CSS());
@@ -273,12 +300,16 @@ main{max-width:980px;margin:0 auto;padding:20px}
 .prose p{margin:0 0 10px}
 .todo{margin:6px 0 10px;padding-left:20px}
 .meta{color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
-.card{display:flex;flex-direction:column;gap:2px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;transition:.15s}
-.card:hover{border-color:var(--brand);box-shadow:0 8px 24px rgba(37,99,235,.12);transform:translateY(-2px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.15s}
+.card:hover{border-color:var(--brand);box-shadow:0 12px 30px rgba(37,99,235,.16);transform:translateY(-3px)}
+.card-img{position:relative;display:block;height:130px;background-size:cover;background-position:center;background-color:#dde3ef}
+.card-img-ph{background:linear-gradient(135deg,#c7d2fe,#93c5fd)}
+.card-img .price{position:absolute;left:10px;bottom:10px;margin:0;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.card-body{display:flex;flex-direction:column;gap:1px;padding:12px 14px 14px}
 .card-city{font-weight:800;font-size:17px;color:var(--ink)}
 .card-country{color:var(--muted);font-size:13px}
-.card-from{color:var(--muted);font-size:12px;margin:2px 0 6px}
+.card-from{color:var(--muted);font-size:12px;margin-top:3px}
 table.info{width:100%;border-collapse:collapse}
 table.info td{padding:9px 6px;border-bottom:1px solid var(--line);font-size:15px}
 table.info td:first-child{color:var(--muted);width:42%}

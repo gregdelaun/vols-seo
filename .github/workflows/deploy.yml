@@ -35,6 +35,11 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node gen/blurbs.mjs
 
+      - name: Photos destinations (Pixabay, cache URLs)
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: node gen/photos.mjs
+
       - name: Génère le site
         env:
           TRAVELPAYOUTS_MARKER: ${{ secrets.TRAVELPAYOUTS_MARKER }}
