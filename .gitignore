@@ -1,0 +1,5 @@
+node_modules/
+site/
+.env
+.DS_Store
+# data/ est versionné : garde le cache des prix + blurbs entre deux runs CI

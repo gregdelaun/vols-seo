@@ -1,0 +1,1278 @@
+{
+  "AOI": {
+    "cityFr": "Ancône",
+    "countryFr": "Italie",
+    "blurb": "Souvent juste un point de passage, Ancône mérite pourtant une pause ! Explore son port antique, son Dôme majestueux offrant une vue imprenable, et les ruelles médiévales du quartier du Duomo pour une immersion authentique loin des foules.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter le Dôme",
+      "Se promener au port",
+      "Goûter les moscioli"
+    ]
+  },
+  "BGY": {
+    "cityFr": "Bergame",
+    "countryFr": "Italie",
+    "blurb": "Bergame, c'est deux villes en une : la \"Città Bassa\" moderne et la \"Città Alta\" médiévale, accessible en funiculaire. Ne manque pas de flâner sur la Piazza Vecchia et d'admirer la Cappella Colleoni, un chef-d'œuvre architectural.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Prendre le funiculaire",
+      "Explorer Città Alta",
+      "Goûter la polenta e osei"
+    ]
+  },
+  "BLQ": {
+    "cityFr": "Bologne",
+    "countryFr": "Italie",
+    "blurb": "Surnommée \"la Grasse\", Bologne est un paradis pour les gourmands et une ville étudiante dynamique. Perds-toi sous ses kilomètres de portiques et monte aux tours de l'Asinelli pour une vue imprenable sur la ville rouge.",
+    "bestSeason": "Avril, mai, septembre",
+    "todo": [
+      "Monter l'Asinelli",
+      "Manger des tagliatelles",
+      "Flâner sous les portiques"
+    ]
+  },
+  "CDT": {
+    "cityFr": "Castellón de la Plana",
+    "countryFr": "Espagne",
+    "blurb": "Moins connue que ses voisines, Castellón offre un équilibre parfait entre plages méditerranéennes et patrimoine. Profite du soleil à la plage du Pinar et découvre l'architecture moderniste du Mercat Central pour une expérience locale.",
+    "bestSeason": "Juin à septembre",
+    "todo": [
+      "Plage del Pinar",
+      "Visiter le Fadrí",
+      "Marché Central"
+    ]
+  },
+  "CLJ": {
+    "cityFr": "Cluj-Napoca",
+    "countryFr": "Roumanie",
+    "blurb": "Cluj, le cœur vibrant de la Transylvanie, est une ville jeune et branchée, mêlant histoire médiévale et vie nocturne animée. Ne manque pas la Place de l'Union et l'imposante Église Saint-Michel, emblèmes de son riche passé.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Place de l'Union",
+      "Jardin Botanique",
+      "Vie nocturne animée"
+    ]
+  },
+  "CTA": {
+    "cityFr": "Catane",
+    "countryFr": "Italie",
+    "blurb": "Catane, au pied de l'Etna, est une ville exubérante, reconstruite en pierre de lave après les éruptions. Plonge dans l'ambiance unique du marché de La Pescheria et admire la Piazza del Duomo, dominée par l'éléphant de lave.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Marché La Pescheria",
+      "Piazza Duomo",
+      "Voir l'Etna"
+    ]
+  },
+  "DUB": {
+    "cityFr": "Dublin",
+    "countryFr": "Irlande",
+    "blurb": "Dublin t'attend avec son ambiance chaleureuse, ses pubs historiques et son riche héritage littéraire. Savoure une pinte de Guinness à Temple Bar, mais n'oublie pas d'explorer le quartier plus authentique de Portobello pour ses cafés et boutiques.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter Guinness Storehouse",
+      "Flâner à Temple Bar",
+      "Explorer Trinity College"
+    ]
+  },
+  "FEZ": {
+    "cityFr": "Fès",
+    "countryFr": "Maroc",
+    "blurb": "Fès, la plus ancienne des villes impériales, te plonge dans un labyrinthe médiéval où le temps semble suspendu. Perds-toi dans les ruelles de Fès el Bali, la médina inscrite à l'UNESCO, et découvre les célèbres tanneries Chouara.",
+    "bestSeason": "Mars à mai, octobre",
+    "todo": [
+      "Médina Fès el Bali",
+      "Tanneries Chouara",
+      "Porte Bab Bou Jeloud"
+    ]
+  },
+  "GRO": {
+    "cityFr": "Gérone",
+    "countryFr": "Espagne",
+    "blurb": "Gérone, avec ses maisons colorées le long de l'Onyar et son quartier juif préservé, est un bijou de la Catalogne. Monte les escaliers de la Cathédrale pour une vue imprenable et explore El Call, son dédale de ruelles historiques.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Cathédrale de Gérone",
+      "Pont de fer Eiffel",
+      "Quartier juif El Call"
+    ]
+  },
+  "MAN": {
+    "cityFr": "Manchester",
+    "countryFr": "Royaume-Uni",
+    "blurb": "Ancienne capitale industrielle, Manchester est aujourd'hui un pôle culturel et musical dynamique. Explore le quartier bohème de Northern Quarter pour ses graffitis et ses boutiques indépendantes, et découvre sa scène musicale légendaire.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Northern Quarter",
+      "Musée de la Science",
+      "Match de football"
+    ]
+  },
+  "MLA": {
+    "cityFr": "Malte",
+    "countryFr": "Malte",
+    "blurb": "Malte, un archipel méditerranéen au carrefour des civilisations, t'offre des temples mégalithiques et des criques secrètes. Explore les rues fortifiées de La Valette, sa capitale inscrite à l'UNESCO, et nage dans les eaux bleues de la Grotte Bleue.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "La Valette fortifiée",
+      "Grotte Bleue",
+      "Île de Gozo"
+    ]
+  },
+  "MRS": {
+    "cityFr": "Marseille",
+    "countryFr": "France",
+    "blurb": "Marseille, la plus ancienne ville de France, est un melting-pot vibrant entre mer Méditerranée et collines provençales. Flâne sur le Vieux-Port, puis perds-toi dans les ruelles colorées du Panier pour une immersion authentique.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Vieux-Port",
+      "Quartier du Panier",
+      "Calanques en bateau"
+    ]
+  },
+  "ORK": {
+    "cityFr": "Cork",
+    "countryFr": "Irlande",
+    "blurb": "Explore Cork, une ville vibrante avec une scène culinaire réputée. Ne manque pas le English Market pour ses produits locaux et son ambiance animée, un vrai régal pour les sens.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter le English Market",
+      "Déguster une bière locale",
+      "Explorer le quartier Shandon"
+    ]
+  },
+  "PMO": {
+    "cityFr": "Palerme",
+    "countryFr": "Italie",
+    "blurb": "Plonge dans le chaos organisé de Palerme, où l'histoire normande, arabe et baroque se rencontrent. Flâne dans le marché de Ballarò pour une immersion totale dans l'ambiance sicilienne et ses saveurs.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Découvrir le Palais des Normands",
+      "Se perdre dans Ballarò",
+      "Goûter la street food"
+    ]
+  },
+  "PSA": {
+    "cityFr": "Pise",
+    "countryFr": "Italie",
+    "blurb": "Pise, bien plus que sa célèbre tour penchée ! Explore la Piazza dei Miracoli et ses merveilles architecturales. Ensuite, perds-toi dans les rues médiévales du Borgo Stretto pour une autre facette de la ville.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Admirer la Tour de Pise",
+      "Visiter le Duomo",
+      "Flâner le long de l'Arno"
+    ]
+  },
+  "PSR": {
+    "cityFr": "Pescara",
+    "countryFr": "Italie",
+    "blurb": "Pescara t'attend avec ses plages de sable fin et sa vie nocturne animée, parfaite pour un séjour détente et festif sur la côte adriatique. Ne manque pas le Ponte del Mare, un symbole moderne offrant de belles vues.",
+    "bestSeason": "Juin à août",
+    "todo": [
+      "Profiter des plages",
+      "Se promener sur le Ponte del Mare",
+      "Goûter l'Arrosticini"
+    ]
+  },
+  "SUF": {
+    "cityFr": "Lamezia Terme",
+    "countryFr": "Italie",
+    "blurb": "Porte d'entrée de la Calabre, Lamezia Terme est un point de départ idéal pour explorer les trésors cachés de la région. N'oublie pas de visiter le Castello Normanno Swabevo pour une touche d'histoire médiévale.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "Explorer le Castello Normanno",
+      "Visiter l'Abbaye de Sant'Eufemia",
+      "Découvrir la Calabre environnante"
+    ]
+  },
+  "TIA": {
+    "cityFr": "Tirana",
+    "countryFr": "Albanie",
+    "blurb": "Tirana, une capitale vibrante qui a su se réinventer avec des bâtiments colorés et une énergie contagieuse. Explore le quartier branché de Blloku, autrefois réservé à l'élite communiste, pour ses cafés et sa vie nocturne.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Visiter la Place Skanderbeg",
+      "Explorer le quartier Blloku",
+      "Monter au Mont Dajti"
+    ]
+  },
+  "TRN": {
+    "cityFr": "Turin",
+    "countryFr": "Italie",
+    "blurb": "Turin, l'élégante capitale du Piémont, te surprendra avec son architecture baroque, ses arcades interminables et son riche passé royal. Ne manque pas de visiter la Mole Antonelliana, emblème de la ville et siège du Musée du Cinéma.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Admirer la Mole Antonelliana",
+      "Déguster un bicerin",
+      "Flâner sous les arcades"
+    ]
+  },
+  "TRS": {
+    "cityFr": "Trieste",
+    "countryFr": "Italie",
+    "blurb": "Trieste, une ville portuaire unique où l'influence autrichienne se mêle à la dolce vita italienne. Bois un café historique comme au Caffè San Marco et profite de l'ambiance cosmopolite sur la Piazza Unità d'Italia.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter le Château de Miramare",
+      "Boire un café historique",
+      "Se promener sur la Piazza Unità"
+    ]
+  },
+  "TSF": {
+    "cityFr": "Venise",
+    "countryFr": "Italie",
+    "blurb": "Laisse-toi charmer par la magie intemporelle de Venise, ses canaux romantiques et ses ruelles secrètes. Éloigne-toi de la foule de la Place Saint-Marc et explore le quartier de Cannaregio pour une ambiance plus authentique.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Naviguer en gondole",
+      "Visiter le Palais des Doges",
+      "Se perdre dans Cannaregio"
+    ]
+  },
+  "TTU": {
+    "cityFr": "Tétouan",
+    "countryFr": "Maroc",
+    "blurb": "Tétouan, la \"Colombe Blanche\", t'invite à découvrir sa médina classée UNESCO, un labyrinthe authentique de ruelles et d'ateliers d'artisans. Ne manque pas les souks colorés pour une immersion sensorielle unique.",
+    "bestSeason": "Mars à juin",
+    "todo": [
+      "Explorer la médina UNESCO",
+      "Visiter l'École des Arts",
+      "Déguster un tajine local"
+    ]
+  },
+  "VIE": {
+    "cityFr": "Vienne",
+    "countryFr": "Autriche",
+    "blurb": "Vienne t'enchantera par sa grandeur impériale, ses palais somptueux et sa scène culturelle riche. Passe un après-midi au Palais de Schönbrunn, résidence d'été des Habsbourg, pour te plonger dans l'histoire autrichienne.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter Schönbrunn",
+      "Assister à un concert",
+      "Goûter la Sachertorte"
+    ]
+  },
+  "VIT": {
+    "cityFr": "Vitoria-Gasteiz",
+    "countryFr": "Espagne",
+    "blurb": "Vitoria-Gasteiz, Capitale Verte Européenne, allie modernité durable et un charmant centre historique médiéval. Explore le quartier de l'Almendra Medieval, avec ses ruelles étroites et ses palais anciens, pour une balade hors du temps.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Découvrir la Cathédrale Santa María",
+      "Se balader dans l'Almendra",
+      "Profiter des espaces verts"
+    ]
+  },
+  "VLC": {
+    "cityFr": "Valence",
+    "countryFr": "Espagne",
+    "blurb": "Plonge dans l'ambiance méditerranéenne de Valence, ville du soleil et des saveurs ! Ne manque pas de goûter une authentique paella valencienne, souvent préparée avec du lapin et des haricots verts.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Explorer la Cité des Arts",
+      "Flâner au Marché Central",
+      "Se détendre à Malvarrosa"
+    ]
+  },
+  "WAW": {
+    "cityFr": "Varsovie",
+    "countryFr": "Pologne",
+    "blurb": "Découvre Varsovie, une capitale résiliente où l'histoire rencontre la modernité. Promène-toi dans la Vieille Ville reconstruite, classée UNESCO, pour admirer ses façades colorées.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter le Château Royal",
+      "Musée de l'Insurrection de Varsovie",
+      "Balade au Parc Łazienki"
+    ]
+  },
+  "WRO": {
+    "cityFr": "Wrocław",
+    "countryFr": "Pologne",
+    "blurb": "Laisse-toi charmer par Wrocław, la \"Venise polonaise\", avec ses nombreux ponts et îles. Pars à la chasse aux nains, ces petites statues cachées partout en ville, une activité ludique garantie.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Chercher les nains de Wrocław",
+      "Découvrir Ostrów Tumski",
+      "Boire une bière sur la Rynek"
+    ]
+  },
+  "ZAG": {
+    "cityFr": "Zagreb",
+    "countryFr": "Croatie",
+    "blurb": "Explore Zagreb, une capitale pleine de charme où l'atmosphère austro-hongroise est palpable. Prends le funiculaire le plus court du monde pour rejoindre la Ville Haute et ses toits colorés.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "Monter à la Ville Haute",
+      "Visiter le Musée des Relations Rompues",
+      "Flâner au marché Dolac"
+    ]
+  },
+  "ALC": {
+    "cityFr": "Alicante",
+    "countryFr": "Espagne",
+    "blurb": "Profite du soleil d'Alicante, une ville côtière animée avec des plages superbes. Ne manque pas de grimper au Château de Santa Barbara pour une vue imprenable sur la Méditerranée.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "Château de Santa Barbara",
+      "Plage du Postiguet",
+      "Balade à l'Explanada"
+    ]
+  },
+  "BHX": {
+    "cityFr": "Birmingham",
+    "countryFr": "Royaume-Uni",
+    "blurb": "Découvre Birmingham, une ville dynamique aux airs industriels transformés. Explore le quartier des bijoux, le \"Jewellery Quarter\", pour ses ateliers historiques et ses boutiques uniques.",
+    "bestSeason": "Juin à septembre",
+    "todo": [
+      "Visiter le Jewellery Quarter",
+      "Canaux de Brindleyplace",
+      "Musée de la Custard Factory"
+    ]
+  },
+  "BRI": {
+    "cityFr": "Bari",
+    "countryFr": "Italie",
+    "blurb": "Plonge dans l'authenticité de Bari, capitale des Pouilles, avec ses ruelles labyrinthiques. Perds-toi dans le Bari Vecchia, le vieux quartier, et observe les femmes préparer les orecchiette devant leur porte.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "Flâner dans Bari Vecchia",
+      "Déguster les orecchiette",
+      "Basilique San Nicola"
+    ]
+  },
+  "CAG": {
+    "cityFr": "Cagliari",
+    "countryFr": "Italie",
+    "blurb": "Laisse-toi séduire par Cagliari, la perle de la Sardaigne, avec ses vues panoramiques sur la mer. Monte au Castello, le quartier historique perché, pour admirer le golfe des Anges.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Explorer le quartier Castello",
+      "Plage du Poetto",
+      "Voir les flamants roses"
+    ]
+  },
+  "MAD": {
+    "cityFr": "Madrid",
+    "countryFr": "Espagne",
+    "blurb": "Vis Madrid, une capitale vibrante où l'art et la vie nocturne se rencontrent. Immerge-toi dans l'ambiance du quartier de La Latina, parfait pour les tapas et les verres en terrasse.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Musée du Prado",
+      "Flâner à La Latina",
+      "Parc du Retiro"
+    ]
+  },
+  "NAP": {
+    "cityFr": "Naples",
+    "countryFr": "Italie",
+    "blurb": "Sens l'énergie unique de Naples, berceau de la pizza et ville aux mille trésors cachés. Goûte une authentique pizza napolitaine dans une trattoria du Spaccanapoli.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Déguster une pizza napolitaine",
+      "Explorer Spaccanapoli",
+      "Visiter le Musée Archéologique"
+    ]
+  },
+  "POZ": {
+    "cityFr": "Poznań",
+    "countryFr": "Pologne",
+    "blurb": "Découvre Poznań, une ville étudiante et historique au cœur de la Grande Pologne. Chaque midi, assiste au spectacle des boucs mécaniques qui s'affrontent sur l'horloge de l'hôtel de ville.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Voir les boucs à midi",
+      "Flâner sur la place du Marché",
+      "Cathédrale de Poznań"
+    ]
+  },
+  "STN": {
+    "cityFr": "Londres",
+    "countryFr": "Royaume-Uni",
+    "blurb": "Plonge dans le dynamisme de Londres, une mégalopole aux multiples facettes et quartiers uniques. Explore le quartier coloré de Notting Hill, avec ses maisons victoriennes et son marché de Portobello.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter le British Museum",
+      "Flâner à Notting Hill",
+      "Admirer Big Ben"
+    ]
+  },
+  "BDS": {
+    "cityFr": "Brindisi",
+    "countryFr": "Italie",
+    "blurb": "Porte des Pouilles, Brindisi t'invite à découvrir son charme portuaire et son riche passé romain. Ne manque pas le Monumento al Marinaio d'Italia pour une vue imprenable sur le port.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter le Dôme",
+      "Flâner sur le Lungomare",
+      "Goûter les orecchiette"
+    ]
+  },
+  "AGP": {
+    "cityFr": "Malaga",
+    "countryFr": "Espagne",
+    "blurb": "Baignée de soleil, Malaga est un mélange vibrant d'histoire et de modernité, berceau de Picasso. Explore les ruelles du centre historique et monte à l'Alcazaba pour des panoramas maritimes.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Explorer l'Alcazaba",
+      "Visiter le Musée Picasso",
+      "Déguster des tapas"
+    ]
+  },
+  "OPO": {
+    "cityFr": "Porto",
+    "countryFr": "Portugal",
+    "blurb": "Laisse-toi charmer par les ruelles pavées de Porto, ses azulejos et ses vues spectaculaires sur le Douro. Traverse le pont Dom Luís I et déguste un verre de Porto dans une cave de Vila Nova de Gaia.",
+    "bestSeason": "Mars à octobre",
+    "todo": [
+      "Visiter une cave de Porto",
+      "Admirer la Livraria Lello",
+      "Flâner au bord du Douro"
+    ]
+  },
+  "PMI": {
+    "cityFr": "Palma de Majorque",
+    "countryFr": "Espagne",
+    "blurb": "Palma, capitale des Baléares, est une ville élégante où l'histoire rencontre la Méditerranée. Sa majestueuse Cathédrale La Seu, surplombant la mer, est un chef-d'œuvre à ne pas manquer.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Admirer la Cathédrale La Seu",
+      "Se perdre dans le Casco Antiguo",
+      "Goûter l'ensaimada"
+    ]
+  },
+  "SVQ": {
+    "cityFr": "Séville",
+    "countryFr": "Espagne",
+    "blurb": "Séville te captive avec son flamenco passionné, ses orangers et son architecture mauresque. Ne manque pas l'Alcazar, un palais somptueux qui te transportera dans un conte des Mille et Une Nuits.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Visiter l'Alcazar Royal",
+      "Assister à un spectacle de flamenco",
+      "Flâner à Triana"
+    ]
+  },
+  "BIQ": {
+    "cityFr": "Biarritz",
+    "countryFr": "France",
+    "blurb": "Élégante et sportive, Biarritz t'offre le meilleur de la Côte Basque entre surf et patrimoine impérial. Promène-toi sur la Grande Plage et admire le Rocher de la Vierge au coucher du soleil.",
+    "bestSeason": "Juin à septembre",
+    "todo": [
+      "Apprendre le surf",
+      "Visiter le Musée de la Mer",
+      "Se balader au Port Vieux"
+    ]
+  },
+  "EDI": {
+    "cityFr": "Édimbourg",
+    "countryFr": "Royaume-Uni",
+    "blurb": "Édimbourg, ville de mystères et d'histoire, t'enchantera avec ses châteaux médiévaux et ses ruelles pavées. Explore le Royal Mile qui relie le château à Holyrood Palace, un incontournable écossais.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter le Château d'Édimbourg",
+      "Monter Arthur's Seat",
+      "Explorer la Vieille Ville"
+    ]
+  },
+  "IAS": {
+    "cityFr": "Iași",
+    "countryFr": "Roumanie",
+    "blurb": "Centre culturel et historique de la Moldavie roumaine, Iași regorge de monastères et de jardins. Admire le Palais de la Culture, un édifice néo-gothique impressionnant qui domine la ville.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter le Palais de la Culture",
+      "Se promener au Jardin Botanique",
+      "Découvrir les églises"
+    ]
+  },
+  "NDR": {
+    "cityFr": "Nador",
+    "countryFr": "Maroc",
+    "blurb": "Située sur la lagune de la Mar Chica, Nador t'invite à une immersion authentique dans le Rif. Profite de ses marchés animés et de ses plages pour une expérience marocaine loin des foules habituelles.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Explorer la lagune Mar Chica",
+      "Flâner au souk",
+      "Goûter la cuisine locale"
+    ]
+  },
+  "RAK": {
+    "cityFr": "Marrakech",
+    "countryFr": "Maroc",
+    "blurb": "La ville ocre, Marrakech, est une explosion de couleurs, de sons et de saveurs. Perds-toi dans les souks de la Médina et laisse-toi envoûter par l'ambiance unique de la place Jemaa el-Fna.",
+    "bestSeason": "Mars à mai",
+    "todo": [
+      "Négocier au souk",
+      "Visiter le Jardin Majorelle",
+      "Dîner place Jemaa el-Fna"
+    ]
+  },
+  "CIA": {
+    "cityFr": "Rome",
+    "countryFr": "Italie",
+    "blurb": "Éternelle et majestueuse, Rome est un musée à ciel ouvert où chaque rue murmure l'histoire. Lance une pièce dans la Fontaine de Trevi et assure-toi un retour dans cette ville incroyable.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Visiter le Colisée",
+      "Jeter une pièce Fontaine de Trevi",
+      "Goûter la vraie carbonara"
+    ]
+  },
+  "FAO": {
+    "cityFr": "Faro",
+    "countryFr": "Portugal",
+    "blurb": "Porte d'entrée de l'Algarve, Faro te séduira par son charme discret et son centre historique. Ne manque pas la sublime Capela dos Ossos et les cigognes nichées sur les toits de la vieille ville.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Explorer la Cidade Velha",
+      "Visiter la Capela dos Ossos",
+      "Faire une excursion à Ria Formosa"
+    ]
+  },
+  "OUD": {
+    "cityFr": "Oujda",
+    "countryFr": "Maroc",
+    "blurb": "Porte de l'Oriental marocain, Oujda t'offre une immersion authentique loin des foules. Ne manque pas le souk El Hout, où les artisans locaux t'émerveilleront par leur savoir-faire traditionnel.",
+    "bestSeason": "Printemps ou automne",
+    "todo": [
+      "Explorer la médina",
+      "Goûter la Harcha",
+      "Visiter parc Lalla Aïcha"
+    ]
+  },
+  "TNG": {
+    "cityFr": "Tanger",
+    "countryFr": "Maroc",
+    "blurb": "Tanger, ville mythique au carrefour des continents, t'invite à flâner dans ses ruelles chargées d'histoire. Bois un thé à la menthe au célèbre Café Hafa en admirant le détroit de Gibraltar.",
+    "bestSeason": "Printemps, début automne",
+    "todo": [
+      "Découvrir la Kasbah",
+      "Se promener à la Corniche",
+      "Visiter les grottes d'Hercule"
+    ]
+  },
+  "TFS": {
+    "cityFr": "Tenerife",
+    "countryFr": "Espagne",
+    "blurb": "Ténérife, l'île de l'éternel printemps, t'offre des paysages lunaires et des plages volcaniques uniques. N'hésite pas à monter au Teide pour un panorama époustouflant, le plus haut sommet d'Espagne.",
+    "bestSeason": "Toute l'année",
+    "todo": [
+      "Gravir le Teide",
+      "Plonger à Los Cristianos",
+      "Explorer le parc Rural Anaga"
+    ]
+  },
+  "KRK": {
+    "cityFr": "Cracovie",
+    "countryFr": "Pologne",
+    "blurb": "Cracovie, l'ancienne capitale polonaise, te séduira par son charme médiéval et son histoire fascinante. Flâne sur la place du Marché Rynek Główny, l'une des plus grandes d'Europe, et visite le quartier juif de Kazimierz.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter le château Wawel",
+      "Explorer Kazimierz",
+      "Découvrir la place du Marché"
+    ]
+  },
+  "BTS": {
+    "cityFr": "Bratislava",
+    "countryFr": "Slovaquie",
+    "blurb": "Bratislava, la capitale slovaque, te surprendra par son centre historique compact et son ambiance décontractée. Profite d'une vue imprenable sur la ville depuis le Château de Bratislava, perché sur une colline.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter le Château",
+      "Flâner vieille ville",
+      "Boire bière locale"
+    ]
+  },
+  "ACE": {
+    "cityFr": "Lanzarote",
+    "countryFr": "Espagne",
+    "blurb": "Lanzarote, l'île volcanique aux paysages lunaires, est une œuvre d'art naturelle et architecturale. Explore le Parc National de Timanfaya pour des vues surréalistes et découvre les créations de César Manrique.",
+    "bestSeason": "Toute l'année",
+    "todo": [
+      "Découvrir Timanfaya",
+      "Visiter Jameos del Agua",
+      "Se baigner à Papagayo"
+    ]
+  },
+  "ESU": {
+    "cityFr": "Essaouira",
+    "countryFr": "Maroc",
+    "blurb": "Essaouira, la \"ville des vents\", t'enchantera par sa médina classée UNESCO et son ambiance décontractée. Ne manque pas le port de pêche animé, où tu pourras déguster du poisson frais pêché du jour.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Flâner dans la médina",
+      "Manger du poisson frais",
+      "Faire du kitesurf"
+    ]
+  },
+  "FUE": {
+    "cityFr": "Fuerteventura",
+    "countryFr": "Espagne",
+    "blurb": "Fuerteventura, l'île aux 150 plages, est le paradis des amateurs de sports nautiques et de farniente. Ses dunes de Corralejo te donneront l'impression d'être en plein désert, avec l'océan à portée de main.",
+    "bestSeason": "Toute l'année",
+    "todo": [
+      "Admirer les dunes Corralejo",
+      "Faire de la planche à voile",
+      "Se détendre à Cofete"
+    ]
+  },
+  "LIS": {
+    "cityFr": "Lisbonne",
+    "countryFr": "Portugal",
+    "blurb": "Lisbonne, la ville aux sept collines, te séduira par ses ruelles escarpées, ses tramways jaunes et son ambiance mélancolique. Prends le tram 28 pour une immersion totale dans les quartiers historiques comme Alfama.",
+    "bestSeason": "Avril à juin, septembre",
+    "todo": [
+      "Écouter du Fado",
+      "Prendre le tram 28",
+      "Visiter la Tour Belém"
+    ]
+  },
+  "TLS": {
+    "cityFr": "Toulouse",
+    "countryFr": "France",
+    "blurb": "Toulouse, la \"Ville Rose\", t'accueille avec sa brique foraine et son atmosphère joviale. Promène-toi le long de la Garonne ou explore la Cité de l'espace pour une aventure intergalactique inoubliable.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Flâner Capitole",
+      "Visiter Cité Espace",
+      "Déguster cassoulet"
+    ]
+  },
+  "PFO": {
+    "cityFr": "Paphos",
+    "countryFr": "Chypre",
+    "blurb": "Paphos, berceau d'Aphrodite, est une ville chypriote riche en histoire et en légendes. Explore le Parc Archéologique de Kato Paphos, classé UNESCO, pour découvrir des mosaïques romaines exceptionnelles.",
+    "bestSeason": "Avril à juin, septembre",
+    "todo": [
+      "Visiter site archéologique",
+      "Nager au Rocher Aphrodite",
+      "Découvrir les Tombeaux Rois"
+    ]
+  },
+  "ZAZ": {
+    "cityFr": "Saragosse",
+    "countryFr": "Espagne",
+    "blurb": "Saragosse, ville d'histoire et de culture en Aragon, te surprendra par son riche patrimoine. Admire l'impressionnante Basilique Notre-Dame du Pilier et son mélange unique d'architectures romaine, mauresque et chrétienne.",
+    "bestSeason": "Mai à juin, septembre",
+    "todo": [
+      "Visiter la Basilique",
+      "Explorer l'Aljafería",
+      "Goûter le ternasco"
+    ]
+  },
+  "OTP": {
+    "cityFr": "Bucarest",
+    "countryFr": "Roumanie",
+    "blurb": "Découvre Bucarest, une capitale vibrante où l'histoire communiste côtoie une vie nocturne animée. Ne manque pas l'impressionnant Palais du Parlement, le deuxième plus grand bâtiment administratif du monde.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Explorer le Vieux Centre",
+      "Visiter le Palais du Parlement",
+      "Se balader au Parc Cișmigiu"
+    ]
+  },
+  "PRG": {
+    "cityFr": "Prague",
+    "countryFr": "République Tchèque",
+    "blurb": "Laisse-toi charmer par Prague, la \"Ville aux Cent Clochers\", avec ses ponts gothiques et son atmosphère médiévale. Une balade sur le Pont Charles au lever du soleil est une expérience inoubliable.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Traverser le Pont Charles",
+      "Admirer l'Horloge Astronomique",
+      "Monter au Château de Prague"
+    ]
+  },
+  "MXP": {
+    "cityFr": "Milan",
+    "countryFr": "Italie",
+    "blurb": "Plonge dans l'élégance milanaise, capitale mondiale de la mode et du design, où l'art est omniprésent. N'oublie pas de lever les yeux pour admirer les détails architecturaux du Duomo, d'une splendeur inégalée.",
+    "bestSeason": "Avril, sept-oct",
+    "todo": [
+      "Visiter le Duomo",
+      "Faire du shopping Quadrilatero",
+      "Voir La Cène"
+    ]
+  },
+  "BCN": {
+    "cityFr": "Barcelone",
+    "countryFr": "Espagne",
+    "blurb": "Barcelone t'attend avec son architecture moderniste fantasque et son ambiance méditerranéenne décontractée. Laisse-toi émerveiller par la Sagrada Família, chef-d'œuvre inachevé de Gaudí.",
+    "bestSeason": "Mai à juin",
+    "todo": [
+      "Découvrir la Sagrada Família",
+      "Flâner dans le Quartier Gothique",
+      "Se promener au Parc Güell"
+    ]
+  },
+  "SDR": {
+    "cityFr": "Santander",
+    "countryFr": "Espagne",
+    "blurb": "Explore Santander, une perle côtière du nord de l'Espagne, alliant élégance urbaine et paysages marins spectaculaires. Profite d'une balade sur la Péninsule de la Magdalena pour des vues imprenables.",
+    "bestSeason": "Juillet à août",
+    "todo": [
+      "Se détendre plage Sardinero",
+      "Visiter le Palacio Magdalena",
+      "Goûter les fruits de mer"
+    ]
+  },
+  "ARN": {
+    "cityFr": "Stockholm",
+    "countryFr": "Suède",
+    "blurb": "Stockholm, la \"Venise du Nord\", te séduira avec ses îles et son design scandinave épuré. Perds-toi dans les ruelles pavées de Gamla Stan, la vieille ville médiévale.",
+    "bestSeason": "Juin à août",
+    "todo": [
+      "Explorer Gamla Stan",
+      "Visiter le Vasa Museum",
+      "Prendre un ferry"
+    ]
+  },
+  "BUD": {
+    "cityFr": "Budapest",
+    "countryFr": "Hongrie",
+    "blurb": "Budapest t'invite à découvrir son riche passé impérial et ses sources thermales relaxantes. Ne manque pas une baignade aux bains Széchenyi pour une expérience unique.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Se baigner aux thermes",
+      "Admirer le Parlement",
+      "Monter au Bastion des Pêcheurs"
+    ]
+  },
+  "KUN": {
+    "cityFr": "Kaunas",
+    "countryFr": "Lituanie",
+    "blurb": "Kaunas, l'ancienne capitale lituanienne, est un trésor d'architecture Art déco et de charme authentique. Flâne dans la vieille ville médiévale et découvre son château historique.",
+    "bestSeason": "Juin à août",
+    "todo": [
+      "Explorer la vieille ville",
+      "Visiter le Château de Kaunas",
+      "Découvrir l'architecture Art déco"
+    ]
+  },
+  "NCL": {
+    "cityFr": "Newcastle",
+    "countryFr": "Royaume-Uni",
+    "blurb": "Immerge-toi dans l'énergie de Newcastle, ville vibrante du nord de l'Angleterre, réputée pour sa vie nocturne et son patrimoine industriel. Traverse le pont Tyne pour des vues emblématiques.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Traverser le Tyne Bridge",
+      "Découvrir la vie nocturne",
+      "Visiter le Château de Newcastle"
+    ]
+  },
+  "PGF": {
+    "cityFr": "Perpignan",
+    "countryFr": "France",
+    "blurb": "Perpignan, ancienne capitale du Royaume de Majorque, t'offre un mélange unique de culture catalane et de soleil méditerranéen. Découvre le Palais des Rois de Majorque, témoignage de son histoire glorieuse.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter le Palais des Rois",
+      "Flâner au Castillet",
+      "Goûter la cuisine catalane"
+    ]
+  },
+  "RBA": {
+    "cityFr": "Rabat",
+    "countryFr": "Maroc",
+    "blurb": "Rabat, capitale sereine du Maroc, te séduira par son mélange harmonieux de modernité et de traditions ancestrales. Explore la Kasbah des Oudayas, un village fortifié bleu et blanc face à l'océan.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Visiter la Kasbah Oudayas",
+      "Découvrir la Tour Hassan",
+      "Se promener dans la Médina"
+    ]
+  },
+  "SOF": {
+    "cityFr": "Sofia",
+    "countryFr": "Bulgarie",
+    "blurb": "Sofia t'accueille avec son histoire millénaire, ses églises orthodoxes dorées et ses influences ottomanes. Admire la majestueuse Cathédrale Alexandre Nevski, un emblème de la ville.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Admirer Cathédrale Nevski",
+      "Explorer le centre-ville",
+      "Visiter l'église Boyana"
+    ]
+  },
+  "WMI": {
+    "cityFr": "Varsovie",
+    "countryFr": "Pologne",
+    "blurb": "Varsovie, la ville qui renaît de ses cendres, te surprendra par son mélange unique d'histoire et de modernité. Ne manque pas de flâner dans la Vieille Ville (Stare Miasto), entièrement reconstruite et classée à l'UNESCO, pour une immersion totale dans son passé glorieux.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter Vieille Ville",
+      "Musée Frédéric Chopin",
+      "Explorer quartier Praga"
+    ]
+  },
+  "SKG": {
+    "cityFr": "Thessalonique",
+    "countryFr": "Grèce",
+    "blurb": "Découvre Thessalonique, une ville vibrante où l'histoire byzantine rencontre une vie nocturne animée et une gastronomie exceptionnelle. Laisse-toi charmer par l'ambiance des marchés comme Modiano et Kapani, parfaits pour goûter aux saveurs locales.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Monter Tour Blanche",
+      "Déguster cuisine locale",
+      "Flâner quartier Ladadika"
+    ]
+  },
+  "FCO": {
+    "cityFr": "Rome",
+    "countryFr": "Italie",
+    "blurb": "Rome, la Ville Éternelle, t'invite à un voyage intemporel à travers ses ruines majestueuses et sa dolce vita. Tu seras émerveillé par l'imposant Colisée, témoignage grandiose de l'Empire romain, et par l'atmosphère unique de ses piazzas.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Visiter Colisée",
+      "Jeter pièce Fontaine Trevi",
+      "Explorer Vatican"
+    ]
+  },
+  "BZR": {
+    "cityFr": "Béziers",
+    "countryFr": "France",
+    "blurb": "Béziers t'ouvre les portes du Sud de la France, entre vignobles ensoleillés et les eaux paisibles du Canal du Midi. Impose-toi une pause aux 9 écluses de Fonseranes, un chef-d'œuvre d'ingénierie qui offre un spectacle fascinant.",
+    "bestSeason": "Juin à septembre",
+    "todo": [
+      "Croisière Canal du Midi",
+      "Cathédrale Saint-Nazaire",
+      "Dégustation vins locaux"
+    ]
+  },
+  "AGA": {
+    "cityFr": "Agadir",
+    "countryFr": "Maroc",
+    "blurb": "Agadir, la perle du Souss, t'attend avec son soleil généreux et sa magnifique plage. Ne manque pas l'animation du Souk El Had, un marché immense où tu trouveras épices, artisanat et une immersion totale dans la vie marocaine.",
+    "bestSeason": "Toute l'année",
+    "todo": [
+      "Détente sur la plage",
+      "Négocier Souk El Had",
+      "Vue depuis la Kasbah"
+    ]
+  },
+  "HEL": {
+    "cityFr": "Helsinki",
+    "countryFr": "Finlande",
+    "blurb": "Helsinki est un trésor de design, d'architecture nordique et de nature préservée, nichée au cœur d'un archipel. Offre-toi une excursion à la forteresse maritime de Suomenlinna, un site UNESCO parfait pour une journée d'exploration.",
+    "bestSeason": "Juin à août",
+    "todo": [
+      "Forteresse Suomenlinna",
+      "Expérience sauna finlandais",
+      "Marché du port"
+    ]
+  },
+  "LPA": {
+    "cityFr": "Grande Canarie",
+    "countryFr": "Espagne",
+    "blurb": "La Grande Canarie te surprendra par sa diversité, des dunes dorées de Maspalomas aux paysages volcaniques. Loue une voiture pour explorer l'intérieur de l'île et atteindre le Roque Nublo, un monolithe emblématique offrant des vues spectaculaires.",
+    "bestSeason": "Octobre à avril",
+    "todo": [
+      "Dunes de Maspalomas",
+      "Randonnée Roque Nublo",
+      "Plages du sud"
+    ]
+  },
+  "RIX": {
+    "cityFr": "Riga",
+    "countryFr": "Lettonie",
+    "blurb": "Riga est une capitale balte fascinante, célèbre pour sa Vieille Ville médiévale et son quartier Art Nouveau. Flâne dans les rues de l'Alberta Iela pour admirer les façades ornées, véritables chefs-d'œuvre architecturaux qui font la renommée de la ville.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Découvrir Vieille Ville",
+      "Quartier Art Nouveau",
+      "Explorer Marché Central"
+    ]
+  },
+  "CPH": {
+    "cityFr": "Copenhague",
+    "countryFr": "Danemark",
+    "blurb": "Copenhague t'enchantera avec son concept de 'hygge', son design innovant et ses canaux pittoresques. Ne manque pas une balade colorée le long de Nyhavn, l'ancien port avec ses maisons aux façades vives et ses cafés animés.",
+    "bestSeason": "Mai à août",
+    "todo": [
+      "Visiter Nyhavn",
+      "Jardins de Tivoli",
+      "Balade à vélo"
+    ]
+  },
+  "VNO": {
+    "cityFr": "Vilnius",
+    "countryFr": "Lituanie",
+    "blurb": "Vilnius, capitale baroque, te séduira par sa Vieille Ville classée UNESCO et son atmosphère bohème. N'oublie pas de traverser le pont pour explorer la République d'Užupis, un quartier artistique et indépendant avec son propre esprit unique.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Explorer Vieille Ville",
+      "République d'Užupis",
+      "Tour de Gediminas"
+    ]
+  },
+  "FNC": {
+    "cityFr": "Funchal",
+    "countryFr": "Portugal",
+    "blurb": "Funchal, la capitale de Madère, est un jardin flottant où la nature exubérante rencontre l'océan Atlantique. Visite le Mercado dos Lavradores, un marché coloré où tu trouveras des fleurs exotiques, des fruits tropicaux et des poissons frais.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Marché des Laboureurs",
+      "Téléphérique Monte",
+      "Randonnée sur les levadas"
+    ]
+  },
+  "ATH": {
+    "cityFr": "Athènes",
+    "countryFr": "Grèce",
+    "blurb": "Athènes, berceau de la civilisation occidentale, t'invite à un voyage fascinant entre antiquité et modernité. Monte à l'Acropole au lever du soleil pour admirer le Parthénon, et ressens l'énergie millénaire de ce site emblématique.",
+    "bestSeason": "Avril à juin",
+    "todo": [
+      "Visiter Acropole",
+      "Se perdre dans Plaka",
+      "Musée archéologique national"
+    ]
+  },
+  "RVN": {
+    "cityFr": "Rovaniemi",
+    "countryFr": "Finlande",
+    "blurb": "Pense Père Noël, aurores boréales et nature sauvage. Au-delà du Village du Père Noël, explore le musée Arktikum pour comprendre la vie arctique et la culture sâme.",
+    "bestSeason": "Hiver (décembre-mars)",
+    "todo": [
+      "Rencontrer le Père Noël",
+      "Chasse aux aurores boréales",
+      "Randonnée en forêt enneigée"
+    ]
+  },
+  "AHO": {
+    "cityFr": "Alghero",
+    "countryFr": "Italie",
+    "blurb": "Découvre cette perle sarde aux airs catalans, avec ses remparts et son port animé. Flâne dans le centre historique médiéval et déguste des fruits de mer frais au bord de l'eau.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Explorer la vieille ville",
+      "Visiter les grottes de Neptune",
+      "Baignade à la plage de Bombarde"
+    ]
+  },
+  "CCF": {
+    "cityFr": "Carcassonne",
+    "countryFr": "France",
+    "blurb": "Remonte le temps dans cette cité médiévale fortifiée, inscrite à l'UNESCO, qui te transportera au Moyen Âge. Ne manque pas de te promener sur les remparts pour des vues imprenables sur la ville.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Visiter la Cité médiévale",
+      "Se balader sur les remparts",
+      "Déguster un cassoulet local"
+    ]
+  },
+  "CFU": {
+    "cityFr": "Corfou",
+    "countryFr": "Grèce",
+    "blurb": "L'île ionienne de Corfou t'attend avec ses plages de sable fin, ses villages pittoresques et son héritage vénitien. Explore la vieille ville de Corfou, classée UNESCO, pour ses ruelles charmantes.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Découvrir la vieille ville",
+      "Se baigner à Paleokastritsa",
+      "Visiter le Palais de l'Achilleion"
+    ]
+  },
+  "CHQ": {
+    "cityFr": "La Canée",
+    "countryFr": "Grèce",
+    "blurb": "Plonge dans l'atmosphère vénitienne de La Canée, avec son vieux port emblématique et ses ruelles colorées. Perds-toi dans le quartier de Topanas pour son architecture unique et ses restaurants.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "Flâner au vieux port",
+      "Explorer le marché couvert",
+      "Randonner les gorges de Samaria"
+    ]
+  },
+  "DBV": {
+    "cityFr": "Dubrovnik",
+    "countryFr": "Croatie",
+    "blurb": "Surnommée la \"Perle de l'Adriatique\", cette ville fortifiée est un joyau d'histoire et de beauté. Parcours les célèbres remparts de la ville pour des panoramas époustouflants sur la mer et les toits.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Marcher sur les remparts",
+      "Explorer la vieille ville",
+      "Prendre le téléphérique"
+    ]
+  },
+  "FNI": {
+    "cityFr": "Nîmes",
+    "countryFr": "France",
+    "blurb": "Immerge-toi dans l'Antiquité romaine à Nîmes, avec ses arènes et sa Maison Carrée remarquablement conservées. Visite les Jardins de la Fontaine pour une pause verdoyante et historique.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Visiter les Arènes",
+      "Découvrir la Maison Carrée",
+      "Flâner aux Jardins de la Fontaine"
+    ]
+  },
+  "FSC": {
+    "cityFr": "Figari",
+    "countryFr": "France",
+    "blurb": "Porte d'entrée du sud de la Corse, Figari est le point de départ idéal pour explorer Bonifacio et ses falaises. Loue une voiture pour atteindre rapidement les plages idylliques de Palombaggia ou Santa Giulia.",
+    "bestSeason": "Juin à septembre",
+    "todo": [
+      "Visiter Bonifacio",
+      "Baignade à Palombaggia",
+      "Randonnée dans l'arrière-pays"
+    ]
+  },
+  "GOA": {
+    "cityFr": "Gênes",
+    "countryFr": "Italie",
+    "blurb": "Découvre Gênes, ville portuaire fascinante avec un labyrinthe de caruggi (ruelles étroites) et de palais somptueux. Ne manque pas l'Aquarium de Gênes, l'un des plus grands d'Europe.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "Explorer les caruggi",
+      "Visiter l'Aquarium",
+      "Admirer les Palazzi dei Rolli"
+    ]
+  },
+  "HER": {
+    "cityFr": "Héraklion",
+    "countryFr": "Grèce",
+    "blurb": "Capitale de la Crète, Héraklion est riche d'histoire minoenne et d'une vie urbaine vibrante. Explore le Palais de Knossos, berceau de la civilisation minoenne, à quelques kilomètres seulement.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "Visiter le Palais de Knossos",
+      "Explorer le musée archéologique",
+      "Flâner au vieux port vénitien"
+    ]
+  },
+  "IBZ": {
+    "cityFr": "Ibiza",
+    "countryFr": "Espagne",
+    "blurb": "Au-delà de sa réputation festive, Ibiza offre des criques secrètes, des villages authentiques et des couchers de soleil magiques. Explore Dalt Vila, la vieille ville fortifiée, classée UNESCO, pour son histoire et ses vues.",
+    "bestSeason": "Juin à septembre",
+    "todo": [
+      "Découvrir Dalt Vila",
+      "Se détendre sur les plages",
+      "Admirer le coucher de soleil"
+    ]
+  },
+  "LEI": {
+    "cityFr": "Almería",
+    "countryFr": "Espagne",
+    "blurb": "Plonge dans le sud de l'Espagne avec Almería, ses plages désertiques et son Alcazaba majestueuse. Le quartier de La Chanca offre un aperçu authentique de l'architecture locale.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "Visiter l'Alcazaba",
+      "Explorer le Cabo de Gata",
+      "Se promener dans le centre"
+    ]
+  },
+  "LRH": {
+    "cityFr": "La Rochelle",
+    "countryFr": "France",
+    "blurb": "Découvre La Rochelle, une ville portuaire historique où les tours médiévales gardent fièrement le Vieux Port. Flâne sur les quais, explore les ruelles et ne manque pas la visite des célèbres Tours de La Rochelle pour une vue imprenable sur l'océan.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter les Tours",
+      "Explorer le Vieux Port",
+      "Excursion Île de Ré"
+    ]
+  },
+  "MAH": {
+    "cityFr": "Minorque",
+    "countryFr": "Espagne",
+    "blurb": "Échappe-toi à Minorque, l'île préservée des Baléares, réputée pour ses criques aux eaux turquoise et sa nature sauvage. Prépare-toi à des baignades idylliques dans des calas comme Macarella et à des soirées tranquilles dans la charmante Ciutadella.",
+    "bestSeason": "Juin à septembre",
+    "todo": [
+      "Baignade calas secrètes",
+      "Flâner à Ciutadella",
+      "Randonner Camí de Cavalls"
+    ]
+  },
+  "OLB": {
+    "cityFr": "Olbia",
+    "countryFr": "Italie",
+    "blurb": "Olbia est ta porte d'entrée vers la magnifique Sardaigne, entre plages de rêve et sites archéologiques. Ne manque pas les splendides plages de la Costa Smeralda, comme Capriccioli, ou une excursion vers l'archipel de La Maddalena.",
+    "bestSeason": "Juin à septembre",
+    "todo": [
+      "Plages Costa Smeralda",
+      "Archipel La Maddalena",
+      "Site nuragique Cabu Abbas"
+    ]
+  },
+  "PEG": {
+    "cityFr": "Pérouse",
+    "countryFr": "Italie",
+    "blurb": "Plonge dans l'ambiance médiévale de Pérouse, la capitale de l'Ombrie, perchée sur sa colline. Laisse-toi charmer par ses ruelles escarpées, ses vues panoramiques et savoure le chocolat local, notamment les célèbres Baci Perugina.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Déguster chocolat local",
+      "Explorer la Rocca Paolina",
+      "Admirer la Fontana Maggiore"
+    ]
+  },
+  "PUY": {
+    "cityFr": "Pula",
+    "countryFr": "Croatie",
+    "blurb": "Pula t'invite à un voyage dans le temps avec son impressionnant amphithéâtre romain, l'un des mieux conservés au monde. Au-delà de l'histoire, profite des plages de l'Adriatique et des saveurs de l'Istrie.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter l'Amphithéâtre",
+      "Explorer le Temple d'Auguste",
+      "Plages de Verudela"
+    ]
+  },
+  "REU": {
+    "cityFr": "Reus",
+    "countryFr": "Espagne",
+    "blurb": "Reus, berceau d'Antoni Gaudí, te surprendra par son riche patrimoine moderniste et ses façades colorées. Suis la Route du Modernisme et découvre l'architecture unique avant de te rendre aux plages proches de la Costa Daurada.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Parcours Modernisme Gaudí",
+      "Visiter l'Institut Pere Mata",
+      "Goûter le vermouth local"
+    ]
+  },
+  "RHO": {
+    "cityFr": "Rhodes",
+    "countryFr": "Grèce",
+    "blurb": "L'île de Rhodes t'attend avec sa majestueuse cité médiévale, classée UNESCO, où les Chevaliers de Saint-Jean ont laissé leur empreinte. Au-delà des remparts, découvre les plages ensoleillées et le village pittoresque de Lindos.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "Flâner vieille ville",
+      "Explorer Lindos Acropole",
+      "Baignade plage Tsambika"
+    ]
+  },
+  "SCQ": {
+    "cityFr": "Saint-Jacques-de-Compostelle",
+    "countryFr": "Espagne",
+    "blurb": "Achève ton pèlerinage ou débute ton exploration à Saint-Jacques-de-Compostelle, ville emblématique de la Galice. Laisse-toi émerveiller par l'imposante Cathédrale et son atmosphère unique, imprégnée d'histoire et de spiritualité.",
+    "bestSeason": "Avril à octobre",
+    "todo": [
+      "Visiter la Cathédrale",
+      "Marché Abastos",
+      "Déguster fruits de mer"
+    ]
+  },
+  "SJJ": {
+    "cityFr": "Sarajevo",
+    "countryFr": "Bosnie-Herzégovine",
+    "blurb": "Sarajevo, la 'Jérusalem de l'Europe', t'offre un mélange fascinant de cultures ottomanes et austro-hongroises. Plonge dans l'ambiance unique du Vieux Bazar de Baščaršija, où mosquées et églises coexistent pacifiquement.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Explorer Baščaršija",
+      "Visiter le Tunnel Espoir",
+      "Traverser le Pont Latin"
+    ]
+  },
+  "TGD": {
+    "cityFr": "Podgorica",
+    "countryFr": "Monténégro",
+    "blurb": "Podgorica, la capitale monténégrine, est le point de départ idéal pour explorer les trésors naturels du pays. À quelques kilomètres, le magnifique Parc national du lac Skadar t'attend pour des paysages époustouflants.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter Lac Skadar",
+      "Monastère d'Ostrog",
+      "Promenade Pont du Millénium"
+    ]
+  },
+  "TPS": {
+    "cityFr": "Trapani",
+    "countryFr": "Italie",
+    "blurb": "Trapani, en Sicile, te séduira avec ses salines historiques et ses moulins à vent, offrant des couchers de soleil inoubliables. Prends le téléphérique pour Erice, un village médiéval perché, ou pars explorer les îles Égades.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Découvrir les Salines",
+      "Téléphérique vers Erice",
+      "Excursion îles Égades"
+    ]
+  },
+  "VOL": {
+    "cityFr": "Volos",
+    "countryFr": "Grèce",
+    "blurb": "Volos, porte d'entrée du mythique Mont Pélion, est une ville animée célèbre pour ses 'tsipouradika' où l'on déguste des mezzés locaux. Profite de son ambiance balnéaire et explore les villages pittoresques du Pélion.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "Explorer le Pélion",
+      "Déguster tsipouradika",
+      "Musée Archéologique"
+    ]
+  },
+  "VRN": {
+    "cityFr": "Vérone",
+    "countryFr": "Italie",
+    "blurb": "Au-delà du balcon de Juliette, Vérone est une ville romaine vibrante. Flâne dans l'ancien Forum, aujourd'hui Piazza delle Erbe, et savoure un risotto all'Amarone.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Visiter les Arènes de Vérone",
+      "Déguster un risotto all'Amarone",
+      "Se perdre à la Piazza Erbe"
+    ]
+  },
+  "ZAD": {
+    "cityFr": "Zadar",
+    "countryFr": "Croatie",
+    "blurb": "Zadar t'offre des couchers de soleil inoubliables, sublimés par des installations artistiques uniques. Écoute l'Orgue Marin et admire le Salut au Soleil sur la promenade.",
+    "bestSeason": "Juin à août",
+    "todo": [
+      "Écouter l'Orgue Marin",
+      "Voir le Salut au Soleil",
+      "Explorer la vieille ville"
+    ]
+  },
+  "AMM": {
+    "cityFr": "Amman",
+    "countryFr": "Jordanie",
+    "blurb": "Amman, la capitale aux sept collines, mélange passé antique et modernité vibrante. Ne manque pas la Citadelle pour une vue panoramique et un voyage dans le temps.",
+    "bestSeason": "Mars à mai",
+    "todo": [
+      "Visiter la Citadelle",
+      "Flâner au souk",
+      "Goûter le mansaf"
+    ]
+  },
+  "GDN": {
+    "cityFr": "Gdańsk",
+    "countryFr": "Pologne",
+    "blurb": "Gdańsk, ville portuaire historique, te plonge dans un passé riche et une architecture colorée. Promène-toi le long de la Długa et découvre les maisons marchandes reconstruites.",
+    "bestSeason": "Mai à septembre",
+    "todo": [
+      "Admirer la Długa",
+      "Visiter le Musée de l'Ambre",
+      "Explorer le chantier naval"
+    ]
+  },
+  "REG": {
+    "cityFr": "Reggio de Calabre",
+    "countryFr": "Italie",
+    "blurb": "Face à la Sicile, Reggio de Calabre te séduira par son \"plus beau kilomètre d'Italie\", la Lungomare Falcomatà. Découvre les Bronzes de Riace au musée archéologique national.",
+    "bestSeason": "Juin à septembre",
+    "todo": [
+      "Voir les Bronzes de Riace",
+      "Flâner sur le Lungomare",
+      "Visiter le château aragonais"
+    ]
+  },
+  "CRV": {
+    "cityFr": "Crotone",
+    "countryFr": "Italie",
+    "blurb": "Crotone, cité de Pythagore, t'invite à un voyage entre plages ioniennes et histoire antique. Explore le Cap Colonna avec son temple d'Héra Lacinia pour une vue imprenable.",
+    "bestSeason": "Juin à août",
+    "todo": [
+      "Découvrir Cap Colonna",
+      "Se baigner sur les plages",
+      "Visiter le centre historique"
+    ]
+  },
+  "KGS": {
+    "cityFr": "Kos",
+    "countryFr": "Grèce",
+    "blurb": "L'île de Kos, berceau d'Hippocrate, t'offre un mélange parfait de plages magnifiques et de sites antiques. Ne manque pas l'Asclépiéion, ancien centre de guérison, pour une immersion historique.",
+    "bestSeason": "Mai à octobre",
+    "todo": [
+      "Visiter l'Asclépiéion",
+      "Se détendre à Paradise Beach",
+      "Explorer le château des Chevaliers"
+    ]
+  },
+  "SZY": {
+    "cityFr": "Olsztyn",
+    "countryFr": "Pologne",
+    "blurb": "Olsztyn, nichée au cœur de la région des mille lacs, est une perle de la Mazurie. Explore son château médiéval et profite des activités nautiques sur le lac Ukiel.",
+    "bestSeason": "Juin à août",
+    "todo": [
+      "Visiter le château d'Olsztyn",
+      "Se promener au lac Ukiel",
+      "Explorer la vieille ville"
+    ]
+  }
+}

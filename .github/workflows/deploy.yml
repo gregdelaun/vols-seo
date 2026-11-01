@@ -1,0 +1,65 @@
+name: Build & deploy site SEO vols
+
+on:
+  schedule:
+    - cron: "30 5 * * *"   # 05:30 UTC chaque jour : prix frais tôt le matin
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # pour committer le cache data/ (prix + blurbs)
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+
+      - name: Collecte prix + routes (Ryanair)
+        env:
+          TRAVELPAYOUTS_MARKER: ${{ secrets.TRAVELPAYOUTS_MARKER }}
+        run: node gen/catalog.mjs
+
+      - name: Contenu éditorial (Gemini, caché)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node gen/blurbs.mjs
+
+      - name: Génère le site
+        env:
+          TRAVELPAYOUTS_MARKER: ${{ secrets.TRAVELPAYOUTS_MARKER }}
+          SITE_BASE_URL: ${{ vars.SITE_BASE_URL }}
+          SITE_NAME: ${{ vars.SITE_NAME }}
+          SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
+        run: node gen/build.mjs
+
+      - name: Commit du cache (prix + blurbs)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/ || true
+          git commit -m "chore: maj cache prix/blurbs [skip ci]" || echo "rien à committer"
+          git push || echo "push ignoré"
+
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: site }
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

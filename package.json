@@ -1,0 +1,14 @@
+{
+  "name": "vols-seo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Site SEO programmatique de vols pas chers (data Ryanair -> pages statiques affiliées).",
+  "scripts": {
+    "catalog": "node gen/catalog.mjs",
+    "blurbs": "node gen/blurbs.mjs",
+    "build": "node gen/build.mjs",
+    "all": "node gen/catalog.mjs && node gen/blurbs.mjs && node gen/build.mjs",
+    "serve": "node gen/serve.mjs"
+  }
+}
