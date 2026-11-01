@@ -75,6 +75,9 @@ const T = {
     homeSub: (n) => `${n} routes comparées, prix rafraîchis chaque jour. Choisis ton aéroport :`,
     bestNow: "🔥 Les meilleurs prix du moment", howTitle: "Comment ça marche",
     how: `${NAME} relève automatiquement chaque jour les tarifs Ryanair au départ des aéroports accessibles depuis la Belgique et la frontière, puis te renvoie vers les sites de réservation pour comparer et réserver au meilleur prix. Gratuit, sans compte.`,
+    keyfact: (o, c, p, dep, ret, date, rt) => rt
+      ? `Au ${date}, le vol ${o} → ${c} le moins cher relevé est d'environ ${p}€ aller-retour (${dep} → ${ret}), opéré par Ryanair.`
+      : `Au ${date}, le vol ${o} → ${c} le moins cher relevé est d'environ ${p}€ l'aller, opéré par Ryanair.`,
   },
   nl: {
     htmlLang: "nl", other: "fr", otherLabel: "FR",
@@ -107,6 +110,9 @@ const T = {
     homeSub: (n) => `${n} routes vergeleken, prijzen dagelijks ververst. Kies je luchthaven:`,
     bestNow: "🔥 De beste prijzen van nu", howTitle: "Hoe werkt het",
     how: `${NAME} haalt elke dag automatisch de Ryanair-tarieven op vanuit de luchthavens bereikbaar vanuit België en de grensstreek, en verwijst je door naar de boekingssites om te vergelijken en te boeken aan de beste prijs. Gratis, zonder account.`,
+    keyfact: (o, c, p, dep, ret, date, rt) => rt
+      ? `Op ${date} is de goedkoopste gevonden vlucht ${o} → ${c} ongeveer ${p}€ heen en terug (${dep} → ${ret}), uitgevoerd door Ryanair.`
+      : `Op ${date} is de goedkoopste gevonden vlucht ${o} → ${c} ongeveer ${p}€ enkele reis, uitgevoerd door Ryanair.`,
   },
 };
 
@@ -257,8 +263,18 @@ for (const L of LOCALES) {
       { q: t.faqQ1(r.originCity, city), a: t.faqA1(r.originCity, city, r.priceFrom ? euro(r.priceFrom) : 0, tripLabel(L, r)) },
       { q: t.faqQ2(city), a: t.faqA2(city, season) },
     ];
-    const jsonld = { "@context": "https://schema.org", "@type": "FAQPage",
+    const faqLd = { "@context": "https://schema.org", "@type": "FAQPage",
       mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+    // Offer : prix lisible par Google + moteurs IA
+    const offerLd = r.priceFrom ? { "@context": "https://schema.org", "@type": "Offer",
+      name: `${r.originCity} → ${city}`, price: String(euro(r.priceFrom)), priceCurrency: "EUR",
+      availability: "https://schema.org/InStock", url: abs(routePath(L, r)),
+      ...(r.departDate ? { validFrom: r.departDate } : {}),
+      itemOffered: { "@type": "Service", name: `Vol ${r.originCity} → ${city}`, provider: { "@type": "Organization", name: "Ryanair" } } } : null;
+    const jsonld = [faqLd, offerLd].filter(Boolean);
+    const keyfact = r.priceFrom ? t.keyfact(r.originCity, city, euro(r.priceFrom),
+      r.departDate ? dLong(L, r.departDate) : "", r.returnDate ? dLong(L, r.returnDate) : "",
+      dLong(L, now.toISOString()), r.roundTrip) : "";
     const bt = blurbText(L, r.dest), todo = blurbTodo(L, r.dest);
     const body = `
 <nav class="crumbs"><a href="${abs(homePath(L))}">${esc(t.home)}</a> › <a href="${abs(departPath(L, r.origin))}">${esc(r.originCity)}</a> › ${esc(city)}</nav>
@@ -267,6 +283,7 @@ for (const L of LOCALES) {
   <p class="sub">${esc(country)} · ${esc(t.atDeparture)} ${esc(r.originName)} ${priceBadge(L, r.priceFrom, r.roundTrip)}</p>
   ${ctaButtons(L, r)}
 </section>
+${keyfact ? `<p class="keyfact">📅 ${esc(keyfact)}</p>` : ""}
 ${bt ? `<section class="prose"><h2>${esc(t.inBrief(city))}</h2><p>${esc(bt)}</p>
   ${todo.length ? `<ul class="todo">${todo.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
   ${season ? `<p class="meta">🗓️ ${esc(t.bestSeason)} : <strong>${esc(season)}</strong></p>` : ""}</section>` : ""}
@@ -332,7 +349,9 @@ ${bt ? `<section class="prose"><p>${esc(bt)}</p></section>` : ""}
     const deals = spread(routes, 48);
     const origins = [...byOrigin.keys()];
     const best = deals[0]?.priceFrom;
-    const heroCity = deals.find((d) => hasPhoto(d.dest))?.dest;
+    // hero d'accueil : destination « carte postale » choisie, sinon 1re offre avec photo
+    const HERO_PREFER = ["SVQ", "VCE", "LPA", "LIS", "AGP", "FAO", "OPO", "BCN", "ATH", "TFS"];
+    const heroCity = HERO_PREFER.find((i) => hasPhoto(i)) || deals.find((d) => hasPhoto(d.dest))?.dest;
     const body = `
 <section class="hero hero-home"${heroCity ? heroBg(heroCity) : ""}>
   <h1>${esc(t.homeH1)}</h1>
@@ -355,7 +374,38 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...urls].map((u) =>
   `<url><loc>${u}</loc><lastmod>${now.toISOString().slice(0, 10)}</lastmod></url>`).join("")}</urlset>`;
 writeFileSync(join(SITE, "sitemap.xml"), sitemap);
-writeFileSync(join(SITE, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${BASE}/sitemap.xml\n`);
+// robots.txt : tout le monde + bots IA explicitement accueillis (GEO)
+const aiBots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "PerplexityBot", "ClaudeBot", "Claude-Web", "Google-Extended", "Applebot-Extended", "CCBot", "Bytespider", "meta-externalagent"];
+writeFileSync(join(SITE, "robots.txt"),
+  `User-agent: *\nAllow: /\n\n# Moteurs génératifs / IA explicitement autorisés\n` +
+  aiBots.map((b) => `User-agent: ${b}\nAllow: /`).join("\n") +
+  `\n\nSitemap: ${BASE}/sitemap.xml\n`);
+// llms.txt : résumé du site pour les LLM (convention émergente)
+{
+  const topDeals = routes.filter((r) => r.priceFrom != null).slice(0, 15)
+    .map((r) => `- ${BL.fr[r.dest]?.cityFr || r.destCity} (${BL.fr[r.dest]?.countryFr || r.country}) — dès ${euro(r.priceFrom)}€ ${r.roundTrip ? "aller-retour" : "l'aller"} depuis ${r.originCity}`);
+  const originNames = [...byOrigin.keys()].map((o) => AIRPORTS[o].city).join(", ");
+  writeFileSync(join(SITE, "llms.txt"),
+`# ${NAME}
+
+> Vols pas chers au départ de Belgique et des aéroports frontaliers. Prix aller-retour réels relevés automatiquement chaque jour via Ryanair. Bilingue FR/NL.
+
+${NAME} compare ${routes.length} liaisons au départ de ${originNames} vers ${byDest.size} destinations en Europe et au Maghreb. Les prix sont mis à jour quotidiennement ; chaque page route indique le tarif le moins cher et les dates, puis renvoie vers les sites de réservation partenaires.
+
+## Mis à jour
+${dLong("fr", now.toISOString())}
+
+## Meilleurs tarifs du moment
+${topDeals.join("\n")}
+
+## Navigation
+- Accueil (FR): ${BASE}/
+- Accueil (NL): ${BASE}/nl/
+- Pages par aéroport de départ: ${BASE}/depart/{ville}/
+- Pages par route: ${BASE}/vol/{origine}-{destination}/
+- Plan du site: ${BASE}/sitemap.xml
+`);
+}
 writeFileSync(join(SITE, ".nojekyll"), "");
 // clé IndexNow (ping moteurs à chaque déploiement, via le workflow)
 const IKEY = process.env.INDEXNOW_KEY || "";
@@ -413,7 +463,7 @@ main{max-width:1024px;margin:0 auto;padding:28px 22px 10px}
 .prose{background:var(--card);border:1px solid var(--hair);border-radius:20px;padding:30px 32px;margin:20px 0}
 .prose h2{margin:0 0 16px;font-size:26px;font-weight:700;letter-spacing:-.02em}
 .prose p{margin:0 0 12px;color:#333;font-size:17px;line-height:1.52}
-.keyfact{background:#f5f5f7;border-radius:14px;padding:16px 18px;font-size:15.5px;color:#1d1d1f;font-weight:500}
+.keyfact{background:#f5f5f7;border-radius:16px;padding:16px 20px;margin:0 0 20px;font-size:15.5px;color:#1d1d1f;font-weight:500;line-height:1.5}
 .todo{margin:10px 0 4px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
 .todo li{background:#f5f5f7;color:#1d1d1f;font-weight:500;font-size:14px;padding:7px 14px;border-radius:980px}
 .meta{color:var(--muted);font-size:15px}
