@@ -55,6 +55,9 @@ jobs:
           SITE_NAME: ${{ vars.SITE_NAME }}
           SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
           SITE_GA_ID: ${{ vars.SITE_GA_ID }}
+          SITE_TELEGRAM: ${{ vars.SITE_TELEGRAM }}
+          SITE_TIKTOK: ${{ vars.SITE_TIKTOK }}
+          SITE_YOUTUBE: ${{ vars.SITE_YOUTUBE }}
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: node gen/build.mjs
 

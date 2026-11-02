@@ -50,6 +50,7 @@ const IMGDIR = join(ROOT, "img");
 
 const BASE = (process.env.SITE_BASE_URL || "https://gregdelaun.github.io/vols-seo").replace(/\/$/, "");
 const NAME = process.env.SITE_NAME || "VolsMalins";
+const TELEGRAM = process.env.SITE_TELEGRAM || "https://t.me/volsmalinsbe"; // canal de bons plans
 const GA = process.env.SITE_GA_ID || ""; // Google Analytics 4 (optionnel)
 const now = new Date();
 
@@ -216,6 +217,7 @@ ${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script
 <span class="tag">${esc(t.tag)}</span>
 <a class="lang" href="${alts[t.other]}" hreflang="${t.other}">${t.otherLabel}</a></header>
 <main>${body}</main>
+<div class="tgcta"><a href="${esc(TELEGRAM)}" target="_blank" rel="noopener">📣 ${esc(L === "nl" ? "Word lid van ons Telegram-kanaal — de beste deals elke dag" : "Rejoins notre canal Telegram — les meilleurs bons plans chaque jour")}</a></div>
 <footer class="foot">
 <p>${esc(t.disclaimer)}</p>
 <p><a href="${abs(homePath(L))}">${esc(t.home)}</a> · ${esc(t.updated)} ${esc(dLong(L, now.toISOString()))}${hasMarker() ? "" : esc(t.untracked)}</p>
@@ -420,7 +422,7 @@ ${bt ? `<section class="prose"><p>${esc(bt)}</p></section>` : ""}
   const socials = [
     [process.env.SITE_TIKTOK, "TikTok"],
     [process.env.SITE_YOUTUBE || "https://youtube.com/@volsmalinsbe", "YouTube"],
-    [process.env.SITE_TELEGRAM, "Telegram"],
+    [TELEGRAM, "Telegram"],
   ].filter(([u]) => u);
   const dealRows = bioDeals.map((r) => {
     const link = flightLink(r.origin, r.dest, r.departDate, r.returnDate);
@@ -565,6 +567,9 @@ main{max-width:1024px;margin:0 auto;padding:28px 22px 10px}
 .pricetrack .pt-low strong{color:#0071e3}
 .pricetrack .pt-trend{background:#f5f5f7;border-radius:980px;padding:7px 15px}
 .pricetrack .deal{background:#fff4e5;color:#b25000;border-radius:980px;padding:7px 15px;font-weight:600}
+.tgcta{text-align:center;margin:40px 0 0}
+.tgcta a{display:inline-block;background:#229ED9;color:#fff;border-radius:980px;padding:15px 28px;font-weight:600;font-size:16px;text-decoration:none;box-shadow:0 4px 14px rgba(34,158,217,.3);transition:transform .12s}
+.tgcta a:hover{transform:translateY(-1px);background:#1b8dc4}
 .todo{margin:10px 0 4px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
 .todo li{background:#f5f5f7;color:#1d1d1f;font-weight:500;font-size:14px;padding:7px 14px;border-radius:980px}
 .meta{color:var(--muted);font-size:15px}
