@@ -12,6 +12,38 @@ const ROOT = join(__dir, "..");
 const SITE = join(ROOT, "site");
 const rd = (f) => (existsSync(join(ROOT, "data", f)) ? JSON.parse(readFileSync(join(ROOT, "data", f), "utf8")) : {});
 const catalog = JSON.parse(readFileSync(join(ROOT, "data", "catalog.json"), "utf8"));
+
+// Historique des prix (snapshots quotidiens de gen/history.mjs). Vide au début :
+// le bloc "prix le plus bas vu / tendance" n'apparaît qu'à partir de HIST_MIN jours.
+const priceHist = rd("price_history.json").routes || {};
+const HIST_MIN = 3;
+// Stats d'une route à partir de son historique, ou null si pas assez de points.
+function histStats(r) {
+  const s = priceHist[`${r.origin}-${r.dest}`];
+  if (!s) return null;
+  const entries = Object.entries(s).sort((a, b) => (a[0] < b[0] ? -1 : 1)); // par date croissante
+  if (entries.length < HIST_MIN) return null;
+  const vals = entries.map((e) => e[1]);
+  const min = Math.min(...vals), max = Math.max(...vals), last = vals[vals.length - 1];
+  const mid = Math.floor(vals.length / 2);
+  const avg = (a) => a.reduce((x, y) => x + y, 0) / a.length;
+  const early = avg(vals.slice(0, mid || 1)), late = avg(vals.slice(mid));
+  const trend = late > early * 1.08 ? "up" : late < early * 0.92 ? "down" : "stable";
+  const isDeal = max > min && last <= min * 1.05; // au plus bas (ou presque) + il y a de la variation
+  return { days: entries.length, min, max, last, trend, isDeal };
+}
+// Bloc visuel "suivi de prix" (SEO + GEO : donnée datée, unique, citable).
+function priceInsight(L, r) {
+  const st = histStats(r);
+  if (!st) return "";
+  const nl = L === "nl";
+  const trendTxt = st.trend === "down" ? (nl ? "📉 prijs daalt" : "📉 prix en baisse")
+    : st.trend === "up" ? (nl ? "📈 prijs stijgt" : "📈 prix en hausse")
+    : (nl ? "➡️ stabiele prijs" : "➡️ prix stable");
+  const lowest = nl ? `Laagste prijs gezien in ${st.days} dagen` : `Prix le plus bas vu en ${st.days} jours`;
+  const deal = st.isDeal ? `<span class="deal">${nl ? "🔥 Goede deal nu" : "🔥 Bon plan en ce moment"}</span>` : "";
+  return `<div class="pricetrack"><span class="pt-low">${esc(lowest)} : <strong>${st.min}€</strong></span><span class="pt-trend">${trendTxt}</span>${deal}</div>`;
+}
 const BL = { fr: rd("blurbs.json"), nl: rd("blurbs_nl.json") };
 const photos = rd("photos.json");
 const IMGDIR = join(ROOT, "img");
@@ -285,6 +317,7 @@ for (const L of LOCALES) {
   ${ctaButtons(L, r)}
 </section>
 ${keyfact ? `<p class="keyfact">📅 ${esc(keyfact)}</p>` : ""}
+${priceInsight(L, r)}
 ${bt ? `<section class="prose"><h2>${esc(t.inBrief(city))}</h2><p>${esc(bt)}</p>
   ${todo.length ? `<ul class="todo">${todo.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
   ${season ? `<p class="meta">🗓️ ${esc(t.bestSeason)} : <strong>${esc(season)}</strong></p>` : ""}</section>` : ""}
@@ -468,6 +501,11 @@ main{max-width:1024px;margin:0 auto;padding:28px 22px 10px}
 .prose h2{margin:0 0 16px;font-size:26px;font-weight:700;letter-spacing:-.02em}
 .prose p{margin:0 0 12px;color:#333;font-size:17px;line-height:1.52}
 .keyfact{background:#f5f5f7;border-radius:16px;padding:16px 20px;margin:0 0 20px;font-size:15.5px;color:#1d1d1f;font-weight:500;line-height:1.5}
+.pricetrack{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 20px;font-size:14.5px;color:#1d1d1f}
+.pricetrack .pt-low{background:#f5f5f7;border-radius:980px;padding:7px 15px}
+.pricetrack .pt-low strong{color:#0071e3}
+.pricetrack .pt-trend{background:#f5f5f7;border-radius:980px;padding:7px 15px}
+.pricetrack .deal{background:#fff4e5;color:#b25000;border-radius:980px;padding:7px 15px;font-weight:600}
 .todo{margin:10px 0 4px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
 .todo li{background:#f5f5f7;color:#1d1d1f;font-weight:500;font-size:14px;padding:7px 14px;border-radius:980px}
 .meta{color:var(--muted);font-size:15px}

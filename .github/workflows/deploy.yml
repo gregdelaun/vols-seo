@@ -30,6 +30,9 @@ jobs:
           TRAVELPAYOUTS_MARKER: ${{ secrets.TRAVELPAYOUTS_MARKER }}
         run: node gen/catalog.mjs
 
+      - name: Snapshot historique des prix
+        run: node gen/history.mjs
+
       - name: Contenu éditorial (Gemini, caché)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
