@@ -404,6 +404,65 @@ ${bt ? `<section class="prose"><p>${esc(bt)}</p></section>` : ""}
   }
 }
 
+// ======= PAGE "LIEN EN BIO" (/go) ==========================================
+// Page mobile ultra-simple = destination du lien en bio TikTok / Reels / Telegram.
+// Liste les meilleurs vols Charleroi du jour avec liens affiliés + liens réseaux.
+// Non indexée (utilitaire), pas dans le sitemap.
+{
+  const bioCity = (r) => BL.fr[r.dest]?.cityFr || r.destCity;
+  const bioCountry = (r) => BL.fr[r.dest]?.countryFr || r.country;
+  const seenB = new Set();
+  const bioDeals = routes
+    .filter((r) => r.origin === "CRL" && r.priceFrom != null)
+    .sort((a, b) => a.priceFrom - b.priceFrom)
+    .filter((r) => (seenB.has(r.dest) ? false : (seenB.add(r.dest), true)))
+    .slice(0, 8);
+  const socials = [
+    [process.env.SITE_TIKTOK, "TikTok"],
+    [process.env.SITE_YOUTUBE || "https://youtube.com/@volsmalinsbe", "YouTube"],
+    [process.env.SITE_TELEGRAM, "Telegram"],
+  ].filter(([u]) => u);
+  const dealRows = bioDeals.map((r) => {
+    const link = flightLink(r.origin, r.dest, r.departDate, r.returnDate);
+    const trip = r.roundTrip ? "aller-retour" : "aller simple";
+    const d = r.departDate ? `${dLong("fr", r.departDate)}${r.returnDate ? ` → ${dLong("fr", r.returnDate)}` : ""}` : "";
+    return `<a class="deal" href="${esc(link)}" rel="sponsored nofollow" target="_blank">
+      <span class="d-city">${esc(bioCity(r))} <small>${esc(bioCountry(r))}</small></span>
+      <span class="d-meta">${d ? esc(d) + " · " : ""}${trip}</span>
+      <span class="d-price">dès ${euro(r.priceFrom)}€</span></a>`;
+  }).join("");
+  const bioHtml = `<!doctype html><html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<title>Vols Malins — Bons plans vols depuis Charleroi</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;background:#f5f5f7;color:#1d1d1f;-webkit-font-smoothing:antialiased;line-height:1.4}
+.wrap{max-width:480px;margin:0 auto;padding:28px 18px 40px}
+.head{text-align:center;margin-bottom:22px}
+.head h1{font-size:26px;font-weight:700;letter-spacing:-.02em}
+.head p{color:#6e6e73;font-size:15px;margin-top:6px}
+.deal{display:grid;grid-template-columns:1fr auto;grid-template-areas:"city price" "meta price";gap:2px 10px;align-items:center;background:#fff;border-radius:18px;padding:15px 18px;margin-bottom:11px;text-decoration:none;color:inherit;box-shadow:0 1px 3px rgba(0,0,0,.05);transition:transform .12s}
+.deal:active{transform:scale(.98)}
+.d-city{grid-area:city;font-weight:600;font-size:17px}
+.d-city small{color:#6e6e73;font-weight:400;font-size:13px}
+.d-meta{grid-area:meta;color:#6e6e73;font-size:13px}
+.d-price{grid-area:price;font-weight:700;font-size:18px;color:#0071e3;white-space:nowrap}
+.more{display:block;text-align:center;background:#0071e3;color:#fff;border-radius:980px;padding:15px;font-weight:600;text-decoration:none;margin:18px 0 10px}
+.socials{display:flex;gap:10px;justify-content:center;margin-top:16px}
+.socials a{flex:1;text-align:center;background:#fff;border-radius:980px;padding:12px;text-decoration:none;color:#1d1d1f;font-weight:500;font-size:14px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.foot{text-align:center;color:#86868b;font-size:12px;margin-top:22px;line-height:1.5}
+</style></head><body><div class="wrap">
+<div class="head"><h1>✈️ Vols Malins</h1><p>Les vols les moins chers depuis Charleroi, mis à jour chaque jour</p></div>
+${dealRows}
+<a class="more" href="${esc(BASE + '/')}">Voir toutes les destinations →</a>
+${socials.length ? `<div class="socials">${socials.map(([u, n]) => `<a href="${esc(u)}" target="_blank">${n}</a>`).join("")}</div>` : ""}
+<p class="foot">Prix Ryanair indicatifs, susceptibles de changer.<br>Liens affiliés : même prix pour toi, tu soutiens le projet. 🙏</p>
+</div></body></html>`;
+  write("go", bioHtml);
+  urls.delete(abs("go")); // page utilitaire : hors sitemap
+}
+
 // ======= fichiers racine ===================================================
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...urls].map((u) =>

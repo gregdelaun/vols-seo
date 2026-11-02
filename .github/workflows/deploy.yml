@@ -58,6 +58,14 @@ jobs:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: node gen/build.mjs
 
+      - name: Post Telegram (digest bons plans)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TRAVELPAYOUTS_MARKER: ${{ secrets.TRAVELPAYOUTS_MARKER }}
+          SITE_BASE_URL: ${{ vars.SITE_BASE_URL }}
+        run: node gen/telegram.mjs
+
       - name: Commit du cache (prix + blurbs)
         run: |
           git config user.name "github-actions"
