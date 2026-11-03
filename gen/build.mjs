@@ -518,9 +518,14 @@ if (existsSync(IMGDIR)) {
   for (const f of readdirSync(IMGDIR)) if (f.endsWith(".jpg")) { copyFileSync(join(IMGDIR, f), join(dst, f)); n++; }
   const heroSrc = join(IMGDIR, "hero");
   if (existsSync(heroSrc)) for (const f of readdirSync(heroSrc)) if (f.endsWith(".jpg")) copyFileSync(join(heroSrc, f), join(dst, "hero", f));
-  // image de partage social (OG) : un hero HD si dispo
-  const ogSrc = existsSync(join(dst, "hero", "TSF.jpg")) ? join(dst, "hero", "TSF.jpg") : join(dst, (readdirSync(dst).find((f) => f.endsWith(".jpg")) || ""));
-  if (existsSync(ogSrc)) copyFileSync(ogSrc, join(SITE, "og.jpg"));
+  // image de partage social (OG) : hero HD préféré, sinon un hero quelconque, sinon une vignette.
+  // On ne retombe JAMAIS sur le dossier (sinon copyFileSync → EISDIR).
+  const pickJpg = (d) => { try { return readdirSync(d).find((f) => f.endsWith(".jpg")); } catch { return undefined; } };
+  let ogSrc = "";
+  if (existsSync(join(dst, "hero", "TSF.jpg"))) ogSrc = join(dst, "hero", "TSF.jpg");
+  else { const h = pickJpg(join(dst, "hero")); if (h) ogSrc = join(dst, "hero", h);
+    else { const v = pickJpg(dst); if (v) ogSrc = join(dst, v); } }
+  if (ogSrc) copyFileSync(ogSrc, join(SITE, "og.jpg"));
   console.log(`Vignettes copiées : ${n} (+ heros HD)`);
 }
 if (process.env.SITE_DOMAIN) writeFileSync(join(SITE, "CNAME"), process.env.SITE_DOMAIN.trim() + "\n");
