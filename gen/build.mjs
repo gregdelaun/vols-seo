@@ -176,6 +176,12 @@ function layout(L, { path, altPath, title, desc, body, jsonld, breadcrumb }) {
   const t = T[L];
   const canonical = abs(path);
   const ld = [];
+  // Entité de marque sitewide : relie le site à ses comptes sociaux (knowledge graph Google)
+  const sameAs = [TELEGRAM, process.env.SITE_YOUTUBE || "https://youtube.com/@volsmalinsbe", process.env.SITE_TIKTOK].filter(Boolean);
+  ld.push({ "@context": "https://schema.org", "@type": "Organization", "@id": `${BASE}/#org`,
+    name: NAME, url: `${BASE}/`, logo: `${BASE}/og.jpg`, sameAs });
+  ld.push({ "@context": "https://schema.org", "@type": "WebSite", "@id": `${BASE}/#website`,
+    name: NAME, url: `${BASE}/`, inLanguage: ["fr-BE", "nl-BE"], publisher: { "@id": `${BASE}/#org` } });
   if (breadcrumb) ld.push({ "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: breadcrumb.map((b, i) => ({ "@type": "ListItem", position: i + 1, name: b.name,
       item: b.path != null ? abs(b.path) : undefined })) });
