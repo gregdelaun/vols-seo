@@ -91,6 +91,25 @@ async function dl1(url, dest) {
   try { const r = await fetch(url); if (!r.ok) return false; writeFileSync(dest, Buffer.from(await r.arrayBuffer())); return true; }
   catch { return false; }
 }
+// Les URL d'images Pixabay (webformatURL/largeImageURL) EXPIRENT (~24h) : un cache
+// photos.json réutilisé plus tard pointe sur des liens morts (HTTP 400). On rafraîchit
+// les deux URL par id avant de (re)télécharger.
+// Espaceur d'appels API Pixabay : ~1 toutes les 700 ms (≈85/min < limite 100/min).
+let _apiChain = Promise.resolve();
+function throttleApi(ms = 700) { const p = _apiChain.then(() => new Promise((r) => setTimeout(r, ms))); _apiChain = p; return p; }
+async function refreshById(p) {
+  if (!p.id || !PKEY) return false;
+  try {
+    await throttleApi();
+    const r = await fetch(`https://pixabay.com/api/?key=${PKEY}&id=${p.id}`);
+    if (!r.ok) return false;
+    const h = (await r.json()).hits?.[0];
+    if (!h) return false;
+    if (h.webformatURL) p.url = h.webformatURL;
+    if (h.largeImageURL) p.large = h.largeImageURL;
+    return true;
+  } catch { return false; }
+}
 
 const FORCE = process.env.PHOTOS_FORCE === "1"; // re-vérifie même les villes déjà en cache
 const todo = list.filter((c) => FORCE || !photos[c.iata]);
@@ -108,11 +127,18 @@ writeFileSync(OUT, JSON.stringify(photos, null, 2));
 
 // 2 tailles : img/{iata}.jpg = vignette 640px (cartes, léger) ; img/hero/{iata}.jpg = 1280px (grand hero seulement)
 mkdirSync(join(IMG, "hero"), { recursive: true });
-let dl = 0;
-await pool(Object.entries(photos), 6, async ([iata, p]) => {
-  const okCard = await dl1(p.url, join(IMG, `${iata}.jpg`));            // 640px (webformat)
-  await dl1(await hiRes(p), join(IMG, "hero", `${iata}.jpg`));          // 1280px (large)
+let dl = 0, refreshed = 0;
+await pool(Object.entries(photos), 4, async ([iata, p]) => {
+  let okCard = await dl1(p.url, join(IMG, `${iata}.jpg`));              // 640px (webformat)
+  let okHero = await dl1(await hiRes(p), join(IMG, "hero", `${iata}.jpg`)); // 1280px (large)
+  if (!okCard || !okHero) {                       // URL expirée -> rafraîchir par id et réessayer
+    if (await refreshById(p)) {
+      refreshed++;
+      if (!okCard) okCard = await dl1(p.url, join(IMG, `${iata}.jpg`));
+      if (!okHero) okHero = await dl1(p.large || p.url, join(IMG, "hero", `${iata}.jpg`));
+    }
+  }
   if (okCard) dl++;
 });
-writeFileSync(OUT, JSON.stringify(photos, null, 2)); // sauve les URLs 'large' récupérées
-console.log(`Photos validées : ${ok} · rejetées : ${rejected} · vignettes 640 + heros 1280 téléchargées : ${dl}.`);
+writeFileSync(OUT, JSON.stringify(photos, null, 2)); // sauve les URLs fraîches récupérées
+console.log(`Photos validées : ${ok} · rejetées : ${rejected} · rafraîchies : ${refreshed} · vignettes 640 + heros 1280 téléchargées : ${dl}.`);
