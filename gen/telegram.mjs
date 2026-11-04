@@ -20,6 +20,7 @@ const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const CHAT = process.env.TELEGRAM_CHAT_ID;
 const SITE = process.env.SITE_BASE_URL || "https://volsmalins.be";
 const N = parseInt(process.env.TELEGRAM_DEALS || "6", 10);
+const ORIGIN = process.env.TELEGRAM_ORIGIN || "CRL"; // canal = Charleroi uniquement
 
 const DRY = process.env.TELEGRAM_DRY === "1"; // aperçu : construit le message mais ne poste pas
 if ((!TOKEN || !CHAT) && !DRY) { console.warn("Telegram : TELEGRAM_BOT_TOKEN/CHAT_ID absents → post sauté."); process.exit(0); }
@@ -34,7 +35,7 @@ const countryFr = (r) => BL[r.dest]?.countryFr || r.country;
 // Meilleurs deals : 1 par destination, les moins chers d'abord.
 const seen = new Set();
 const deals = catalog.routes
-  .filter((r) => r.priceFrom != null)
+  .filter((r) => r.priceFrom != null && r.origin === ORIGIN)
   .sort((a, b) => a.priceFrom - b.priceFrom)
   .filter((r) => (seen.has(r.dest) ? false : (seen.add(r.dest), true)))
   .slice(0, N);
