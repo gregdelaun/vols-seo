@@ -62,6 +62,7 @@ jobs:
         run: node gen/build.mjs
 
       - name: Post Telegram (digest bons plans)
+        if: github.event_name == 'schedule'   # 1 post/jour max : jamais sur un push (anti-bruit)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -70,6 +71,7 @@ jobs:
         run: node gen/telegram.mjs
 
       - name: Alertes baisse de prix (Telegram)
+        if: github.event_name == 'schedule'   # 1 post/jour max : jamais sur un push (anti-bruit)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
