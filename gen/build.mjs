@@ -51,6 +51,28 @@ const IMGDIR = join(ROOT, "img");
 const BASE = (process.env.SITE_BASE_URL || "https://gregdelaun.github.io/vols-seo").replace(/\/$/, "");
 const NAME = process.env.SITE_NAME || "VolsMalins";
 const TELEGRAM = process.env.SITE_TELEGRAM || "https://t.me/volsmalinsbe"; // canal de bons plans
+// Affiliés « voyage » mieux rémunérés que les vols (liens courts trackés Travelpayouts, marker 798969)
+const AFF = {
+  esim: process.env.AFF_ESIM || "https://airalo.tpx.li/zeNceXVZ",      // Airalo 12 %
+  car: process.env.AFF_CAR || "https://getrentacar.tpx.li/Z5b2y0Hn",   // GetRentacar 10 %
+  claim: process.env.AFF_CLAIM || "https://airhelp.tpx.li/G6mHGuND",   // AirHelp 15 %
+};
+// Hors zone de roaming UE/EEE → eSIM utile pour un voyageur belge
+const NO_EU_ROAMING = new Set(["United Kingdom", "Albania", "Morocco", "Bosnia & Herzegovina", "Montenegro", "Jordan",
+  "Turkey", "Egypt", "Tunisia", "Israel", "Serbia", "North Macedonia", "Switzerland", "Georgia", "Armenia", "Ukraine", "Moldova"]);
+function travelKit(L, r) {
+  const city = cityName(L, r), country = countryName(L, r), nl = L === "nl";
+  const items = [
+    [AFF.car, "🚗", nl ? `Huurauto in ${city}` : `Louer une voiture à ${city}`, nl ? "Vergelijk lokale verhuurders" : "Compare les loueurs locaux"],
+    NO_EU_ROAMING.has(r.country) ? [AFF.esim, "📶", nl ? `eSIM voor ${country}` : `eSIM data · ${country}`,
+      nl ? "Geen gratis EU-roaming daar — vermijd een torenhoge factuur" : "Pas de roaming UE gratuit là-bas — évite la facture salée"] : null,
+    [AFF.claim, "💶", nl ? "Vlucht vertraagd of geannuleerd?" : "Vol retardé ou annulé ?",
+      nl ? "Tot €600 compensatie (EU-regels)" : "Jusqu'à 600 € d'indemnisation (règle européenne)"],
+  ].filter(Boolean);
+  return `<section class="prose kit"><h2>${esc(nl ? "Bereid je reis voor" : "Prépare ton voyage")}</h2><div class="kitgrid">${
+    items.map(([u, ic, t, d]) => `<a class="kitem" href="${esc(u)}" rel="sponsored nofollow" target="_blank"><span class="kic">${ic}</span><span><b>${esc(t)}</b><small>${esc(d)}</small></span></a>`).join("")
+  }</div></section>`;
+}
 const GA = process.env.SITE_GA_ID || ""; // Google Analytics 4 (optionnel)
 const now = new Date();
 
@@ -338,6 +360,7 @@ ${bt ? `<section class="prose"><h2>${esc(t.inBrief(city))}</h2><p>${esc(bt)}</p>
     ${r.departDate ? `<tr><td>${esc(t.egDates)}</td><td>${esc(dLong(L, r.departDate))}${r.returnDate ? ` → ${esc(dLong(L, r.returnDate))}` : ""}</td></tr>` : ""}
   </tbody></table>
 </section>
+${travelKit(L, r)}
 <section class="prose"><h2>${esc(t.faqTitle)}</h2>
   ${faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("")}
 </section>
@@ -460,10 +483,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue"
 .socials{display:flex;gap:10px;justify-content:center;margin-top:16px}
 .socials a{flex:1;text-align:center;background:#fff;border-radius:980px;padding:12px;text-decoration:none;color:#1d1d1f;font-weight:500;font-size:14px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
 .foot{text-align:center;color:#86868b;font-size:12px;margin-top:22px;line-height:1.5}
+.kit2{margin-top:16px;display:grid;gap:9px}.kit2 a{display:block;background:#fff;border-radius:14px;padding:13px 16px;text-decoration:none;color:#1d1d1f;font-size:15px;font-weight:500;box-shadow:0 1px 3px rgba(0,0,0,.05)}
 </style></head><body><div class="wrap">
 <div class="head"><h1>✈️ Vols Malins</h1><p>Les vols les moins chers depuis Charleroi, mis à jour chaque jour</p></div>
 ${dealRows}
 <a class="more" href="${esc(BASE + '/')}">Voir toutes les destinations →</a>
+<div class="kit2">
+  <a href="${esc(AFF.claim)}" rel="sponsored nofollow" target="_blank">💶 Vol retardé ou annulé ? Jusqu'à 600 € d'indemnisation</a>
+  <a href="${esc(AFF.car)}" rel="sponsored nofollow" target="_blank">🚗 Louer une voiture sur place</a>
+  <a href="${esc(AFF.esim)}" rel="sponsored nofollow" target="_blank">📶 eSIM pour voyager hors UE (Maroc, UK…)</a>
+</div>
 ${socials.length ? `<div class="socials">${socials.map(([u, n]) => `<a href="${esc(u)}" target="_blank">${n}</a>`).join("")}</div>` : ""}
 <p class="foot">Prix Ryanair indicatifs, susceptibles de changer.<br>Liens affiliés : même prix pour toi, tu soutiens le projet. 🙏</p>
 </div></body></html>`;
@@ -578,6 +607,10 @@ main{max-width:1024px;margin:0 auto;padding:28px 22px 10px}
 .pricetrack .pt-low strong{color:#0071e3}
 .pricetrack .pt-trend{background:#f5f5f7;border-radius:980px;padding:7px 15px}
 .pricetrack .deal{background:#fff4e5;color:#b25000;border-radius:980px;padding:7px 15px;font-weight:600}
+.kitgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.kitem{display:flex;gap:12px;align-items:center;padding:14px 16px;border:1px solid var(--hair);border-radius:14px;text-decoration:none;color:inherit;background:#fff;transition:transform .12s,box-shadow .12s}
+.kitem:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.kic{font-size:26px}.kitem b{display:block;font-size:15px}.kitem small{display:block;color:#64748b;font-size:13px;margin-top:2px}
 .tgcta{text-align:center;margin:40px 0 0}
 .tgcta a{display:inline-block;background:#229ED9;color:#fff;border-radius:980px;padding:15px 28px;font-weight:600;font-size:16px;text-decoration:none;box-shadow:0 4px 14px rgba(34,158,217,.3);transition:transform .12s}
 .tgcta a:hover{transform:translateY(-1px);background:#1b8dc4}
