@@ -38,6 +38,13 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node gen/blurbs.mjs
 
+      - name: Cache des images (évite de retélécharger les 116 photos à chaque run)
+        uses: actions/cache@v4
+        with:
+          path: img
+          key: img-${{ github.run_id }}
+          restore-keys: img-
+
       - name: Photos destinations (Pixabay, cache URLs)
         env:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}

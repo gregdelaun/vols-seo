@@ -2,7 +2,7 @@
 // l'IA choisit, parmi plusieurs candidates, celle qui montre vraiment la ville
 // (point de repère / skyline / vieille ville / côte) et rejette les ciels vides & photos génériques.
 // Cache dans data/photos.json ; JPG dans img/{iata}.jpg.
-import { writeFileSync, readFileSync, existsSync, mkdirSync } from "node:fs";
+import { writeFileSync, readFileSync, existsSync, mkdirSync, statSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -128,9 +128,14 @@ writeFileSync(OUT, JSON.stringify(photos, null, 2));
 // 2 tailles : img/{iata}.jpg = vignette 640px (cartes, léger) ; img/hero/{iata}.jpg = 1280px (grand hero seulement)
 mkdirSync(join(IMG, "hero"), { recursive: true });
 let dl = 0, refreshed = 0;
+let kept = 0;
+const have = (f) => { try { return statSync(f).size > 2000; } catch { return false; } };
 await pool(Object.entries(photos), 4, async ([iata, p]) => {
-  let okCard = await dl1(p.url, join(IMG, `${iata}.jpg`));              // 640px (webformat)
-  let okHero = await dl1(await hiRes(p), join(IMG, "hero", `${iata}.jpg`)); // 1280px (large)
+  const cardF = join(IMG, `${iata}.jpg`), heroF = join(IMG, "hero", `${iata}.jpg`);
+  // Déjà présentes (cache CI entre runs) → on ne retélécharge pas : moins d'appels Pixabay, moins d'échecs.
+  if (have(cardF) && have(heroF)) { kept++; dl++; return; }
+  let okCard = have(cardF) || await dl1(p.url, cardF);                  // 640px (webformat)
+  let okHero = have(heroF) || await dl1(await hiRes(p), heroF);         // 1280px (large)
   if (!okCard || !okHero) {                       // URL expirée -> rafraîchir par id et réessayer
     if (await refreshById(p)) {
       refreshed++;
@@ -141,4 +146,4 @@ await pool(Object.entries(photos), 4, async ([iata, p]) => {
   if (okCard) dl++;
 });
 writeFileSync(OUT, JSON.stringify(photos, null, 2)); // sauve les URLs fraîches récupérées
-console.log(`Photos validées : ${ok} · rejetées : ${rejected} · rafraîchies : ${refreshed} · vignettes 640 + heros 1280 téléchargées : ${dl}.`);
+console.log(`Photos validées : ${ok} · rejetées : ${rejected} · rafraîchies : ${refreshed} · déjà en cache : ${kept} · vignettes 640 + heros 1280 téléchargées : ${dl}.`);
