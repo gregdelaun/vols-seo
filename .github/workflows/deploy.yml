@@ -2,7 +2,7 @@ name: Build & deploy site SEO vols
 
 on:
   schedule:
-    - cron: "30 5 * * *"   # 05:30 UTC chaque jour : prix frais tôt le matin
+    - cron: "13 4 * * *"   # minute impaire (GitHub retarde moins) ; doit finir avant le Short YouTube
   workflow_dispatch:
   push:
     branches: [main]
