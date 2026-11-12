@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T18:35:12.377Z",
+  "generatedAt": "2026-11-12T18:39:00.295Z",
   "count": 272,
   "withPrice": 187,
   "routes": [
@@ -1181,23 +1181,6 @@
       "originCity": "Charleroi",
       "originName": "Bruxelles-Charleroi",
       "originSlug": "charleroi",
-      "dest": "GRO",
-      "destSeo": "barcelona-girona",
-      "destCity": "Girona",
-      "country": "Spain",
-      "iso3": "ESP",
-      "lat": 41.901,
-      "lon": 2.76055,
-      "priceFrom": 42.18,
-      "departDate": "2026-12-06",
-      "returnDate": "2026-12-13",
-      "roundTrip": true
-    },
-    {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
       "dest": "SUF",
       "destSeo": "lamezia",
       "destCity": "Lamezia",
@@ -1242,6 +1225,23 @@
       "priceFrom": 42.98,
       "departDate": "2027-01-18",
       "returnDate": "2027-01-23",
+      "roundTrip": true
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "GRO",
+      "destSeo": "barcelona-girona",
+      "destCity": "Girona",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 41.901,
+      "lon": 2.76055,
+      "priceFrom": 43.18,
+      "departDate": "2026-12-06",
+      "returnDate": "2026-12-13",
       "roundTrip": true
     },
     {
