@@ -115,12 +115,14 @@ const FORCE = process.env.PHOTOS_FORCE === "1"; // re-vérifie même les villes 
 const todo = list.filter((c) => FORCE || !photos[c.iata]);
 console.log(`${list.length} villes, ${todo.length} à (re)vérifier via Vision${GKEY ? "" : " (IA off)"}.`);
 let ok = 0, rejected = 0;
+const fresh = new Set(); // villes (re)choisies dans ce run → fichiers à remplacer
 await pool(todo, 3, async (c) => {
   const cands = await candidates(c);
   if (!cands.length) { rejected++; return; } // aucune image dispo -> fond dégradé
   let idx = await pickBest(c, cands);
   if (idx < 0) idx = 0; // l'IA n'a pas de favori net -> on garde la 1re (requête "landmark")
   photos[c.iata] = cands[idx];
+  fresh.add(c.iata);
   ok++;
 });
 writeFileSync(OUT, JSON.stringify(photos, null, 2));
@@ -133,9 +135,11 @@ const have = (f) => { try { return statSync(f).size > 2000; } catch { return fal
 await pool(Object.entries(photos), 4, async ([iata, p]) => {
   const cardF = join(IMG, `${iata}.jpg`), heroF = join(IMG, "hero", `${iata}.jpg`);
   // Déjà présentes (cache CI entre runs) → on ne retélécharge pas : moins d'appels Pixabay, moins d'échecs.
-  if (have(cardF) && have(heroF)) { kept++; dl++; return; }
-  let okCard = have(cardF) || await dl1(p.url, cardF);                  // 640px (webformat)
-  let okHero = have(heroF) || await dl1(await hiRes(p), heroF);         // 1280px (large)
+  // (sauf si la ville vient d'être (re)choisie : nouvelle photo → on remplace le fichier en cache)
+  if (!fresh.has(iata) && have(cardF) && have(heroF)) { kept++; dl++; return; }
+  const reuse = (f) => !fresh.has(iata) && have(f);
+  let okCard = reuse(cardF) || await dl1(p.url, cardF);                  // 640px (webformat)
+  let okHero = reuse(heroF) || await dl1(await hiRes(p), heroF);         // 1280px (large)
   if (!okCard || !okHero) {                       // URL expirée -> rafraîchir par id et réessayer
     if (await refreshById(p)) {
       refreshed++;
