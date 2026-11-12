@@ -46,6 +46,17 @@ function priceInsight(L, r) {
 }
 const BL = { fr: rd("blurbs.json"), nl: rd("blurbs_nl.json") };
 const photos = rd("photos.json");
+// Pages saisonnières « Où partir en <mois> depuis X » (gen/months.mjs)
+const MONTHS = rd("months.json");
+const MSEG = { fr: "ou-partir", nl: "waarheen" };
+const MFMT = { fr: new Intl.DateTimeFormat("fr-BE", { month: "long", timeZone: "UTC" }),
+  nl: new Intl.DateTimeFormat("nl-BE", { month: "long", timeZone: "UTC" }) };
+const monthName = (L, key) => MFMT[L].format(new Date(`${key}-15T00:00:00Z`));
+const monthLabel = (L, key) => `${monthName(L, key)} ${key.slice(0, 4)}`;
+const monthPath = (L, o, key) => `${PFX[L]}${MSEG[L]}/${AIRPORTS[o].slug}-${slugify(monthName(L, key))}-${key.slice(0, 4)}`;
+const monthHub = (L) => `${PFX[L]}${MSEG[L]}`;
+const monthAirports = () => Object.keys(MONTHS.airports || {}).filter((o) => AIRPORTS[o]);
+const SUN_LAT = 38.6; // au sud : Canaries, Maroc, Andalousie, Sicile, Malte, Crète, Algarve…
 const IMGDIR = join(ROOT, "img");
 
 const BASE = (process.env.SITE_BASE_URL || "https://gregdelaun.github.io/vols-seo").replace(/\/$/, "");
@@ -409,6 +420,99 @@ ${bt ? `<section class="prose"><p>${esc(bt)}</p></section>` : ""}
       breadcrumb: [{ name: t.home, path: homePath(L) }, { name: A.city, path: departPath(L, origin) }] }));
   }
 
+  // --- PAGES SAISONNIÈRES « Où partir en <mois> depuis X » ---
+  const MT = L === "nl" ? {
+    h1: (m, c) => `Waarheen in ${m} vanuit ${c}?`,
+    title: (m, c, n, p) => `Waarheen in ${m} vanuit ${c}? ${n} bestemmingen vanaf ${p}€ | ${NAME}`,
+    desc: (m, c, n, p, city) => `De goedkoopste retourvluchten in ${m} vanuit ${c}: ${n} bestemmingen, vanaf ${p}€ (${city}). Echte Ryanair-prijzen, dagelijks bijgewerkt.`,
+    intro: (m, c, n, p, city) => `In ${m} vind je vanuit ${c} retourvluchten naar ${n} bestemmingen. De goedkoopste: ${city} vanaf ${p}€ retour. Prijzen dagelijks gecheckt bij Ryanair.`,
+    cheapest: (m) => `De goedkoopste bestemmingen in ${m}`, sun: (m) => `☀️ Naar de zon in ${m}`,
+    all: "Alle bestemmingen en prijzen", th: ["Bestemming", "Land", "Retour vanaf", "Voorbeelddata"],
+    other: "Andere maanden", hubH1: "Waarheen vertrekken? Per maand", hubTitle: `Waarheen vertrekken per maand: goedkope vluchten | ${NAME}`,
+    hubDesc: "Per maand en per luchthaven de goedkoopste retourvluchten, met echte prijzen.",
+    q1: (m, c) => `Wat is de goedkoopste bestemming in ${m} vanuit ${c}?`,
+    a1: (city, p, d1, d2) => `${city}, vanaf ${p}€ retour (bv. ${d1} → ${d2}).`,
+    q2: (m, c) => `Waar vind je zon in ${m} vanuit ${c}?`,
+    a2: (list) => `Bijvoorbeeld: ${list}.`,
+    q3: (m, c) => `Hoeveel bestemmingen zijn er in ${m} vanuit ${c}?`, a3: (n) => `${n} bestemmingen met een retourvlucht.`,
+  } : {
+    h1: (m, c) => `Où partir en ${m} depuis ${c} ?`,
+    title: (m, c, n, p) => `Où partir en ${m} depuis ${c} ? ${n} destinations dès ${p}€ | ${NAME}`,
+    desc: (m, c, n, p, city) => `Les vols aller-retour les moins chers en ${m} depuis ${c} : ${n} destinations, dès ${p}€ (${city}). Vrais prix Ryanair, mis à jour chaque jour.`,
+    intro: (m, c, n, p, city) => `En ${m}, depuis ${c}, on trouve des vols aller-retour vers ${n} destinations. La moins chère : ${city} dès ${p}€ aller-retour. Prix relevés chaque jour chez Ryanair.`,
+    cheapest: (m) => `Les destinations les moins chères en ${m}`, sun: (m) => `☀️ Au soleil en ${m}`,
+    all: "Toutes les destinations et prix", th: ["Destination", "Pays", "A/R dès", "Exemple de dates"],
+    other: "Autres mois", hubH1: "Où partir ? Mois par mois", hubTitle: `Où partir mois par mois : vols pas chers | ${NAME}`,
+    hubDesc: "Pour chaque mois et chaque aéroport, les vols aller-retour les moins chers, avec les vrais prix.",
+    q1: (m, c) => `Quelle est la destination la moins chère en ${m} depuis ${c} ?`,
+    a1: (city, p, d1, d2) => `${city}, dès ${p}€ aller-retour (ex. ${d1} → ${d2}).`,
+    q2: (m, c) => `Où partir au soleil en ${m} depuis ${c} ?`,
+    a2: (list) => `Par exemple : ${list}.`,
+    q3: (m, c) => `Combien de destinations en ${m} depuis ${c} ?`, a3: (n) => `${n} destinations avec un vol aller-retour.`,
+  };
+  for (const o of monthAirports()) {
+    const A = AIRPORTS[o];
+    const keys = (MONTHS.months || []).filter((k) => (MONTHS.airports[o][k] || []).length >= 5);
+    for (const key of keys) {
+      // offres du mois rattachées aux routes du catalogue (pour le lien vers la page route + photo)
+      const items = MONTHS.airports[o][key].map((x) => {
+        const base = routes.find((r) => r.origin === o && r.dest === x.dest);
+        return base ? { ...base, priceFrom: x.price, departDate: x.out, returnDate: x.in, roundTrip: true } : null;
+      }).filter(Boolean);
+      if (items.length < 5) continue;
+      const m = monthLabel(L, key), best = items[0];
+      const sun = items.filter((r) => r.lat != null && r.lat < SUN_LAT).slice(0, 8);
+      const path = monthPath(L, o, key);
+      const faq = [
+        { q: MT.q1(m, A.city), a: MT.a1(cityName(L, best), euro(best.priceFrom), dShort(L, best.departDate), dShort(L, best.returnDate)) },
+        ...(sun.length ? [{ q: MT.q2(m, A.city), a: MT.a2(sun.slice(0, 4).map((r) => `${cityName(L, r)} (${euro(r.priceFrom)}€)`).join(", ")) }] : []),
+        { q: MT.q3(m, A.city), a: MT.a3(items.length) },
+      ];
+      const faqLd = { "@context": "https://schema.org", "@type": "FAQPage",
+        mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
+      const others = keys.filter((k) => k !== key);
+      const body = `
+<nav class="crumbs"><a href="${abs(homePath(L))}">${esc(t.home)}</a> › <a href="${abs(monthHub(L))}">${esc(MT.hubH1)}</a> › ${esc(m)}</nav>
+<section class="hero"${heroBg((sun[0] || best).dest)}>
+  <h1>${esc(MT.h1(m, A.city))}</h1>
+  <p class="sub">${items.length} ${esc(t.destinations)} · ${priceBadge(L, best.priceFrom, true)}</p>
+</section>
+<p class="keyfact">📅 ${esc(MT.intro(m, A.city, items.length, euro(best.priceFrom), cityName(L, best)))}</p>
+<section class="prose"><h2>${esc(MT.cheapest(m))}</h2>
+  <div class="grid">${items.slice(0, 12).map((x) => routeCard(L, x)).join("")}</div></section>
+${sun.length >= 3 ? `<section class="prose"><h2>${esc(MT.sun(m))}</h2>
+  <div class="grid">${sun.map((x) => routeCard(L, x)).join("")}</div></section>` : ""}
+<section class="prose"><h2>${esc(MT.all)}</h2>
+  <table class="info"><thead><tr>${MT.th.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>
+  ${items.map((x) => `<tr><td><a href="${esc(flightLink(o, x.dest, x.departDate, x.returnDate))}" rel="sponsored nofollow" target="_blank">${esc(cityName(L, x))}</a></td><td>${flag(x)} ${esc(countryName(L, x))}</td><td><strong>${euro(x.priceFrom)}€</strong></td><td>${esc(dShort(L, x.departDate))} → ${esc(dShort(L, x.returnDate))}</td></tr>`).join("")}
+  </tbody></table></section>
+<section class="prose"><h2>${esc(t.faqTitle)}</h2>
+  ${faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("")}</section>
+${others.length ? `<section class="prose"><h2>${esc(MT.other)}</h2><div class="origins">${others.map((k) =>
+  `<a class="chip" href="${abs(monthPath(L, o, k))}">${esc(monthLabel(L, k))}</a>`).join("")}</div></section>` : ""}`;
+      write(path, layout(L, { path, altPath: { fr: monthPath("fr", o, key), nl: monthPath("nl", o, key) },
+        title: MT.title(m, A.city, items.length, euro(best.priceFrom)),
+        desc: MT.desc(m, A.city, items.length, euro(best.priceFrom), cityName(L, best)), body, jsonld: [faqLd],
+        breadcrumb: [{ name: t.home, path: homePath(L) }, { name: MT.hubH1, path: monthHub(L) }, { name: m, path }] }));
+    }
+  }
+  if (monthAirports().length) {
+    const body = `
+<nav class="crumbs"><a href="${abs(homePath(L))}">${esc(t.home)}</a> › ${esc(MT.hubH1)}</nav>
+<section class="prose"><h1>${esc(MT.hubH1)}</h1>
+${monthAirports().map((o) => `<h2>${esc(AIRPORTS[o].city)}</h2><div class="origins">${(MONTHS.months || [])
+  .filter((k) => (MONTHS.airports[o][k] || []).length >= 5)
+  .map((k) => `<a class="chip" href="${abs(monthPath(L, o, k))}">${esc(MT.h1(monthLabel(L, k), AIRPORTS[o].city))}</a>`).join("")}</div>`).join("")}
+</section>`;
+    write(monthHub(L), layout(L, { path: monthHub(L), altPath: { fr: monthHub("fr"), nl: monthHub("nl") },
+      title: MT.hubTitle, desc: MT.hubDesc, body,
+      breadcrumb: [{ name: t.home, path: homePath(L) }, { name: MT.hubH1, path: monthHub(L) }] }));
+  }
+  // liens internes vers les pages saisonnières (accueil)
+  const monthChips = monthAirports().includes("CRL") ? (MONTHS.months || [])
+    .filter((k) => (MONTHS.airports.CRL[k] || []).length >= 5)
+    .map((k) => `<a class="chip" href="${abs(monthPath(L, "CRL", k))}">${esc(MT.h1(monthLabel(L, k), "Charleroi"))}</a>`).join("") : "";
+
   // --- ACCUEIL ---
   {
     const deals = spread(routes, 48);
@@ -427,6 +531,7 @@ ${bt ? `<section class="prose"><p>${esc(bt)}</p></section>` : ""}
 </section>
 <section class="prose"><h2>${esc(t.bestNow)}</h2>
   <div class="grid">${deals.map((x) => routeCard(L, x)).join("")}</div></section>
+${monthChips ? `<section class="prose"><h2>📅 ${esc(L === "nl" ? "Waarheen per maand?" : "Où partir ce mois-ci ?")}</h2><div class="origins">${monthChips}</div></section>` : ""}
 <section class="prose"><h2>${esc(t.howTitle)}</h2><p>${esc(t.how)}</p></section>`;
     write(homePath(L), layout(L, { path: homePath(L),
       altPath: { fr: homePath("fr"), nl: homePath("nl") },

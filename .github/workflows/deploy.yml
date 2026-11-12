@@ -33,6 +33,9 @@ jobs:
       - name: Snapshot historique des prix
         run: node gen/history.mjs
 
+      - name: Prix par mois (pages « Où partir en <mois> »)
+        run: node gen/months.mjs || echo "mois ignorés (on garde le cache)"
+
       - name: Contenu éditorial (Gemini, caché)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
