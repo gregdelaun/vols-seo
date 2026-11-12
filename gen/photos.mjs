@@ -2,7 +2,7 @@
 // l'IA choisit, parmi plusieurs candidates, celle qui montre vraiment la ville
 // (point de repère / skyline / vieille ville / côte) et rejette les ciels vides & photos génériques.
 // Cache dans data/photos.json ; JPG dans img/{iata}.jpg.
-import { writeFileSync, readFileSync, existsSync, mkdirSync, statSync } from "node:fs";
+import { writeFileSync, readFileSync, existsSync, mkdirSync, statSync, rmSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -65,7 +65,7 @@ async function pickBest(c, cands) {
 Choisis celle qui montre le MIEUX un visuel RECONNAISSABLE et ATTRACTIF de ${c.city} : monument, skyline, vieille ville, canal, côte, place célèbre.
 REJETTE : ciel vide/nuages seuls, champ ou paysage générique, gros plan d'objet, texte, carte, et toute photo d'une AUTRE ville.
 Réponds en JSON STRICT {"index": n} (n = meilleur index) ou {"index": -1} si aucune ne convient.`;
-    const parts = [{ text: prompt }, ...imgs];
+    const parts = [{ text: prompt + `\nMots-clés Pixabay de chaque photo (indice : un autre nom de ville = REJET) :\n` + cands.map((x, i) => `${i}: ${x.tags}`).join("\n") }, ...imgs];
     const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent`,
       { method: "POST", headers: { "x-goog-api-key": GKEY, "content-type": "application/json" },
         body: JSON.stringify({ contents: [{ parts }], generationConfig: { responseMimeType: "application/json", temperature: 0 } }) });
@@ -119,8 +119,12 @@ const fresh = new Set(); // villes (re)choisies dans ce run → fichiers à remp
 await pool(todo, 3, async (c) => {
   const cands = await candidates(c);
   if (!cands.length) { rejected++; return; } // aucune image dispo -> fond dégradé
-  let idx = await pickBest(c, cands);
-  if (idx < 0) idx = 0; // l'IA n'a pas de favori net -> on garde la 1re (requête "landmark")
+  const idx = await pickBest(c, cands);
+  if (idx < 0) { // aucune photo fiable (souvent : une AUTRE ville, ex. Florence pour Pescara) → pas de photo
+    delete photos[c.iata];
+    for (const f of [join(IMG, `${c.iata}.jpg`), join(IMG, "hero", `${c.iata}.jpg`)]) { try { rmSync(f); } catch {} }
+    rejected++; console.log(`  ✗ ${c.city} : aucune photo fiable → fond dégradé`); return;
+  }
   photos[c.iata] = cands[idx];
   fresh.add(c.iata);
   ok++;
