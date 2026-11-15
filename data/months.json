@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-14T11:27:25.365Z",
+ "generatedAt": "2026-11-15T11:56:41.679Z",
  "months": [
   "2026-11",
   "2026-12",
@@ -13,7 +13,7 @@
      "dest": "MAN",
      "city": "Manchester",
      "country": "Royaume-Uni",
-     "price": 31.98,
+     "price": 33.84,
      "out": "2026-11-25",
      "in": "2026-12-02"
     },
@@ -29,31 +29,31 @@
      "dest": "TRN",
      "city": "Turin",
      "country": "Italie",
-     "price": 40.76,
+     "price": 39.98,
      "out": "2026-11-29",
      "in": "2026-12-06"
-    },
-    {
-     "dest": "DUB",
-     "city": "Dublin",
-     "country": "Irlande",
-     "price": 40.98,
-     "out": "2026-11-28",
-     "in": "2026-12-05"
     },
     {
      "dest": "CLJ",
      "city": "Cluj",
      "country": "Roumanie",
-     "price": 43.98,
+     "price": 40.98,
      "out": "2026-11-27",
      "in": "2026-12-04"
+    },
+    {
+     "dest": "DUB",
+     "city": "Dublin",
+     "country": "Irlande",
+     "price": 41.52,
+     "out": "2026-11-28",
+     "in": "2026-12-05"
     },
     {
      "dest": "MRS",
      "city": "Marseille",
      "country": "France",
-     "price": 44.98,
+     "price": 47.98,
      "out": "2026-11-24",
      "in": "2026-12-01"
     },
@@ -61,7 +61,7 @@
      "dest": "IAS",
      "city": "IASI",
      "country": "Roumanie",
-     "price": 50.15,
+     "price": 48.98,
      "out": "2026-11-27",
      "in": "2026-12-02"
     },
@@ -70,38 +70,70 @@
      "city": "Wroclaw",
      "country": "Pologne",
      "price": 50.98,
-     "out": "2026-11-30",
-     "in": "2026-12-05"
-    },
-    {
-     "dest": "ZAG",
-     "city": "Zagreb",
-     "country": "Croatie",
-     "price": 52.99,
-     "out": "2026-11-28",
-     "in": "2026-12-04"
+     "out": "2026-11-23",
+     "in": "2026-11-30"
     },
     {
      "dest": "ORK",
      "city": "Cork",
      "country": "Irlande",
-     "price": 52.99,
+     "price": 53.28,
      "out": "2026-11-27",
+     "in": "2026-12-04"
+    },
+    {
+     "dest": "ZAG",
+     "city": "Zagreb",
+     "country": "Croatie",
+     "price": 53.98,
+     "out": "2026-11-28",
      "in": "2026-12-04"
     },
     {
      "dest": "MLA",
      "city": "Malte",
      "country": "Malte",
-     "price": 53.4,
+     "price": 54.44,
      "out": "2026-11-24",
+     "in": "2026-11-26"
+    },
+    {
+     "dest": "BGY",
+     "city": "Bergamo",
+     "country": "Italie",
+     "price": 55.98,
+     "out": "2026-11-28",
+     "in": "2026-11-30"
+    },
+    {
+     "dest": "ARN",
+     "city": "Stockholm",
+     "country": "Suède",
+     "price": 55.98,
+     "out": "2026-11-23",
      "in": "2026-11-26"
     },
     {
      "dest": "BUD",
      "city": "Budapest",
      "country": "Hongrie",
-     "price": 53.88,
+     "price": 55.98,
+     "out": "2026-11-29",
+     "in": "2026-12-06"
+    },
+    {
+     "dest": "TTU",
+     "city": "Tétouan",
+     "country": "Maroc",
+     "price": 57.98,
+     "out": "2026-11-30",
+     "in": "2026-12-07"
+    },
+    {
+     "dest": "GRO",
+     "city": "Girona",
+     "country": "Espagne",
+     "price": 58.09,
      "out": "2026-11-29",
      "in": "2026-12-06"
     },
@@ -109,81 +141,73 @@
      "dest": "ESU",
      "city": "Essaouira",
      "country": "Maroc",
-     "price": 54.03,
-     "out": "2026-11-26",
-     "in": "2026-12-03"
-    },
-    {
-     "dest": "ARN",
-     "city": "Stockholm",
-     "country": "Suède",
-     "price": 54.98,
-     "out": "2026-11-23",
-     "in": "2026-11-26"
-    },
-    {
-     "dest": "TTU",
-     "city": "Tétouan",
-     "country": "Maroc",
-     "price": 58.48,
-     "out": "2026-11-30",
-     "in": "2026-12-07"
-    },
-    {
-     "dest": "BGY",
-     "city": "Bergamo",
-     "country": "Italie",
      "price": 58.98,
-     "out": "2026-11-26",
-     "in": "2026-11-29"
+     "out": "2026-11-29",
+     "in": "2026-12-03"
     },
     {
      "dest": "PSR",
      "city": "Pescara",
      "country": "Italie",
-     "price": 60.27,
+     "price": 59.98,
      "out": "2026-11-22",
      "in": "2026-11-28"
-    },
-    {
-     "dest": "PGF",
-     "city": "Perpignan",
-     "country": "France",
-     "price": 61.98,
-     "out": "2026-11-30",
-     "in": "2026-12-04"
     },
     {
      "dest": "KRK",
      "city": "Cracovie",
      "country": "Pologne",
-     "price": 61.98,
+     "price": 59.98,
      "out": "2026-11-28",
      "in": "2026-12-05"
     },
     {
-     "dest": "GRO",
-     "city": "Girona",
-     "country": "Espagne",
-     "price": 65.4,
-     "out": "2026-11-29",
-     "in": "2026-12-06"
+     "dest": "PGF",
+     "city": "Perpignan",
+     "country": "France",
+     "price": 61.31,
+     "out": "2026-11-30",
+     "in": "2026-12-04"
     },
     {
      "dest": "NDR",
      "city": "Nador",
      "country": "Maroc",
-     "price": 65.43,
+     "price": 64.46,
      "out": "2026-11-30",
      "in": "2026-12-07"
     },
     {
-     "dest": "TNG",
-     "city": "Tanger",
+     "dest": "CDT",
+     "city": "Castellon",
+     "country": "Espagne",
+     "price": 65.98,
+     "out": "2026-11-29",
+     "in": "2026-12-06"
+    },
+    {
+     "dest": "FEZ",
+     "city": "Fes",
      "country": "Maroc",
-     "price": 65.73,
+     "price": 66.98,
      "out": "2026-11-30",
-     "in": "2026-12-02"
+     "in": "2026-12-07"
+    },
+    {
+     "dest": "RBA",
+     "city": "Rabat",
+     "country": "Maroc",
+     "price": 67.16,
+     "out": "2026-11-30",
+     "in": "2026-12-07"
+    },
+    {
+     "dest": "CIA",
+     "city": "Rome",
+     "country": "Italie",
+     "price": 67.98,
+     "out": "2026-11-24",
+     "in": "2026-12-01"
     },
     {
      "dest": "EDI",
@@ -194,202 +218,138 @@
      "in": "2026-12-02"
     },
     {
-     "dest": "CIA",
-     "city": "Rome",
-     "country": "Italie",
-     "price": 68.06,
-     "out": "2026-11-24",
-     "in": "2026-12-01"
-    },
-    {
-     "dest": "FEZ",
-     "city": "Fes",
-     "country": "Maroc",
-     "price": 69.98,
-     "out": "2026-11-30",
-     "in": "2026-12-07"
-    },
-    {
-     "dest": "RBA",
-     "city": "Rabat",
-     "country": "Maroc",
-     "price": 70.18,
-     "out": "2026-11-30",
-     "in": "2026-12-07"
-    },
-    {
      "dest": "RAK",
      "city": "Marrakech",
      "country": "Maroc",
-     "price": 71.02,
+     "price": 69.98,
      "out": "2026-11-29",
      "in": "2026-12-04"
     },
     {
-     "dest": "CDT",
-     "city": "Castellon",
-     "country": "Espagne",
-     "price": 71.98,
-     "out": "2026-11-22",
-     "in": "2026-11-27"
-    },
-    {
-     "dest": "PSA",
-     "city": "Pise",
-     "country": "Italie",
-     "price": 72.98,
-     "out": "2026-11-21",
-     "in": "2026-11-28"
-    },
-    {
-     "dest": "WAW",
-     "city": "Varsovie",
-     "country": "Pologne",
-     "price": 72.98,
-     "out": "2026-11-30",
-     "in": "2026-12-04"
+     "dest": "TNG",
+     "city": "Tanger",
+     "country": "Maroc",
+     "price": 71.4,
+     "out": "2026-11-28",
+     "in": "2026-12-03"
     },
     {
      "dest": "PMO",
      "city": "Palerme",
      "country": "Italie",
-     "price": 74.98,
-     "out": "2026-11-28",
+     "price": 71.98,
+     "out": "2026-11-27",
      "in": "2026-12-04"
     },
     {
      "dest": "AGA",
      "city": "Agadir",
      "country": "Maroc",
-     "price": 76.17,
+     "price": 75.29,
      "out": "2026-11-30",
      "in": "2026-12-03"
     },
     {
-     "dest": "CAG",
-     "city": "Cagliari",
+     "dest": "PSA",
+     "city": "Pise",
      "country": "Italie",
-     "price": 76.44,
-     "out": "2026-11-30",
-     "in": "2026-12-03"
+     "price": 75.98,
+     "out": "2026-11-21",
+     "in": "2026-11-28"
     },
     {
      "dest": "TLS",
      "city": "Toulouse",
      "country": "France",
-     "price": 78.13,
+     "price": 76.98,
      "out": "2026-11-24",
      "in": "2026-11-30"
-    },
-    {
-     "dest": "VIE",
-     "city": "Vienna",
-     "country": "Autriche",
-     "price": 78.24,
-     "out": "2026-11-29",
-     "in": "2026-12-05"
-    },
-    {
-     "dest": "FAO",
-     "city": "Faro",
-     "country": "Portugal",
-     "price": 79.58,
-     "out": "2026-11-30",
-     "in": "2026-12-07"
-    },
-    {
-     "dest": "LIS",
-     "city": "Lisbonne",
-     "country": "Portugal",
-     "price": 80.13,
-     "out": "2026-11-29",
-     "in": "2026-12-05"
     },
     {
      "dest": "VLC",
      "city": "Valence",
      "country": "Espagne",
-     "price": 82.25,
-     "out": "2026-11-22",
-     "in": "2026-11-28"
+     "price": 79.04,
+     "out": "2026-11-29",
+     "in": "2026-12-06"
     },
     {
-     "dest": "SKG",
-     "city": "Thessalonique",
-     "country": "Grèce",
-     "price": 85.22,
-     "out": "2026-11-23",
-     "in": "2026-11-30"
+     "dest": "VIE",
+     "city": "Vienna",
+     "country": "Autriche",
+     "price": 84.34,
+     "out": "2026-11-29",
+     "in": "2026-12-05"
+    },
+    {
+     "dest": "CAG",
+     "city": "Cagliari",
+     "country": "Italie",
+     "price": 84.46,
+     "out": "2026-11-30",
+     "in": "2026-12-03"
     },
     {
      "dest": "CTA",
      "city": "Catane",
      "country": "Italie",
-     "price": 87.07,
-     "out": "2026-11-27",
-     "in": "2026-12-04"
+     "price": 85.38,
+     "out": "2026-11-29",
+     "in": "2026-12-06"
     },
     {
-     "dest": "KUN",
-     "city": "Kaunas",
-     "country": "Lituanie",
-     "price": 88.62,
-     "out": "2026-11-27",
-     "in": "2026-12-04"
-    },
-    {
-     "dest": "ACE",
-     "city": "Lanzarote",
-     "country": "Espagne",
-     "price": 89.58,
-     "out": "2026-11-26",
-     "in": "2026-12-03"
-    },
-    {
-     "dest": "BLQ",
-     "city": "Bologne",
-     "country": "Italie",
-     "price": 89.61,
-     "out": "2026-11-27",
-     "in": "2026-12-02"
+     "dest": "FAO",
+     "city": "Faro",
+     "country": "Portugal",
+     "price": 85.66,
+     "out": "2026-11-30",
+     "in": "2026-12-07"
     },
     {
      "dest": "FUE",
      "city": "Fuerteventura",
      "country": "Espagne",
-     "price": 90.43,
+     "price": 86.43,
      "out": "2026-11-24",
      "in": "2026-12-01"
     },
     {
-     "dest": "RIX",
-     "city": "Riga",
-     "country": "Lettonie",
-     "price": 91.98,
-     "out": "2026-11-30",
-     "in": "2026-12-07"
+     "dest": "LIS",
+     "city": "Lisbonne",
+     "country": "Portugal",
+     "price": 88.86,
+     "out": "2026-11-29",
+     "in": "2026-12-05"
     },
     {
-     "dest": "SVQ",
-     "city": "Séville",
+     "dest": "WAW",
+     "city": "Varsovie",
+     "country": "Pologne",
+     "price": 88.98,
+     "out": "2026-11-30",
+     "in": "2026-12-05"
+    },
+    {
+     "dest": "ACE",
+     "city": "Lanzarote",
      "country": "Espagne",
-     "price": 92.48,
-     "out": "2026-11-29",
-     "in": "2026-12-06"
+     "price": 90.58,
+     "out": "2026-11-26",
+     "in": "2026-12-03"
+    },
+    {
+     "dest": "SUF",
+     "city": "Lamezia",
+     "country": "Italie",
+     "price": 92.13,
+     "out": "2026-11-27",
+     "in": "2026-12-04"
     },
     {
      "dest": "VIT",
      "city": "Vitoria-Gasteiz",
      "country": "Espagne",
-     "price": 92.98,
-     "out": "2026-11-27",
-     "in": "2026-11-30"
-    },
-    {
-     "dest": "AOI",
-     "city": "Ancône",
-     "country": "Italie",
-     "price": 96.98,
+     "price": 93.55,
      "out": "2026-11-27",
      "in": "2026-11-30"
     },
@@ -397,7 +357,15 @@
      "dest": "FNC",
      "city": "Funchal",
      "country": "Portugal",
-     "price": 98.98,
+     "price": 93.98,
+     "out": "2026-11-30",
+     "in": "2026-12-07"
+    },
+    {
+     "dest": "RIX",
+     "city": "Riga",
+     "country": "Lettonie",
+     "price": 94.98,
      "out": "2026-11-30",
      "in": "2026-12-07"
     },
@@ -405,23 +373,47 @@
      "dest": "ALC",
      "city": "Alicante",
      "country": "Espagne",
-     "price": 101.04,
+     "price": 96.98,
      "out": "2026-11-30",
      "in": "2026-12-07"
     },
     {
-     "dest": "AGP",
-     "city": "Malaga",
+     "dest": "AOI",
+     "city": "Ancône",
+     "country": "Italie",
+     "price": 97.98,
+     "out": "2026-11-27",
+     "in": "2026-11-30"
+    },
+    {
+     "dest": "SVQ",
+     "city": "Séville",
      "country": "Espagne",
-     "price": 101.59,
-     "out": "2026-11-26",
+     "price": 97.99,
+     "out": "2026-11-29",
+     "in": "2026-12-06"
+    },
+    {
+     "dest": "KUN",
+     "city": "Kaunas",
+     "country": "Lituanie",
+     "price": 98.64,
+     "out": "2026-11-29",
+     "in": "2026-12-04"
+    },
+    {
+     "dest": "BLQ",
+     "city": "Bologne",
+     "country": "Italie",
+     "price": 99.44,
+     "out": "2026-11-27",
      "in": "2026-12-02"
     },
     {
      "dest": "PMI",
      "city": "Palma",
      "country": "Espagne",
-     "price": 104.73,
+     "price": 101.63,
      "out": "2026-11-30",
      "in": "2026-12-07"
     },
@@ -429,7 +421,7 @@
      "dest": "BRI",
      "city": "Bari",
      "country": "Italie",
-     "price": 105.09,
+     "price": 103.28,
      "out": "2026-11-28",
      "in": "2026-12-03"
     },
@@ -453,57 +445,81 @@
      "dest": "OUD",
      "city": "Oujda",
      "country": "Maroc",
-     "price": 108,
+     "price": 106.98,
      "out": "2026-11-29",
-     "in": "2026-12-02"
-    },
-    {
-     "dest": "SOF",
-     "city": "Sofia",
-     "country": "Bulgarie",
-     "price": 108.63,
-     "out": "2026-11-24",
-     "in": "2026-12-01"
-    },
-    {
-     "dest": "SUF",
-     "city": "Lamezia",
-     "country": "Italie",
-     "price": 110.1,
-     "out": "2026-11-27",
      "in": "2026-12-04"
     },
     {
      "dest": "OTP",
      "city": "Bucarest",
      "country": "Roumanie",
-     "price": 110.98,
+     "price": 106.98,
      "out": "2026-11-27",
      "in": "2026-12-04"
+    },
+    {
+     "dest": "HEL",
+     "city": "Helsinki",
+     "country": "Finlande",
+     "price": 106.98,
+     "out": "2026-11-23",
+     "in": "2026-11-28"
     },
     {
      "dest": "TFS",
      "city": "Tenerife",
      "country": "Espagne",
-     "price": 112.28,
+     "price": 107.28,
      "out": "2026-11-25",
      "in": "2026-12-02"
+    },
+    {
+     "dest": "SOF",
+     "city": "Sofia",
+     "country": "Bulgarie",
+     "price": 108.37,
+     "out": "2026-11-24",
+     "in": "2026-12-01"
+    },
+    {
+     "dest": "AGP",
+     "city": "Malaga",
+     "country": "Espagne",
+     "price": 108.98,
+     "out": "2026-11-30",
+     "in": "2026-12-07"
+    },
+    {
+     "dest": "PRG",
+     "city": "Prague",
+     "country": "République tchèque",
+     "price": 109.78,
+     "out": "2026-11-30",
+     "in": "2026-12-05"
+    },
+    {
+     "dest": "SKG",
+     "city": "Thessalonique",
+     "country": "Grèce",
+     "price": 110.58,
+     "out": "2026-11-23",
+     "in": "2026-11-28"
     },
     {
      "dest": "BDS",
      "city": "Brindisi",
      "country": "Italie",
-     "price": 112.46,
+     "price": 111.18,
      "out": "2026-11-29",
      "in": "2026-12-06"
     },
     {
-     "dest": "ATH",
-     "city": "Athènes",
-     "country": "Grèce",
+     "dest": "BIQ",
+     "city": "Biarritz",
+     "country": "France",
      "price": 112.98,
-     "out": "2026-11-28",
-     "in": "2026-12-05"
+     "out": "2026-11-27",
+     "in": "2026-11-29"
     },
     {
      "dest": "BTS",
@@ -514,66 +530,50 @@
      "in": "2026-12-06"
     },
     {
-     "dest": "MAD",
-     "city": "Madrid",
-     "country": "Espagne",
-     "price": 114.98,
-     "out": "2026-11-30",
-     "in": "2026-12-07"
+     "dest": "ATH",
+     "city": "Athènes",
+     "country": "Grèce",
+     "price": 113.98,
+     "out": "2026-11-28",
+     "in": "2026-12-05"
     },
     {
      "dest": "BCN",
      "city": "Barcelone",
      "country": "Espagne",
-     "price": 115.98,
+     "price": 115.23,
      "out": "2026-11-28",
      "in": "2026-12-05"
     },
     {
-     "dest": "HEL",
-     "city": "Helsinki",
-     "country": "Finlande",
-     "price": 115.98,
-     "out": "2026-11-23",
-     "in": "2026-11-28"
-    },
-    {
-     "dest": "PRG",
-     "city": "Prague",
-     "country": "République tchèque",
-     "price": 117.78,
-     "out": "2026-11-30",
-     "in": "2026-12-05"
-    },
-    {
-     "dest": "SDR",
-     "city": "Santander",
+     "dest": "MAD",
+     "city": "Madrid",
      "country": "Espagne",
-     "price": 119.4,
-     "out": "2026-11-16",
-     "in": "2026-11-20"
-    },
-    {
-     "dest": "BIQ",
-     "city": "Biarritz",
-     "country": "France",
-     "price": 120.98,
-     "out": "2026-11-22",
-     "in": "2026-11-29"
+     "price": 115.98,
+     "out": "2026-11-30",
+     "in": "2026-12-07"
     },
     {
      "dest": "OPO",
      "city": "Porto",
      "country": "Portugal",
-     "price": 126.94,
-     "out": "2026-11-25",
-     "in": "2026-12-02"
+     "price": 117.98,
+     "out": "2026-11-29",
+     "in": "2026-12-03"
+    },
+    {
+     "dest": "SDR",
+     "city": "Santander",
+     "country": "Espagne",
+     "price": 122.98,
+     "out": "2026-11-30",
+     "in": "2026-12-07"
     },
     {
      "dest": "RVN",
      "city": "Rovaniemi",
      "country": "Finlande",
-     "price": 130.98,
+     "price": 124.98,
      "out": "2026-11-17",
      "in": "2026-11-24"
     }
@@ -607,24 +607,40 @@
      "dest": "CLJ",
      "city": "Cluj",
      "country": "Roumanie",
-     "price": 32.98,
-     "out": "2026-12-05",
+     "price": 31.98,
+     "out": "2026-12-04",
      "in": "2026-12-07"
+    },
+    {
+     "dest": "CAG",
+     "city": "Cagliari",
+     "country": "Italie",
+     "price": 33.98,
+     "out": "2026-12-03",
+     "in": "2026-12-10"
+    },
+    {
+     "dest": "BGY",
+     "city": "Bergamo",
+     "country": "Italie",
+     "price": 33.98,
+     "out": "2026-12-06",
+     "in": "2026-12-12"
     },
     {
      "dest": "EDI",
      "city": "Édimbourg",
      "country": "Royaume-Uni",
      "price": 33.98,
-     "out": "2026-12-09",
-     "in": "2026-12-16"
+     "out": "2026-12-02",
+     "in": "2026-12-09"
     },
     {
      "dest": "BLQ",
      "city": "Bologne",
      "country": "Italie",
      "price": 34.98,
-     "out": "2026-12-04",
+     "out": "2026-12-05",
      "in": "2026-12-09"
     },
     {
@@ -636,12 +652,20 @@
      "in": "2026-12-10"
     },
     {
+     "dest": "AOI",
+     "city": "Ancône",
+     "country": "Italie",
+     "price": 35.98,
+     "out": "2026-12-11",
+     "in": "2026-12-14"
+    },
+    {
      "dest": "TRN",
      "city": "Turin",
      "country": "Italie",
-     "price": 36.98,
+     "price": 35.98,
      "out": "2026-12-06",
-     "in": "2026-12-13"
+     "in": "2026-12-12"
     },
     {
      "dest": "ORK",
@@ -652,36 +676,44 @@
      "in": "2026-12-13"
     },
     {
-     "dest": "BGY",
-     "city": "Bergamo",
-     "country": "Italie",
-     "price": 37.98,
+     "dest": "CDT",
+     "city": "Castellon",
+     "country": "Espagne",
+     "price": 38.98,
+     "out": "2026-12-06",
+     "in": "2026-12-13"
+    },
+    {
+     "dest": "ARN",
+     "city": "Stockholm",
+     "country": "Suède",
+     "price": 39.98,
      "out": "2026-12-05",
      "in": "2026-12-12"
     },
     {
-     "dest": "AOI",
-     "city": "Ancône",
-     "country": "Italie",
-     "price": 38.87,
-     "out": "2026-12-11",
-     "in": "2026-12-14"
-    },
-    {
-     "dest": "CDT",
-     "city": "Castellon",
-     "country": "Espagne",
+     "dest": "WRO",
+     "city": "Wroclaw",
+     "country": "Pologne",
      "price": 39.98,
-     "out": "2026-12-06",
-     "in": "2026-12-13"
+     "out": "2026-12-05",
+     "in": "2026-12-12"
     },
     {
      "dest": "MRS",
      "city": "Marseille",
      "country": "France",
-     "price": 39.98,
+     "price": 40.41,
      "out": "2026-12-01",
      "in": "2026-12-08"
+    },
+    {
+     "dest": "GRO",
+     "city": "Girona",
+     "country": "Espagne",
+     "price": 40.98,
+     "out": "2026-12-06",
+     "in": "2026-12-13"
     },
     {
      "dest": "ESU",
@@ -692,18 +724,10 @@
      "in": "2026-12-10"
     },
     {
-     "dest": "ARN",
-     "city": "Stockholm",
-     "country": "Suède",
-     "price": 40.98,
-     "out": "2026-12-05",
-     "in": "2026-12-12"
-    },
-    {
      "dest": "BUD",
      "city": "Budapest",
      "country": "Hongrie",
-     "price": 40.98,
+     "price": 41.98,
      "out": "2026-12-06",
      "in": "2026-12-11"
     },
@@ -711,55 +735,55 @@
      "dest": "KRK",
      "city": "Cracovie",
      "country": "Pologne",
-     "price": 40.98,
+     "price": 41.98,
      "out": "2026-12-05",
      "in": "2026-12-12"
-    },
-    {
-     "dest": "GRO",
-     "city": "Girona",
-     "country": "Espagne",
-     "price": 41.18,
-     "out": "2026-12-06",
-     "in": "2026-12-13"
-    },
-    {
-     "dest": "WRO",
-     "city": "Wroclaw",
-     "country": "Pologne",
-     "price": 41.61,
-     "out": "2026-12-07",
-     "in": "2026-12-14"
-    },
-    {
-     "dest": "CAG",
-     "city": "Cagliari",
-     "country": "Italie",
-     "price": 43.98,
-     "out": "2026-12-04",
-     "in": "2026-12-11"
     },
     {
      "dest": "MLA",
      "city": "Malte",
      "country": "Malte",
-     "price": 43.98,
+     "price": 42.98,
      "out": "2026-12-06",
      "in": "2026-12-12"
-    },
-    {
-     "dest": "RAK",
-     "city": "Marrakech",
-     "country": "Maroc",
-     "price": 44.98,
-     "out": "2026-12-10",
-     "in": "2026-12-17"
     },
     {
      "dest": "PSA",
      "city": "Pise",
      "country": "Italie",
+     "price": 43.33,
+     "out": "2026-12-07",
+     "in": "2026-12-14"
+    },
+    {
+     "dest": "KUN",
+     "city": "Kaunas",
+     "country": "Lituanie",
      "price": 44.98,
+     "out": "2026-12-04",
+     "in": "2026-12-11"
+    },
+    {
+     "dest": "RAK",
+     "city": "Marrakech",
+     "country": "Maroc",
+     "price": 45.98,
+     "out": "2026-12-10",
+     "in": "2026-12-17"
+    },
+    {
+     "dest": "CIA",
+     "city": "Rome",
+     "country": "Italie",
+     "price": 45.98,
+     "out": "2026-12-02",
+     "in": "2026-12-09"
+    },
+    {
+     "dest": "ZAG",
+     "city": "Zagreb",
+     "country": "Croatie",
+     "price": 45.98,
      "out": "2026-12-10",
      "in": "2026-12-17"
     },
@@ -767,7 +791,7 @@
      "dest": "SDR",
      "city": "Santander",
      "country": "Espagne",
-     "price": 45.05,
+     "price": 46.05,
      "out": "2026-12-07",
      "in": "2026-12-14"
     },
@@ -780,75 +804,35 @@
      "in": "2026-12-08"
     },
     {
-     "dest": "KUN",
-     "city": "Kaunas",
-     "country": "Lituanie",
-     "price": 46.98,
-     "out": "2026-12-11",
+     "dest": "FAO",
+     "city": "Faro",
+     "country": "Portugal",
+     "price": 47.98,
+     "out": "2026-12-06",
      "in": "2026-12-13"
+    },
+    {
+     "dest": "BIQ",
+     "city": "Biarritz",
+     "country": "France",
+     "price": 48.98,
+     "out": "2026-12-04",
+     "in": "2026-12-11"
+    },
+    {
+     "dest": "AGP",
+     "city": "Malaga",
+     "country": "Espagne",
+     "price": 49.98,
+     "out": "2026-12-02",
+     "in": "2026-12-09"
     },
     {
      "dest": "TNG",
      "city": "Tanger",
      "country": "Maroc",
-     "price": 48.98,
-     "out": "2026-12-08",
-     "in": "2026-12-15"
-    },
-    {
-     "dest": "CIA",
-     "city": "Rome",
-     "country": "Italie",
-     "price": 48.98,
-     "out": "2026-12-02",
-     "in": "2026-12-09"
-    },
-    {
-     "dest": "FAO",
-     "city": "Faro",
-     "country": "Portugal",
-     "price": 49.74,
-     "out": "2026-12-06",
-     "in": "2026-12-13"
-    },
-    {
-     "dest": "ACE",
-     "city": "Lanzarote",
-     "country": "Espagne",
      "price": 49.98,
-     "out": "2026-12-08",
-     "in": "2026-12-10"
-    },
-    {
-     "dest": "ZAG",
-     "city": "Zagreb",
-     "country": "Croatie",
-     "price": 49.98,
-     "out": "2026-12-10",
-     "in": "2026-12-17"
-    },
-    {
-     "dest": "WAW",
-     "city": "Varsovie",
-     "country": "Pologne",
-     "price": 50.33,
      "out": "2026-12-07",
-     "in": "2026-12-11"
-    },
-    {
-     "dest": "FUE",
-     "city": "Fuerteventura",
-     "country": "Espagne",
-     "price": 51.98,
-     "out": "2026-12-01",
-     "in": "2026-12-08"
-    },
-    {
-     "dest": "VLC",
-     "city": "Valence",
-     "country": "Espagne",
-     "price": 51.98,
-     "out": "2026-12-06",
      "in": "2026-12-12"
     },
     {
@@ -860,68 +844,68 @@
      "in": "2026-12-18"
     },
     {
-     "dest": "BIQ",
-     "city": "Biarritz",
-     "country": "France",
+     "dest": "WAW",
+     "city": "Varsovie",
+     "country": "Pologne",
      "price": 51.98,
-     "out": "2026-12-04",
-     "in": "2026-12-11"
+     "out": "2026-12-05",
+     "in": "2026-12-12"
+    },
+    {
+     "dest": "ACE",
+     "city": "Lanzarote",
+     "country": "Espagne",
+     "price": 53,
+     "out": "2026-12-08",
+     "in": "2026-12-10"
     },
     {
      "dest": "BCN",
      "city": "Barcelone",
      "country": "Espagne",
-     "price": 52.18,
+     "price": 53.18,
      "out": "2026-12-05",
      "in": "2026-12-12"
     },
     {
-     "dest": "VIE",
-     "city": "Vienna",
-     "country": "Autriche",
-     "price": 52.78,
-     "out": "2026-12-03",
-     "in": "2026-12-05"
+     "dest": "VLC",
+     "city": "Valence",
+     "country": "Espagne",
+     "price": 54.98,
+     "out": "2026-12-06",
+     "in": "2026-12-13"
     },
     {
-     "dest": "AGP",
-     "city": "Malaga",
-     "country": "Espagne",
-     "price": 52.86,
-     "out": "2026-12-02",
-     "in": "2026-12-09"
+     "dest": "NDR",
+     "city": "Nador",
+     "country": "Maroc",
+     "price": 54.98,
+     "out": "2026-12-01",
+     "in": "2026-12-08"
     },
     {
      "dest": "BTS",
      "city": "Bratislava",
      "country": "Slovaquie",
-     "price": 54.21,
+     "price": 55.21,
      "out": "2026-12-06",
      "in": "2026-12-13"
     },
     {
-     "dest": "PGF",
-     "city": "Perpignan",
-     "country": "France",
-     "price": 54.31,
-     "out": "2026-12-07",
-     "in": "2026-12-11"
-    },
-    {
-     "dest": "RBA",
-     "city": "Rabat",
-     "country": "Maroc",
-     "price": 54.65,
-     "out": "2026-12-08",
-     "in": "2026-12-10"
-    },
-    {
-     "dest": "SVQ",
-     "city": "Séville",
+     "dest": "FUE",
+     "city": "Fuerteventura",
      "country": "Espagne",
+     "price": 55.61,
+     "out": "2026-12-01",
+     "in": "2026-12-08"
+    },
+    {
+     "dest": "BRI",
+     "city": "Bari",
+     "country": "Italie",
      "price": 55.98,
-     "out": "2026-12-04",
-     "in": "2026-12-11"
+     "out": "2026-12-05",
+     "in": "2026-12-07"
     },
     {
      "dest": "CTA",
@@ -929,149 +913,165 @@
      "country": "Italie",
      "price": 55.98,
      "out": "2026-12-06",
-     "in": "2026-12-12"
+     "in": "2026-12-13"
+    },
+    {
+     "dest": "PGF",
+     "city": "Perpignan",
+     "country": "France",
+     "price": 56.75,
+     "out": "2026-12-07",
+     "in": "2026-12-11"
+    },
+    {
+     "dest": "SVQ",
+     "city": "Séville",
+     "country": "Espagne",
+     "price": 56.98,
+     "out": "2026-12-04",
+     "in": "2026-12-11"
+    },
+    {
+     "dest": "AGA",
+     "city": "Agadir",
+     "country": "Maroc",
+     "price": 58.98,
+     "out": "2026-12-08",
+     "in": "2026-12-15"
+    },
+    {
+     "dest": "FEZ",
+     "city": "Fes",
+     "country": "Maroc",
+     "price": 59.97,
+     "out": "2026-12-07",
+     "in": "2026-12-14"
+    },
+    {
+     "dest": "TTU",
+     "city": "Tétouan",
+     "country": "Maroc",
+     "price": 59.98,
+     "out": "2026-12-07",
+     "in": "2026-12-14"
+    },
+    {
+     "dest": "FNC",
+     "city": "Funchal",
+     "country": "Portugal",
+     "price": 59.98,
+     "out": "2026-12-14",
+     "in": "2026-12-21"
     },
     {
      "dest": "BZR",
      "city": "Béziers",
      "country": "France",
-     "price": 57.93,
-     "out": "2026-12-04",
+     "price": 60.5,
+     "out": "2026-12-06",
      "in": "2026-12-11"
     },
     {
      "dest": "LIS",
      "city": "Lisbonne",
      "country": "Portugal",
-     "price": 60.3,
+     "price": 60.89,
      "out": "2026-12-06",
      "in": "2026-12-09"
-    },
-    {
-     "dest": "BRI",
-     "city": "Bari",
-     "country": "Italie",
-     "price": 60.98,
-     "out": "2026-12-05",
-     "in": "2026-12-07"
-    },
-    {
-     "dest": "TTU",
-     "city": "Tétouan",
-     "country": "Maroc",
-     "price": 61.11,
-     "out": "2026-12-07",
-     "in": "2026-12-14"
-    },
-    {
-     "dest": "NDR",
-     "city": "Nador",
-     "country": "Maroc",
-     "price": 61.98,
-     "out": "2026-12-08",
-     "in": "2026-12-15"
-    },
-    {
-     "dest": "ALC",
-     "city": "Alicante",
-     "country": "Espagne",
-     "price": 62.98,
-     "out": "2026-12-05",
-     "in": "2026-12-12"
-    },
-    {
-     "dest": "FEZ",
-     "city": "Fes",
-     "country": "Maroc",
-     "price": 62.98,
-     "out": "2026-12-06",
-     "in": "2026-12-13"
     },
     {
      "dest": "BDS",
      "city": "Brindisi",
      "country": "Italie",
-     "price": 63.18,
+     "price": 60.9,
      "out": "2026-12-06",
      "in": "2026-12-13"
     },
     {
-     "dest": "RIX",
-     "city": "Riga",
-     "country": "Lettonie",
-     "price": 63.98,
-     "out": "2026-12-05",
-     "in": "2026-12-07"
-    },
-    {
-     "dest": "AGA",
-     "city": "Agadir",
+     "dest": "RBA",
+     "city": "Rabat",
      "country": "Maroc",
-     "price": 66.65,
-     "out": "2026-12-08",
-     "in": "2026-12-15"
+     "price": 61.73,
+     "out": "2026-12-03",
+     "in": "2026-12-10"
     },
     {
-     "dest": "FNC",
-     "city": "Funchal",
-     "country": "Portugal",
-     "price": 70.51,
-     "out": "2026-12-07",
-     "in": "2026-12-14"
-    },
-    {
-     "dest": "LPA",
-     "city": "Grande Canarie",
-     "country": "Espagne",
-     "price": 70.98,
-     "out": "2026-12-02",
-     "in": "2026-12-09"
+     "dest": "VIE",
+     "city": "Vienna",
+     "country": "Autriche",
+     "price": 63.42,
+     "out": "2026-12-05",
+     "in": "2026-12-12"
     },
     {
      "dest": "TFS",
      "city": "Tenerife",
      "country": "Espagne",
-     "price": 72.28,
-     "out": "2026-12-07",
+     "price": 65.98,
+     "out": "2026-12-11",
+     "in": "2026-12-17"
+    },
+    {
+     "dest": "RIX",
+     "city": "Riga",
+     "country": "Lettonie",
+     "price": 66.98,
+     "out": "2026-12-05",
+     "in": "2026-12-07"
+    },
+    {
+     "dest": "LPA",
+     "city": "Grande Canarie",
+     "country": "Espagne",
+     "price": 67.48,
+     "out": "2026-12-02",
      "in": "2026-12-09"
+    },
+    {
+     "dest": "ALC",
+     "city": "Alicante",
+     "country": "Espagne",
+     "price": 70.58,
+     "out": "2026-12-05",
+     "in": "2026-12-11"
     },
     {
      "dest": "MAD",
      "city": "Madrid",
      "country": "Espagne",
-     "price": 73.98,
+     "price": 72.98,
      "out": "2026-12-02",
      "in": "2026-12-08"
-    },
-    {
-     "dest": "PRG",
-     "city": "Prague",
-     "country": "République tchèque",
-     "price": 74.23,
-     "out": "2026-12-14",
-     "in": "2026-12-20"
-    },
-    {
-     "dest": "PMI",
-     "city": "Palma",
-     "country": "Espagne",
-     "price": 75.98,
-     "out": "2026-12-11",
-     "in": "2026-12-18"
     },
     {
      "dest": "SKG",
      "city": "Thessalonique",
      "country": "Grèce",
-     "price": 76.98,
+     "price": 72.98,
      "out": "2026-12-05",
      "in": "2026-12-12"
     },
     {
-     "dest": "VIT",
-     "city": "Vitoria-Gasteiz",
+     "dest": "PRG",
+     "city": "Prague",
+     "country": "République tchèque",
+     "price": 73.28,
+     "out": "2026-12-14",
+     "in": "2026-12-20"
+    },
+    {
+     "dest": "SUF",
+     "city": "Lamezia",
+     "country": "Italie",
+     "price": 75.98,
+     "out": "2026-12-04",
+     "in": "2026-12-06"
+    },
+    {
+     "dest": "PMI",
+     "city": "Palma",
      "country": "Espagne",
-     "price": 77.18,
+     "price": 77.98,
      "out": "2026-12-11",
      "in": "2026-12-18"
     },
@@ -1079,47 +1079,39 @@
      "dest": "OPO",
      "city": "Porto",
      "country": "Portugal",
-     "price": 78.98,
+     "price": 77.98,
      "out": "2026-12-04",
      "in": "2026-12-10"
-    },
-    {
-     "dest": "OUD",
-     "city": "Oujda",
-     "country": "Maroc",
-     "price": 82.15,
-     "out": "2026-12-09",
-     "in": "2026-12-16"
-    },
-    {
-     "dest": "SUF",
-     "city": "Lamezia",
-     "country": "Italie",
-     "price": 82.64,
-     "out": "2026-12-04",
-     "in": "2026-12-06"
     },
     {
      "dest": "OTP",
      "city": "Bucarest",
      "country": "Roumanie",
-     "price": 86.79,
+     "price": 82.46,
      "out": "2026-12-03",
      "in": "2026-12-10"
     },
     {
-     "dest": "ATH",
-     "city": "Athènes",
-     "country": "Grèce",
-     "price": 87.98,
-     "out": "2026-12-13",
-     "in": "2026-12-20"
+     "dest": "VIT",
+     "city": "Vitoria-Gasteiz",
+     "country": "Espagne",
+     "price": 82.98,
+     "out": "2026-12-11",
+     "in": "2026-12-18"
+    },
+    {
+     "dest": "OUD",
+     "city": "Oujda",
+     "country": "Maroc",
+     "price": 85,
+     "out": "2026-12-11",
+     "in": "2026-12-18"
     },
     {
      "dest": "IAS",
      "city": "IASI",
      "country": "Roumanie",
-     "price": 87.98,
+     "price": 85.98,
      "out": "2026-12-02",
      "in": "2026-12-09"
     },
@@ -1127,15 +1119,23 @@
      "dest": "SOF",
      "city": "Sofia",
      "country": "Bulgarie",
-     "price": 89.49,
+     "price": 87.25,
      "out": "2026-12-04",
      "in": "2026-12-11"
+    },
+    {
+     "dest": "ATH",
+     "city": "Athènes",
+     "country": "Grèce",
+     "price": 90.98,
+     "out": "2026-12-10",
+     "in": "2026-12-17"
     },
     {
      "dest": "HEL",
      "city": "Helsinki",
      "country": "Finlande",
-     "price": 92.78,
+     "price": 103.18,
      "out": "2026-12-07",
      "in": "2026-12-14"
     },
@@ -1143,7 +1143,7 @@
      "dest": "RVN",
      "city": "Rovaniemi",
      "country": "Finlande",
-     "price": 139.46,
+     "price": 136.9,
      "out": "2026-12-03",
      "in": "2026-12-05"
     },
@@ -1151,19 +1151,27 @@
      "dest": "NAP",
      "city": "Naples",
      "country": "Italie",
-     "price": 139.99,
+     "price": 142.99,
      "out": "2026-12-13",
      "in": "2026-12-20"
     }
    ],
    "2027-01": [
     {
+     "dest": "TIA",
+     "city": "Tirana",
+     "country": "Albanie",
+     "price": 30.98,
+     "out": "2027-01-20",
+     "in": "2027-01-26"
+    },
+    {
      "dest": "BGY",
      "city": "Bergamo",
      "country": "Italie",
      "price": 34.98,
      "out": "2027-01-10",
-     "in": "2027-01-15"
+     "in": "2027-01-16"
     },
     {
      "dest": "BIQ",
@@ -1182,12 +1190,12 @@
      "in": "2027-02-01"
     },
     {
-     "dest": "TIA",
-     "city": "Tirana",
-     "country": "Albanie",
-     "price": 34.98,
-     "out": "2027-01-20",
-     "in": "2027-01-26"
+     "dest": "TRN",
+     "city": "Turin",
+     "country": "Italie",
+     "price": 36.98,
+     "out": "2027-01-17",
+     "in": "2027-01-23"
     },
     {
      "dest": "WRO",
@@ -1198,12 +1206,28 @@
      "in": "2027-02-01"
     },
     {
-     "dest": "TRN",
-     "city": "Turin",
+     "dest": "PSR",
+     "city": "Pescara",
      "country": "Italie",
-     "price": 37.98,
-     "out": "2027-01-17",
-     "in": "2027-01-23"
+     "price": 38.98,
+     "out": "2027-01-11",
+     "in": "2027-01-16"
+    },
+    {
+     "dest": "CIA",
+     "city": "Rome",
+     "country": "Italie",
+     "price": 38.98,
+     "out": "2027-01-12",
+     "in": "2027-01-14"
+    },
+    {
+     "dest": "MAN",
+     "city": "Manchester",
+     "country": "Royaume-Uni",
+     "price": 38.98,
+     "out": "2027-01-28",
+     "in": "2027-02-01"
     },
     {
      "dest": "SDR",
@@ -1222,28 +1246,12 @@
      "in": "2027-01-18"
     },
     {
-     "dest": "CIA",
-     "city": "Rome",
-     "country": "Italie",
-     "price": 39.98,
-     "out": "2027-01-11",
-     "in": "2027-01-14"
-    },
-    {
      "dest": "BUD",
      "city": "Budapest",
      "country": "Hongrie",
      "price": 39.98,
      "out": "2027-01-09",
      "in": "2027-01-16"
-    },
-    {
-     "dest": "MAN",
-     "city": "Manchester",
-     "country": "Royaume-Uni",
-     "price": 39.98,
-     "out": "2027-01-01",
-     "in": "2027-01-06"
     },
     {
      "dest": "EDI",
@@ -1276,14 +1284,6 @@
      "price": 39.98,
      "out": "2027-01-11",
      "in": "2027-01-16"
-    },
-    {
-     "dest": "PSR",
-     "city": "Pescara",
-     "country": "Italie",
-     "price": 40.98,
-     "out": "2027-01-30",
-     "in": "2027-02-06"
     },
     {
      "dest": "AOI",
@@ -1302,12 +1302,12 @@
      "in": "2027-01-14"
     },
     {
-     "dest": "TNG",
-     "city": "Tanger",
-     "country": "Maroc",
+     "dest": "CAG",
+     "city": "Cagliari",
+     "country": "Italie",
      "price": 42.98,
-     "out": "2027-01-11",
-     "in": "2027-01-13"
+     "out": "2027-01-14",
+     "in": "2027-01-21"
     },
     {
      "dest": "SUF",
@@ -1318,20 +1318,28 @@
      "in": "2027-01-31"
     },
     {
+     "dest": "DUB",
+     "city": "Dublin",
+     "country": "Irlande",
+     "price": 42.98,
+     "out": "2027-01-08",
+     "in": "2027-01-11"
+    },
+    {
+     "dest": "TNG",
+     "city": "Tanger",
+     "country": "Maroc",
+     "price": 43.98,
+     "out": "2027-01-11",
+     "in": "2027-01-13"
+    },
+    {
      "dest": "CLJ",
      "city": "Cluj",
      "country": "Roumanie",
-     "price": 42.98,
+     "price": 43.98,
      "out": "2027-01-15",
      "in": "2027-01-22"
-    },
-    {
-     "dest": "CAG",
-     "city": "Cagliari",
-     "country": "Italie",
-     "price": 43.98,
-     "out": "2027-01-14",
-     "in": "2027-01-21"
     },
     {
      "dest": "ORK",
@@ -1342,36 +1350,36 @@
      "in": "2027-01-31"
     },
     {
-     "dest": "DUB",
-     "city": "Dublin",
-     "country": "Irlande",
-     "price": 44.98,
-     "out": "2027-01-08",
-     "in": "2027-01-11"
-    },
-    {
      "dest": "BLQ",
      "city": "Bologne",
      "country": "Italie",
      "price": 45.1,
      "out": "2027-01-15",
-     "in": "2027-01-17"
+     "in": "2027-01-22"
+    },
+    {
+     "dest": "ARN",
+     "city": "Stockholm",
+     "country": "Suède",
+     "price": 45.98,
+     "out": "2027-01-18",
+     "in": "2027-01-22"
     },
     {
      "dest": "RAK",
      "city": "Marrakech",
      "country": "Maroc",
-     "price": 45.98,
+     "price": 46.98,
      "out": "2027-01-05",
      "in": "2027-01-12"
     },
     {
-     "dest": "BDS",
-     "city": "Brindisi",
-     "country": "Italie",
-     "price": 46.52,
-     "out": "2027-01-15",
-     "in": "2027-01-17"
+     "dest": "NDR",
+     "city": "Nador",
+     "country": "Maroc",
+     "price": 46.98,
+     "out": "2027-01-18",
+     "in": "2027-01-21"
     },
     {
      "dest": "MRS",
@@ -1382,20 +1390,20 @@
      "in": "2027-01-18"
     },
     {
-     "dest": "ARN",
-     "city": "Stockholm",
-     "country": "Suède",
-     "price": 47.98,
-     "out": "2027-01-18",
-     "in": "2027-01-22"
-    },
-    {
      "dest": "TLS",
      "city": "Toulouse",
      "country": "France",
-     "price": 47.98,
+     "price": 46.98,
      "out": "2027-01-12",
      "in": "2027-01-19"
+    },
+    {
+     "dest": "BDS",
+     "city": "Brindisi",
+     "country": "Italie",
+     "price": 47.06,
+     "out": "2027-01-15",
+     "in": "2027-01-17"
     },
     {
      "dest": "IAS",
@@ -1406,12 +1414,28 @@
      "in": "2027-02-05"
     },
     {
+     "dest": "FAO",
+     "city": "Faro",
+     "country": "Portugal",
+     "price": 47.98,
+     "out": "2027-01-25",
+     "in": "2027-02-01"
+    },
+    {
      "dest": "KRK",
      "city": "Cracovie",
      "country": "Pologne",
      "price": 48.27,
      "out": "2027-01-16",
      "in": "2027-01-23"
+    },
+    {
+     "dest": "BCN",
+     "city": "Barcelone",
+     "country": "Espagne",
+     "price": 48.98,
+     "out": "2027-01-11",
+     "in": "2027-01-17"
     },
     {
      "dest": "BTS",
@@ -1422,30 +1446,6 @@
      "in": "2027-01-15"
     },
     {
-     "dest": "FAO",
-     "city": "Faro",
-     "country": "Portugal",
-     "price": 48.98,
-     "out": "2027-01-25",
-     "in": "2027-02-01"
-    },
-    {
-     "dest": "BCN",
-     "city": "Barcelone",
-     "country": "Espagne",
-     "price": 49.98,
-     "out": "2027-01-15",
-     "in": "2027-01-21"
-    },
-    {
-     "dest": "GRO",
-     "city": "Girona",
-     "country": "Espagne",
-     "price": 49.98,
-     "out": "2027-01-18",
-     "in": "2027-01-22"
-    },
-    {
      "dest": "FEZ",
      "city": "Fes",
      "country": "Maroc",
@@ -1454,36 +1454,52 @@
      "in": "2027-01-18"
     },
     {
-     "dest": "NDR",
-     "city": "Nador",
-     "country": "Maroc",
+     "dest": "PSA",
+     "city": "Pise",
+     "country": "Italie",
      "price": 49.98,
-     "out": "2027-01-18",
-     "in": "2027-01-21"
+     "out": "2027-01-15",
+     "in": "2027-01-22"
     },
     {
-     "dest": "RBA",
-     "city": "Rabat",
-     "country": "Maroc",
+     "dest": "KUN",
+     "city": "Kaunas",
+     "country": "Lituanie",
      "price": 49.98,
-     "out": "2027-01-18",
-     "in": "2027-01-25"
+     "out": "2027-01-10",
+     "in": "2027-01-17"
+    },
+    {
+     "dest": "PRG",
+     "city": "Prague",
+     "country": "République tchèque",
+     "price": 49.98,
+     "out": "2027-01-06",
+     "in": "2027-01-11"
     },
     {
      "dest": "RIX",
      "city": "Riga",
      "country": "Lettonie",
-     "price": 50.07,
+     "price": 49.98,
      "out": "2027-01-11",
      "in": "2027-01-18"
     },
     {
-     "dest": "PSA",
-     "city": "Pise",
-     "country": "Italie",
-     "price": 50.14,
-     "out": "2027-01-15",
-     "in": "2027-01-22"
+     "dest": "RBA",
+     "city": "Rabat",
+     "country": "Maroc",
+     "price": 50.29,
+     "out": "2027-01-18",
+     "in": "2027-01-21"
+    },
+    {
+     "dest": "GRO",
+     "city": "Girona",
+     "country": "Espagne",
+     "price": 50.54,
+     "out": "2027-01-08",
+     "in": "2027-01-15"
     },
     {
      "dest": "PMI",
@@ -1502,28 +1518,12 @@
      "in": "2027-01-17"
     },
     {
-     "dest": "PGF",
-     "city": "Perpignan",
-     "country": "France",
-     "price": 50.98,
-     "out": "2027-01-11",
-     "in": "2027-01-15"
-    },
-    {
-     "dest": "KUN",
-     "city": "Kaunas",
-     "country": "Lituanie",
-     "price": 51.76,
-     "out": "2027-01-10",
-     "in": "2027-01-17"
-    },
-    {
-     "dest": "TTU",
-     "city": "Tétouan",
-     "country": "Maroc",
+     "dest": "BRI",
+     "city": "Bari",
+     "country": "Italie",
      "price": 51.98,
-     "out": "2027-01-18",
-     "in": "2027-01-25"
+     "out": "2027-01-11",
+     "in": "2027-01-17"
     },
     {
      "dest": "SKG",
@@ -1534,44 +1534,28 @@
      "in": "2027-01-23"
     },
     {
-     "dest": "PRG",
-     "city": "Prague",
-     "country": "République tchèque",
-     "price": 53.09,
-     "out": "2027-01-06",
-     "in": "2027-01-11"
+     "dest": "AGA",
+     "city": "Agadir",
+     "country": "Maroc",
+     "price": 52.98,
+     "out": "2027-01-18",
+     "in": "2027-01-21"
     },
     {
-     "dest": "BRI",
-     "city": "Bari",
-     "country": "Italie",
-     "price": 53.36,
-     "out": "2027-01-11",
-     "in": "2027-01-17"
+     "dest": "TTU",
+     "city": "Tétouan",
+     "country": "Maroc",
+     "price": 52.98,
+     "out": "2027-01-18",
+     "in": "2027-01-25"
     },
     {
      "dest": "OTP",
      "city": "Bucarest",
      "country": "Roumanie",
-     "price": 53.57,
-     "out": "2027-01-31",
-     "in": "2027-02-05"
-    },
-    {
-     "dest": "AGP",
-     "city": "Malaga",
-     "country": "Espagne",
-     "price": 53.98,
-     "out": "2027-01-16",
-     "in": "2027-01-21"
-    },
-    {
-     "dest": "AGA",
-     "city": "Agadir",
-     "country": "Maroc",
-     "price": 53.98,
-     "out": "2027-01-18",
-     "in": "2027-01-21"
+     "price": 53.74,
+     "out": "2027-01-21",
+     "in": "2027-01-23"
     },
     {
      "dest": "SOF",
@@ -1582,6 +1566,22 @@
      "in": "2027-02-02"
     },
     {
+     "dest": "AGP",
+     "city": "Malaga",
+     "country": "Espagne",
+     "price": 54.98,
+     "out": "2027-01-16",
+     "in": "2027-01-21"
+    },
+    {
+     "dest": "CTA",
+     "city": "Catane",
+     "country": "Italie",
+     "price": 54.98,
+     "out": "2027-01-18",
+     "in": "2027-01-24"
+    },
+    {
      "dest": "SVQ",
      "city": "Séville",
      "country": "Espagne",
@@ -1590,52 +1590,52 @@
      "in": "2027-01-16"
     },
     {
-     "dest": "CTA",
-     "city": "Catane",
-     "country": "Italie",
-     "price": 56.98,
-     "out": "2027-01-18",
-     "in": "2027-01-24"
+     "dest": "PGF",
+     "city": "Perpignan",
+     "country": "France",
+     "price": 55.98,
+     "out": "2027-01-11",
+     "in": "2027-01-15"
     },
     {
      "dest": "ALC",
      "city": "Alicante",
      "country": "Espagne",
-     "price": 57.98,
+     "price": 56.98,
      "out": "2027-01-18",
      "in": "2027-01-24"
     },
     {
-     "dest": "MAD",
-     "city": "Madrid",
-     "country": "Espagne",
-     "price": 57.98,
-     "out": "2027-01-11",
-     "in": "2027-01-18"
+     "dest": "OPO",
+     "city": "Porto",
+     "country": "Portugal",
+     "price": 58.98,
+     "out": "2027-01-16",
+     "in": "2027-01-22"
     },
     {
-     "dest": "VLC",
-     "city": "Valence",
+     "dest": "MAD",
+     "city": "Madrid",
      "country": "Espagne",
      "price": 59.98,
      "out": "2027-01-11",
      "in": "2027-01-15"
     },
     {
-     "dest": "OPO",
-     "city": "Porto",
-     "country": "Portugal",
+     "dest": "VLC",
+     "city": "Valence",
+     "country": "Espagne",
      "price": 59.98,
-     "out": "2027-01-16",
-     "in": "2027-01-22"
+     "out": "2027-01-25",
+     "in": "2027-02-01"
     },
     {
      "dest": "LIS",
      "city": "Lisbonne",
      "country": "Portugal",
-     "price": 61.98,
-     "out": "2027-01-09",
-     "in": "2027-01-16"
+     "price": 60.98,
+     "out": "2027-01-06",
+     "in": "2027-01-13"
     },
     {
      "dest": "FUE",
@@ -1649,15 +1649,15 @@
      "dest": "BZR",
      "city": "Béziers",
      "country": "France",
-     "price": 66.98,
-     "out": "2027-01-17",
-     "in": "2027-01-22"
+     "price": 65.39,
+     "out": "2027-01-10",
+     "in": "2027-01-15"
     },
     {
      "dest": "HEL",
      "city": "Helsinki",
      "country": "Finlande",
-     "price": 68.38,
+     "price": 66.38,
      "out": "2027-01-23",
      "in": "2027-01-25"
     },
@@ -1665,33 +1665,33 @@
      "dest": "OUD",
      "city": "Oujda",
      "country": "Maroc",
-     "price": 68.98,
-     "out": "2027-01-13",
-     "in": "2027-01-15"
-    },
-    {
-     "dest": "FNC",
-     "city": "Funchal",
-     "country": "Portugal",
-     "price": 72.65,
-     "out": "2027-01-18",
-     "in": "2027-01-25"
-    },
-    {
-     "dest": "TFS",
-     "city": "Tenerife",
-     "country": "Espagne",
-     "price": 75.98,
-     "out": "2027-01-18",
-     "in": "2027-01-21"
+     "price": 70.71,
+     "out": "2027-01-24",
+     "in": "2027-01-29"
     },
     {
      "dest": "ATH",
      "city": "Athènes",
      "country": "Grèce",
-     "price": 76.48,
+     "price": 71.98,
      "out": "2027-01-21",
      "in": "2027-01-28"
+    },
+    {
+     "dest": "TFS",
+     "city": "Tenerife",
+     "country": "Espagne",
+     "price": 72.98,
+     "out": "2027-01-18",
+     "in": "2027-01-21"
+    },
+    {
+     "dest": "FNC",
+     "city": "Funchal",
+     "country": "Portugal",
+     "price": 73.65,
+     "out": "2027-01-18",
+     "in": "2027-01-25"
     },
     {
      "dest": "ACE",
@@ -1702,34 +1702,34 @@
      "in": "2027-01-12"
     },
     {
-     "dest": "NAP",
-     "city": "Naples",
-     "country": "Italie",
-     "price": 82.98,
-     "out": "2027-01-24",
-     "in": "2027-01-28"
-    },
-    {
      "dest": "LPA",
      "city": "Grande Canarie",
      "country": "Espagne",
-     "price": 84.98,
+     "price": 81.98,
      "out": "2027-01-17",
      "in": "2027-01-24"
+    },
+    {
+     "dest": "NAP",
+     "city": "Naples",
+     "country": "Italie",
+     "price": 85.98,
+     "out": "2027-01-24",
+     "in": "2027-01-28"
     },
     {
      "dest": "RVN",
      "city": "Rovaniemi",
      "country": "Finlande",
-     "price": 178.98,
-     "out": "2027-01-14",
-     "in": "2027-01-21"
+     "price": 181.98,
+     "out": "2027-01-05",
+     "in": "2027-01-07"
     },
     {
      "dest": "CDT",
      "city": "Castellon",
      "country": "Espagne",
-     "price": 232.78,
+     "price": 229.68,
      "out": "2027-01-01",
      "in": "2027-01-03"
     }
@@ -1739,7 +1739,7 @@
      "dest": "ZAG",
      "city": "Zagreb",
      "country": "Croatie",
-     "price": 31.98,
+     "price": 30.98,
      "out": "2027-02-18",
      "in": "2027-02-21"
     },
@@ -1760,6 +1760,14 @@
      "in": "2027-02-20"
     },
     {
+     "dest": "BCN",
+     "city": "Barcelone",
+     "country": "Espagne",
+     "price": 39.98,
+     "out": "2027-02-14",
+     "in": "2027-02-21"
+    },
+    {
      "dest": "AOI",
      "city": "Ancône",
      "country": "Italie",
@@ -1776,6 +1784,14 @@
      "in": "2027-02-11"
     },
     {
+     "dest": "PSR",
+     "city": "Pescara",
+     "country": "Italie",
+     "price": 39.98,
+     "out": "2027-02-16",
+     "in": "2027-02-23"
+    },
+    {
      "dest": "CIA",
      "city": "Rome",
      "country": "Italie",
@@ -1784,26 +1800,10 @@
      "in": "2027-02-04"
     },
     {
-     "dest": "BCN",
-     "city": "Barcelone",
-     "country": "Espagne",
-     "price": 40.98,
-     "out": "2027-02-14",
-     "in": "2027-02-21"
-    },
-    {
-     "dest": "PSR",
-     "city": "Pescara",
-     "country": "Italie",
-     "price": 40.98,
-     "out": "2027-02-16",
-     "in": "2027-02-23"
-    },
-    {
      "dest": "TRN",
      "city": "Turin",
      "country": "Italie",
-     "price": 40.98,
+     "price": 39.98,
      "out": "2027-02-14",
      "in": "2027-02-19"
     },
@@ -1832,20 +1832,36 @@
      "in": "2027-02-12"
     },
     {
-     "dest": "SOF",
-     "city": "Sofia",
-     "country": "Bulgarie",
-     "price": 45.28,
-     "out": "2027-02-15",
-     "in": "2027-02-22"
-    },
-    {
      "dest": "CLJ",
      "city": "Cluj",
      "country": "Roumanie",
      "price": 46.86,
      "out": "2027-02-19",
      "in": "2027-02-25"
+    },
+    {
+     "dest": "MRS",
+     "city": "Marseille",
+     "country": "France",
+     "price": 46.98,
+     "out": "2027-02-03",
+     "in": "2027-02-10"
+    },
+    {
+     "dest": "TIA",
+     "city": "Tirana",
+     "country": "Albanie",
+     "price": 46.98,
+     "out": "2027-02-15",
+     "in": "2027-02-21"
+    },
+    {
+     "dest": "SOF",
+     "city": "Sofia",
+     "country": "Bulgarie",
+     "price": 47.06,
+     "out": "2027-02-14",
+     "in": "2027-02-19"
     },
     {
      "dest": "IAS",
@@ -1856,12 +1872,12 @@
      "in": "2027-02-08"
     },
     {
-     "dest": "MRS",
-     "city": "Marseille",
-     "country": "France",
-     "price": 47.98,
-     "out": "2027-02-03",
-     "in": "2027-02-10"
+     "dest": "WAW",
+     "city": "Varsovie",
+     "country": "Pologne",
+     "price": 48.86,
+     "out": "2027-02-01",
+     "in": "2027-02-08"
     },
     {
      "dest": "CDT",
@@ -1872,12 +1888,28 @@
      "in": "2027-02-19"
     },
     {
-     "dest": "TIA",
-     "city": "Tirana",
-     "country": "Albanie",
-     "price": 49.62,
-     "out": "2027-02-01",
+     "dest": "CAG",
+     "city": "Cagliari",
+     "country": "Italie",
+     "price": 48.98,
+     "out": "2027-02-05",
      "in": "2027-02-08"
+    },
+    {
+     "dest": "MLA",
+     "city": "Malte",
+     "country": "Malte",
+     "price": 48.98,
+     "out": "2027-02-02",
+     "in": "2027-02-04"
+    },
+    {
+     "dest": "ORK",
+     "city": "Cork",
+     "country": "Irlande",
+     "price": 49.16,
+     "out": "2027-02-05",
+     "in": "2027-02-07"
     },
     {
      "dest": "EDI",
@@ -1888,28 +1920,12 @@
      "in": "2027-02-20"
     },
     {
-     "dest": "MLA",
-     "city": "Malte",
-     "country": "Malte",
-     "price": 49.98,
-     "out": "2027-02-02",
-     "in": "2027-02-04"
-    },
-    {
-     "dest": "ORK",
-     "city": "Cork",
-     "country": "Irlande",
-     "price": 50.16,
-     "out": "2027-02-05",
-     "in": "2027-02-07"
-    },
-    {
-     "dest": "WAW",
-     "city": "Varsovie",
-     "country": "Pologne",
-     "price": 50.43,
-     "out": "2027-02-15",
-     "in": "2027-02-18"
+     "dest": "PSA",
+     "city": "Pise",
+     "country": "Italie",
+     "price": 50.39,
+     "out": "2027-02-13",
+     "in": "2027-02-19"
     },
     {
      "dest": "DUB",
@@ -1920,10 +1936,18 @@
      "in": "2027-02-08"
     },
     {
+     "dest": "GRO",
+     "city": "Girona",
+     "country": "Espagne",
+     "price": 50.98,
+     "out": "2027-02-13",
+     "in": "2027-02-20"
+    },
+    {
      "dest": "KRK",
      "city": "Cracovie",
      "country": "Pologne",
-     "price": 50.81,
+     "price": 51.28,
      "out": "2027-02-13",
      "in": "2027-02-20"
     },
@@ -1931,25 +1955,9 @@
      "dest": "RBA",
      "city": "Rabat",
      "country": "Maroc",
-     "price": 50.98,
+     "price": 51.98,
      "out": "2027-02-11",
      "in": "2027-02-18"
-    },
-    {
-     "dest": "CAG",
-     "city": "Cagliari",
-     "country": "Italie",
-     "price": 51.39,
-     "out": "2027-02-05",
-     "in": "2027-02-11"
-    },
-    {
-     "dest": "PSA",
-     "city": "Pise",
-     "country": "Italie",
-     "price": 51.39,
-     "out": "2027-02-13",
-     "in": "2027-02-19"
     },
     {
      "dest": "BRI",
@@ -1960,12 +1968,20 @@
      "in": "2027-02-22"
     },
     {
-     "dest": "GRO",
-     "city": "Girona",
+     "dest": "VIT",
+     "city": "Vitoria-Gasteiz",
      "country": "Espagne",
-     "price": 52.98,
-     "out": "2027-02-13",
-     "in": "2027-02-20"
+     "price": 52.16,
+     "out": "2027-02-05",
+     "in": "2027-02-12"
+    },
+    {
+     "dest": "BUD",
+     "city": "Budapest",
+     "country": "Hongrie",
+     "price": 52.19,
+     "out": "2027-02-27",
+     "in": "2027-03-05"
     },
     {
      "dest": "TNG",
@@ -1974,30 +1990,6 @@
      "price": 52.98,
      "out": "2027-02-12",
      "in": "2027-02-16"
-    },
-    {
-     "dest": "TTU",
-     "city": "Tétouan",
-     "country": "Maroc",
-     "price": 52.98,
-     "out": "2027-02-13",
-     "in": "2027-02-20"
-    },
-    {
-     "dest": "BUD",
-     "city": "Budapest",
-     "country": "Hongrie",
-     "price": 52.98,
-     "out": "2027-02-06",
-     "in": "2027-02-12"
-    },
-    {
-     "dest": "VIT",
-     "city": "Vitoria-Gasteiz",
-     "country": "Espagne",
-     "price": 53.16,
-     "out": "2027-02-05",
-     "in": "2027-02-12"
     },
     {
      "dest": "BZR",
@@ -2011,24 +2003,40 @@
      "dest": "BDS",
      "city": "Brindisi",
      "country": "Italie",
-     "price": 54.75,
+     "price": 53.75,
      "out": "2027-02-14",
      "in": "2027-02-21"
     },
     {
-     "dest": "FEZ",
-     "city": "Fes",
+     "dest": "TTU",
+     "city": "Tétouan",
      "country": "Maroc",
-     "price": 55.03,
-     "out": "2027-02-01",
-     "in": "2027-02-05"
+     "price": 53.98,
+     "out": "2027-02-13",
+     "in": "2027-02-20"
     },
     {
      "dest": "ARN",
      "city": "Stockholm",
      "country": "Suède",
-     "price": 55.8,
+     "price": 54.8,
      "out": "2027-02-15",
+     "in": "2027-02-18"
+    },
+    {
+     "dest": "AGP",
+     "city": "Malaga",
+     "country": "Espagne",
+     "price": 55.98,
+     "out": "2027-02-03",
+     "in": "2027-02-05"
+    },
+    {
+     "dest": "RAK",
+     "city": "Marrakech",
+     "country": "Maroc",
+     "price": 55.98,
+     "out": "2027-02-14",
      "in": "2027-02-18"
     },
     {
@@ -2040,28 +2048,12 @@
      "in": "2027-02-18"
     },
     {
-     "dest": "AGP",
-     "city": "Malaga",
-     "country": "Espagne",
-     "price": 56.98,
-     "out": "2027-02-03",
-     "in": "2027-02-05"
-    },
-    {
-     "dest": "RAK",
-     "city": "Marrakech",
+     "dest": "FEZ",
+     "city": "Fes",
      "country": "Maroc",
-     "price": 56.98,
-     "out": "2027-02-14",
-     "in": "2027-02-18"
-    },
-    {
-     "dest": "FAO",
-     "city": "Faro",
-     "country": "Portugal",
-     "price": 56.98,
-     "out": "2027-02-11",
-     "in": "2027-02-17"
+     "price": 56.62,
+     "out": "2027-02-16",
+     "in": "2027-02-19"
     },
     {
      "dest": "OTP",
@@ -2072,52 +2064,60 @@
      "in": "2027-02-05"
     },
     {
+     "dest": "TLS",
+     "city": "Toulouse",
+     "country": "France",
+     "price": 58.75,
+     "out": "2027-02-13",
+     "in": "2027-02-19"
+    },
+    {
+     "dest": "FAO",
+     "city": "Faro",
+     "country": "Portugal",
+     "price": 59.98,
+     "out": "2027-02-11",
+     "in": "2027-02-17"
+    },
+    {
      "dest": "CTA",
      "city": "Catane",
      "country": "Italie",
-     "price": 58.98,
+     "price": 60.98,
      "out": "2027-02-14",
      "in": "2027-02-19"
     },
     {
-     "dest": "TLS",
-     "city": "Toulouse",
-     "country": "France",
-     "price": 59.52,
-     "out": "2027-02-13",
-     "in": "2027-02-20"
+     "dest": "PRG",
+     "city": "Prague",
+     "country": "République tchèque",
+     "price": 62.98,
+     "out": "2027-02-15",
+     "in": "2027-02-22"
     },
     {
      "dest": "VIE",
      "city": "Vienna",
      "country": "Autriche",
-     "price": 63.33,
+     "price": 63.54,
      "out": "2027-02-08",
      "in": "2027-02-14"
-    },
-    {
-     "dest": "RIX",
-     "city": "Riga",
-     "country": "Lettonie",
-     "price": 64.19,
-     "out": "2027-02-13",
-     "in": "2027-02-20"
     },
     {
      "dest": "NDR",
      "city": "Nador",
      "country": "Maroc",
-     "price": 64.98,
+     "price": 63.98,
      "out": "2027-02-02",
      "in": "2027-02-08"
     },
     {
-     "dest": "VLC",
-     "city": "Valence",
+     "dest": "ALC",
+     "city": "Alicante",
      "country": "Espagne",
-     "price": 65.44,
-     "out": "2027-02-15",
-     "in": "2027-02-19"
+     "price": 64.98,
+     "out": "2027-02-02",
+     "in": "2027-02-05"
     },
     {
      "dest": "MAD",
@@ -2131,17 +2131,17 @@
      "dest": "OUD",
      "city": "Oujda",
      "country": "Maroc",
-     "price": 66.03,
+     "price": 65.62,
      "out": "2027-02-10",
      "in": "2027-02-17"
     },
     {
-     "dest": "PRG",
-     "city": "Prague",
-     "country": "République tchèque",
-     "price": 66.98,
-     "out": "2027-02-15",
-     "in": "2027-02-22"
+     "dest": "VLC",
+     "city": "Valence",
+     "country": "Espagne",
+     "price": 66.08,
+     "out": "2027-02-14",
+     "in": "2027-02-19"
     },
     {
      "dest": "OPO",
@@ -2160,14 +2160,6 @@
      "in": "2027-02-21"
     },
     {
-     "dest": "ALC",
-     "city": "Alicante",
-     "country": "Espagne",
-     "price": 68.9,
-     "out": "2027-02-13",
-     "in": "2027-02-20"
-    },
-    {
      "dest": "BIQ",
      "city": "Biarritz",
      "country": "France",
@@ -2176,28 +2168,44 @@
      "in": "2027-02-19"
     },
     {
-     "dest": "ATH",
-     "city": "Athènes",
-     "country": "Grèce",
-     "price": 72.98,
-     "out": "2027-02-08",
-     "in": "2027-02-15"
-    },
-    {
      "dest": "AGA",
      "city": "Agadir",
      "country": "Maroc",
-     "price": 73.28,
+     "price": 74.28,
      "out": "2027-02-15",
      "in": "2027-02-19"
+    },
+    {
+     "dest": "PMI",
+     "city": "Palma",
+     "country": "Espagne",
+     "price": 74.41,
+     "out": "2027-02-08",
+     "in": "2027-02-13"
+    },
+    {
+     "dest": "RIX",
+     "city": "Riga",
+     "country": "Lettonie",
+     "price": 75.9,
+     "out": "2027-02-15",
+     "in": "2027-02-20"
     },
     {
      "dest": "LIS",
      "city": "Lisbonne",
      "country": "Portugal",
-     "price": 76.94,
+     "price": 75.94,
      "out": "2027-02-12",
      "in": "2027-02-17"
+    },
+    {
+     "dest": "ATH",
+     "city": "Athènes",
+     "country": "Grèce",
+     "price": 77.98,
+     "out": "2027-02-04",
+     "in": "2027-02-08"
     },
     {
      "dest": "BTS",
@@ -2208,14 +2216,6 @@
      "in": "2027-02-19"
     },
     {
-     "dest": "PMI",
-     "city": "Palma",
-     "country": "Espagne",
-     "price": 78.98,
-     "out": "2027-02-15",
-     "in": "2027-02-22"
-    },
-    {
      "dest": "SKG",
      "city": "Thessalonique",
      "country": "Grèce",
@@ -2224,34 +2224,34 @@
      "in": "2027-02-06"
     },
     {
-     "dest": "PGF",
-     "city": "Perpignan",
-     "country": "France",
-     "price": 81.75,
-     "out": "2027-02-01",
-     "in": "2027-02-05"
-    },
-    {
      "dest": "ESU",
      "city": "Essaouira",
      "country": "Maroc",
-     "price": 81.93,
+     "price": 82.83,
      "out": "2027-02-02",
      "in": "2027-02-04"
+    },
+    {
+     "dest": "PGF",
+     "city": "Perpignan",
+     "country": "France",
+     "price": 86.28,
+     "out": "2027-02-08",
+     "in": "2027-02-15"
     },
     {
      "dest": "SVQ",
      "city": "Séville",
      "country": "Espagne",
-     "price": 82.98,
-     "out": "2027-02-15",
-     "in": "2027-02-19"
+     "price": 86.94,
+     "out": "2027-02-13",
+     "in": "2027-02-15"
     },
     {
      "dest": "ACE",
      "city": "Lanzarote",
      "country": "Espagne",
-     "price": 100.98,
+     "price": 95.98,
      "out": "2027-02-16",
      "in": "2027-02-23"
     },
@@ -2283,7 +2283,7 @@
      "dest": "FUE",
      "city": "Fuerteventura",
      "country": "Espagne",
-     "price": 116.83,
+     "price": 115.83,
      "out": "2027-02-16",
      "in": "2027-02-20"
     },
@@ -2291,7 +2291,7 @@
      "dest": "FNC",
      "city": "Funchal",
      "country": "Portugal",
-     "price": 120.9,
+     "price": 118.9,
      "out": "2027-02-12",
      "in": "2027-02-19"
     },
@@ -2299,15 +2299,15 @@
      "dest": "NAP",
      "city": "Naples",
      "country": "Italie",
-     "price": 122.77,
-     "out": "2027-02-04",
-     "in": "2027-02-07"
+     "price": 121.98,
+     "out": "2027-02-14",
+     "in": "2027-02-18"
     },
     {
      "dest": "RVN",
      "city": "Rovaniemi",
      "country": "Finlande",
-     "price": 297.58,
+     "price": 296.18,
      "out": "2027-02-13",
      "in": "2027-02-20"
     }
@@ -2327,7 +2327,7 @@
      "dest": "POZ",
      "city": "Poznań",
      "country": "Pologne",
-     "price": 37.33,
+     "price": 37.48,
      "out": "2026-11-29",
      "in": "2026-12-06"
     },
@@ -2343,121 +2343,121 @@
      "dest": "DUB",
      "city": "Dublin",
      "country": "Irlande",
-     "price": 43.98,
-     "out": "2026-11-22",
-     "in": "2026-11-29"
-    },
-    {
-     "dest": "PFO",
-     "city": "Paphos",
-     "country": "Chypre",
-     "price": 48.66,
-     "out": "2026-11-26",
-     "in": "2026-12-03"
-    },
-    {
-     "dest": "ORK",
-     "city": "Cork",
-     "country": "Irlande",
-     "price": 50.98,
-     "out": "2026-11-27",
-     "in": "2026-11-29"
-    },
-    {
-     "dest": "FEZ",
-     "city": "Fes",
-     "country": "Maroc",
-     "price": 52.98,
-     "out": "2026-11-30",
-     "in": "2026-12-03"
-    },
-    {
-     "dest": "CLJ",
-     "city": "Cluj",
-     "country": "Roumanie",
-     "price": 58.98,
-     "out": "2026-11-27",
-     "in": "2026-12-04"
-    },
-    {
-     "dest": "VIE",
-     "city": "Vienna",
-     "country": "Autriche",
-     "price": 58.98,
-     "out": "2026-11-23",
+     "price": 46.98,
+     "out": "2026-11-24",
      "in": "2026-11-29"
     },
     {
      "dest": "PSA",
      "city": "Pise",
      "country": "Italie",
-     "price": 59.78,
+     "price": 50.78,
      "out": "2026-11-21",
      "in": "2026-11-28"
+    },
+    {
+     "dest": "FEZ",
+     "city": "Fes",
+     "country": "Maroc",
+     "price": 52.78,
+     "out": "2026-11-30",
+     "in": "2026-12-03"
     },
     {
      "dest": "FAO",
      "city": "Faro",
      "country": "Portugal",
-     "price": 63.98,
+     "price": 55.98,
      "out": "2026-11-29",
      "in": "2026-12-06"
     },
     {
-     "dest": "OPO",
-     "city": "Porto",
-     "country": "Portugal",
-     "price": 64.18,
-     "out": "2026-11-28",
-     "in": "2026-12-02"
-    },
-    {
-     "dest": "CAG",
-     "city": "Cagliari",
-     "country": "Italie",
-     "price": 64.88,
-     "out": "2026-11-28",
-     "in": "2026-12-01"
-    },
-    {
-     "dest": "MAN",
-     "city": "Manchester",
-     "country": "Royaume-Uni",
-     "price": 64.98,
-     "out": "2026-11-30",
-     "in": "2026-12-05"
-    },
-    {
-     "dest": "EDI",
-     "city": "Édimbourg",
-     "country": "Royaume-Uni",
-     "price": 65.83,
-     "out": "2026-11-30",
-     "in": "2026-12-04"
+     "dest": "PFO",
+     "city": "Paphos",
+     "country": "Chypre",
+     "price": 56.38,
+     "out": "2026-11-26",
+     "in": "2026-12-03"
     },
     {
      "dest": "BGY",
      "city": "Bergamo",
      "country": "Italie",
-     "price": 66.66,
+     "price": 61.66,
      "out": "2026-11-28",
      "in": "2026-11-30"
     },
     {
-     "dest": "ALC",
-     "city": "Alicante",
-     "country": "Espagne",
-     "price": 71.98,
-     "out": "2026-11-29",
-     "in": "2026-12-06"
+     "dest": "EDI",
+     "city": "Édimbourg",
+     "country": "Royaume-Uni",
+     "price": 66.97,
+     "out": "2026-11-30",
+     "in": "2026-12-04"
     },
     {
-     "dest": "BCN",
-     "city": "Barcelone",
-     "country": "Espagne",
-     "price": 71.98,
+     "dest": "MAN",
+     "city": "Manchester",
+     "country": "Royaume-Uni",
+     "price": 66.98,
      "out": "2026-11-30",
-     "in": "2026-12-07"
+     "in": "2026-12-05"
+    },
+    {
+     "dest": "ORK",
+     "city": "Cork",
+     "country": "Irlande",
+     "price": 67.93,
+     "out": "2026-11-27",
+     "in": "2026-11-29"
+    },
+    {
+     "dest": "CTA",
+     "city": "Catane",
+     "country": "Italie",
+     "price": 68.89,
+     "out": "2026-11-25",
+     "in": "2026-12-02"
+    },
+    {
+     "dest": "MXP",
+     "city": "Milan",
+     "country": "Italie",
+     "price": 68.98,
+     "out": "2026-11-27",
+     "in": "2026-11-30"
+    },
+    {
+     "dest": "OPO",
+     "city": "Porto",
+     "country": "Portugal",
+     "price": 69.14,
+     "out": "2026-11-28",
+     "in": "2026-12-02"
+    },
+    {
+     "dest": "BRI",
+     "city": "Bari",
+     "country": "Italie",
+     "price": 69.98,
+     "out": "2026-11-25",
+     "in": "2026-12-01"
+    },
+    {
+     "dest": "CPH",
+     "city": "Copenhagen",
+     "country": "Danemark",
+     "price": 69.98,
+     "out": "2026-11-26",
+     "in": "2026-12-03"
+    },
+    {
+     "dest": "CAG",
+     "city": "Cagliari",
+     "country": "Italie",
+     "price": 71.89,
+     "out": "2026-11-28",
+     "in": "2026-12-05"
     },
     {
      "dest": "WRO",
@@ -2468,130 +2468,138 @@
      "in": "2026-12-06"
     },
     {
+     "dest": "ALC",
+     "city": "Alicante",
+     "country": "Espagne",
+     "price": 72.63,
+     "out": "2026-11-29",
+     "in": "2026-12-06"
+    },
+    {
+     "dest": "CLJ",
+     "city": "Cluj",
+     "country": "Roumanie",
+     "price": 72.98,
+     "out": "2026-11-27",
+     "in": "2026-12-04"
+    },
+    {
      "dest": "RAK",
      "city": "Marrakech",
      "country": "Maroc",
-     "price": 72.48,
+     "price": 73.48,
      "out": "2026-11-29",
      "in": "2026-12-03"
     },
     {
-     "dest": "CPH",
-     "city": "Copenhagen",
-     "country": "Danemark",
-     "price": 73.18,
-     "out": "2026-11-26",
-     "in": "2026-12-03"
+     "dest": "BCN",
+     "city": "Barcelone",
+     "country": "Espagne",
+     "price": 75.98,
+     "out": "2026-11-30",
+     "in": "2026-12-07"
     },
     {
      "dest": "TNG",
      "city": "Tanger",
      "country": "Maroc",
-     "price": 73.28,
+     "price": 76.28,
      "out": "2026-11-30",
-     "in": "2026-12-07"
-    },
-    {
-     "dest": "MXP",
-     "city": "Milan",
-     "country": "Italie",
-     "price": 74.98,
-     "out": "2026-11-27",
-     "in": "2026-11-30"
-    },
-    {
-     "dest": "CTA",
-     "city": "Catane",
-     "country": "Italie",
-     "price": 75.8,
-     "out": "2026-11-25",
-     "in": "2026-12-02"
-    },
-    {
-     "dest": "BRI",
-     "city": "Bari",
-     "country": "Italie",
-     "price": 76.84,
-     "out": "2026-11-25",
-     "in": "2026-12-01"
-    },
-    {
-     "dest": "ZAG",
-     "city": "Zagreb",
-     "country": "Croatie",
-     "price": 76.98,
-     "out": "2026-11-27",
-     "in": "2026-11-29"
-    },
-    {
-     "dest": "OTP",
-     "city": "Bucarest",
-     "country": "Roumanie",
-     "price": 77.98,
-     "out": "2026-11-27",
-     "in": "2026-12-04"
-    },
-    {
-     "dest": "WMI",
-     "city": "Varsovie",
-     "country": "Pologne",
-     "price": 80.92,
-     "out": "2026-11-28",
-     "in": "2026-12-05"
+     "in": "2026-12-06"
     },
     {
      "dest": "NDR",
      "city": "Nador",
      "country": "Maroc",
-     "price": 84.79,
+     "price": 78.68,
      "out": "2026-11-27",
      "in": "2026-12-04"
     },
     {
-     "dest": "BLQ",
-     "city": "Bologne",
-     "country": "Italie",
-     "price": 89.64,
+     "dest": "OTP",
+     "city": "Bucarest",
+     "country": "Roumanie",
+     "price": 79.98,
+     "out": "2026-11-27",
+     "in": "2026-12-04"
+    },
+    {
+     "dest": "ZAG",
+     "city": "Zagreb",
+     "country": "Croatie",
+     "price": 79.98,
+     "out": "2026-11-27",
+     "in": "2026-11-29"
+    },
+    {
+     "dest": "VIE",
+     "city": "Vienna",
+     "country": "Autriche",
+     "price": 84.76,
      "out": "2026-11-21",
      "in": "2026-11-28"
     },
     {
-     "dest": "VLC",
-     "city": "Valence",
-     "country": "Espagne",
-     "price": 91.98,
-     "out": "2026-11-29",
-     "in": "2026-12-06"
-    },
-    {
-     "dest": "MLA",
-     "city": "Malte",
-     "country": "Malte",
-     "price": 91.98,
-     "out": "2026-11-30",
-     "in": "2026-12-06"
+     "dest": "WMI",
+     "city": "Varsovie",
+     "country": "Pologne",
+     "price": 85.28,
+     "out": "2026-11-19",
+     "in": "2026-11-21"
     },
     {
      "dest": "SVQ",
      "city": "Séville",
      "country": "Espagne",
-     "price": 93.23,
-     "out": "2026-11-24",
-     "in": "2026-11-27"
+     "price": 85.98,
+     "out": "2026-11-27",
+     "in": "2026-12-04"
+    },
+    {
+     "dest": "VLC",
+     "city": "Valence",
+     "country": "Espagne",
+     "price": 88.98,
+     "out": "2026-11-29",
+     "in": "2026-12-06"
     },
     {
      "dest": "KRK",
      "city": "Cracovie",
      "country": "Pologne",
-     "price": 96.55,
+     "price": 89.55,
      "out": "2026-11-23",
      "in": "2026-11-29"
+    },
+    {
+     "dest": "BLQ",
+     "city": "Bologne",
+     "country": "Italie",
+     "price": 90.18,
+     "out": "2026-11-27",
+     "in": "2026-11-29"
+    },
+    {
+     "dest": "MLA",
+     "city": "Malte",
+     "country": "Malte",
+     "price": 92.98,
+     "out": "2026-11-30",
+     "in": "2026-12-06"
     },
     {
      "dest": "FCO",
      "city": "Rome",
      "country": "Italie",
-     "price": 102.2,
+     "price": 103.9,
+     "out": "2026-11-27",
+     "in": "2026-12-04"
+    },
+    {
+     "dest": "IAS",
+     "city": "IASI",
+     "country": "Roumanie",
+     "price": 104.57,
      "out": "2026-11-27",
      "in": "2026-12-04"
     },
@@ -2604,20 +2612,20 @@
      "in": "2026-12-04"
     },
     {
+     "dest": "RBA",
+     "city": "Rabat",
+     "country": "Maroc",
+     "price": 105.98,
+     "out": "2026-11-30",
+     "in": "2026-12-02"
+    },
+    {
      "dest": "VNO",
      "city": "Vilnius",
      "country": "Lituanie",
-     "price": 105.98,
+     "price": 106.98,
      "out": "2026-11-28",
      "in": "2026-11-30"
-    },
-    {
-     "dest": "SKG",
-     "city": "Thessalonique",
-     "country": "Grèce",
-     "price": 108.98,
-     "out": "2026-11-27",
-     "in": "2026-12-04"
     },
     {
      "dest": "OUD",
@@ -2628,66 +2636,58 @@
      "in": "2026-12-07"
     },
     {
-     "dest": "RBA",
-     "city": "Rabat",
-     "country": "Maroc",
-     "price": 110.28,
-     "out": "2026-11-30",
-     "in": "2026-12-03"
-    },
-    {
      "dest": "ARN",
      "city": "Stockholm",
      "country": "Suède",
-     "price": 111.98,
+     "price": 110.98,
      "out": "2026-11-27",
+     "in": "2026-12-04"
+    },
+    {
+     "dest": "MAD",
+     "city": "Madrid",
+     "country": "Espagne",
+     "price": 111.98,
+     "out": "2026-11-26",
+     "in": "2026-11-28"
+    },
+    {
+     "dest": "SKG",
+     "city": "Thessalonique",
+     "country": "Grèce",
+     "price": 112.98,
+     "out": "2026-11-27",
+     "in": "2026-12-04"
+    },
+    {
+     "dest": "BUD",
+     "city": "Budapest",
+     "country": "Hongrie",
+     "price": 115.98,
+     "out": "2026-11-28",
      "in": "2026-12-04"
     },
     {
      "dest": "LIS",
      "city": "Lisbonne",
      "country": "Portugal",
-     "price": 112.28,
+     "price": 119.56,
      "out": "2026-11-25",
      "in": "2026-12-02"
-    },
-    {
-     "dest": "IAS",
-     "city": "IASI",
-     "country": "Roumanie",
-     "price": 113.63,
-     "out": "2026-11-27",
-     "in": "2026-12-04"
     },
     {
      "dest": "TIA",
      "city": "Tirana",
      "country": "Albanie",
-     "price": 125.98,
+     "price": 131.98,
      "out": "2026-11-20",
      "in": "2026-11-27"
-    },
-    {
-     "dest": "MAD",
-     "city": "Madrid",
-     "country": "Espagne",
-     "price": 126.55,
-     "out": "2026-11-26",
-     "in": "2026-11-28"
-    },
-    {
-     "dest": "BUD",
-     "city": "Budapest",
-     "country": "Hongrie",
-     "price": 130.98,
-     "out": "2026-11-28",
-     "in": "2026-12-04"
     },
     {
      "dest": "RVN",
      "city": "Rovaniemi",
      "country": "Finlande",
-     "price": 178.98,
+     "price": 195.98,
      "out": "2026-11-22",
      "in": "2026-11-26"
     }
@@ -2714,16 +2714,24 @@
      "city": "Birmingham",
      "country": "Royaume-Uni",
      "price": 31.98,
-     "out": "2026-12-05",
-     "in": "2026-12-12"
+     "out": "2026-12-03",
+     "in": "2026-12-05"
     },
     {
-     "dest": "FEZ",
-     "city": "Fes",
-     "country": "Maroc",
+     "dest": "DUB",
+     "city": "Dublin",
+     "country": "Irlande",
+     "price": 31.98,
+     "out": "2026-12-05",
+     "in": "2026-12-07"
+    },
+    {
+     "dest": "ALC",
+     "city": "Alicante",
+     "country": "Espagne",
      "price": 32.98,
-     "out": "2026-12-09",
-     "in": "2026-12-11"
+     "out": "2026-12-06",
+     "in": "2026-12-13"
     },
     {
      "dest": "MAN",
@@ -2734,26 +2742,26 @@
      "in": "2026-12-05"
     },
     {
-     "dest": "DUB",
-     "city": "Dublin",
-     "country": "Irlande",
-     "price": 32.98,
-     "out": "2026-12-12",
-     "in": "2026-12-16"
-    },
-    {
      "dest": "POZ",
      "city": "Poznań",
      "country": "Pologne",
-     "price": 34.88,
+     "price": 32.98,
      "out": "2026-12-06",
      "in": "2026-12-13"
+    },
+    {
+     "dest": "FEZ",
+     "city": "Fes",
+     "country": "Maroc",
+     "price": 33.98,
+     "out": "2026-12-07",
+     "in": "2026-12-10"
     },
     {
      "dest": "TSF",
      "city": "Venise",
      "country": "Italie",
-     "price": 35.98,
+     "price": 33.98,
      "out": "2026-12-05",
      "in": "2026-12-12"
     },
@@ -2761,9 +2769,25 @@
      "dest": "BLQ",
      "city": "Bologne",
      "country": "Italie",
-     "price": 36.98,
+     "price": 35.98,
      "out": "2026-12-05",
      "in": "2026-12-12"
+    },
+    {
+     "dest": "CAG",
+     "city": "Cagliari",
+     "country": "Italie",
+     "price": 37.98,
+     "out": "2026-12-11",
+     "in": "2026-12-15"
+    },
+    {
+     "dest": "CTA",
+     "city": "Catane",
+     "country": "Italie",
+     "price": 37.98,
+     "out": "2026-12-06",
+     "in": "2026-12-13"
     },
     {
      "dest": "BGY",
@@ -2774,24 +2798,8 @@
      "in": "2026-12-14"
     },
     {
-     "dest": "NDR",
-     "city": "Nador",
-     "country": "Maroc",
-     "price": 39.98,
-     "out": "2026-12-08",
-     "in": "2026-12-15"
-    },
-    {
-     "dest": "ALC",
-     "city": "Alicante",
-     "country": "Espagne",
-     "price": 39.98,
-     "out": "2026-12-06",
-     "in": "2026-12-13"
-    },
-    {
-     "dest": "CTA",
-     "city": "Catane",
+     "dest": "BRI",
+     "city": "Bari",
      "country": "Italie",
      "price": 39.98,
      "out": "2026-12-02",
@@ -2801,247 +2809,239 @@
      "dest": "MXP",
      "city": "Milan",
      "country": "Italie",
-     "price": 39.98,
+     "price": 40.15,
      "out": "2026-12-11",
      "in": "2026-12-13"
     },
     {
-     "dest": "FCO",
-     "city": "Rome",
-     "country": "Italie",
-     "price": 39.98,
-     "out": "2026-12-03",
-     "in": "2026-12-10"
-    },
-    {
-     "dest": "BRI",
-     "city": "Bari",
-     "country": "Italie",
-     "price": 41.18,
-     "out": "2026-12-02",
-     "in": "2026-12-09"
-    },
-    {
-     "dest": "WMI",
-     "city": "Varsovie",
-     "country": "Pologne",
-     "price": 42.22,
-     "out": "2026-12-10",
-     "in": "2026-12-17"
-    },
-    {
-     "dest": "CAG",
-     "city": "Cagliari",
-     "country": "Italie",
-     "price": 43.28,
-     "out": "2026-12-11",
+     "dest": "NDR",
+     "city": "Nador",
+     "country": "Maroc",
+     "price": 43.98,
+     "out": "2026-12-08",
      "in": "2026-12-15"
     },
     {
-     "dest": "SVQ",
-     "city": "Séville",
-     "country": "Espagne",
-     "price": 43.98,
-     "out": "2026-12-14",
-     "in": "2026-12-18"
+     "dest": "WRO",
+     "city": "Wroclaw",
+     "country": "Pologne",
+     "price": 44.78,
+     "out": "2026-12-04",
+     "in": "2026-12-06"
     },
     {
      "dest": "EDI",
      "city": "Édimbourg",
      "country": "Royaume-Uni",
-     "price": 45.98,
-     "out": "2026-12-14",
-     "in": "2026-12-21"
+     "price": 45.63,
+     "out": "2026-12-04",
+     "in": "2026-12-11"
     },
     {
-     "dest": "PFO",
-     "city": "Paphos",
-     "country": "Chypre",
-     "price": 45.98,
+     "dest": "SVQ",
+     "city": "Séville",
+     "country": "Espagne",
+     "price": 46.98,
+     "out": "2026-12-04",
+     "in": "2026-12-11"
+    },
+    {
+     "dest": "KRK",
+     "city": "Cracovie",
+     "country": "Pologne",
+     "price": 47.98,
+     "out": "2026-12-09",
+     "in": "2026-12-16"
+    },
+    {
+     "dest": "WMI",
+     "city": "Varsovie",
+     "country": "Pologne",
+     "price": 48.34,
+     "out": "2026-12-05",
+     "in": "2026-12-12"
+    },
+    {
+     "dest": "OPO",
+     "city": "Porto",
+     "country": "Portugal",
+     "price": 48.38,
      "out": "2026-12-03",
-     "in": "2026-12-07"
+     "in": "2026-12-09"
     },
     {
      "dest": "TNG",
      "city": "Tanger",
      "country": "Maroc",
-     "price": 46.98,
+     "price": 48.98,
      "out": "2026-12-08",
+     "in": "2026-12-14"
+    },
+    {
+     "dest": "VLC",
+     "city": "Valence",
+     "country": "Espagne",
+     "price": 49.29,
+     "out": "2026-12-06",
      "in": "2026-12-13"
     },
     {
      "dest": "RAK",
      "city": "Marrakech",
      "country": "Maroc",
-     "price": 48.98,
-     "out": "2026-12-09",
-     "in": "2026-12-16"
+     "price": 49.98,
+     "out": "2026-12-08",
+     "in": "2026-12-15"
     },
     {
      "dest": "FAO",
      "city": "Faro",
      "country": "Portugal",
      "price": 49.98,
-     "out": "2026-12-13",
-     "in": "2026-12-18"
-    },
-    {
-     "dest": "OPO",
-     "city": "Porto",
-     "country": "Portugal",
-     "price": 50.65,
      "out": "2026-12-03",
-     "in": "2026-12-09"
+     "in": "2026-12-06"
     },
     {
-     "dest": "VLC",
-     "city": "Valence",
-     "country": "Espagne",
+     "dest": "PFO",
+     "city": "Paphos",
+     "country": "Chypre",
      "price": 50.98,
-     "out": "2026-12-06",
-     "in": "2026-12-13"
+     "out": "2026-12-03",
+     "in": "2026-12-07"
     },
     {
-     "dest": "KRK",
-     "city": "Cracovie",
-     "country": "Pologne",
-     "price": 50.98,
-     "out": "2026-12-09",
-     "in": "2026-12-16"
-    },
-    {
-     "dest": "WRO",
-     "city": "Wroclaw",
-     "country": "Pologne",
-     "price": 51.98,
-     "out": "2026-12-07",
-     "in": "2026-12-14"
-    },
-    {
-     "dest": "CLJ",
-     "city": "Cluj",
-     "country": "Roumanie",
-     "price": 52.26,
-     "out": "2026-12-07",
-     "in": "2026-12-12"
-    },
-    {
-     "dest": "MLA",
-     "city": "Malte",
-     "country": "Malte",
-     "price": 57.82,
-     "out": "2026-12-13",
-     "in": "2026-12-20"
+     "dest": "FCO",
+     "city": "Rome",
+     "country": "Italie",
+     "price": 51.63,
+     "out": "2026-12-03",
+     "in": "2026-12-10"
     },
     {
      "dest": "BCN",
      "city": "Barcelone",
      "country": "Espagne",
-     "price": 57.98,
+     "price": 53.98,
      "out": "2026-12-12",
      "in": "2026-12-14"
+    },
+    {
+     "dest": "NAP",
+     "city": "Naples",
+     "country": "Italie",
+     "price": 55.08,
+     "out": "2026-12-14",
+     "in": "2026-12-21"
     },
     {
      "dest": "MAD",
      "city": "Madrid",
      "country": "Espagne",
-     "price": 57.98,
+     "price": 56.33,
      "out": "2026-12-05",
+     "in": "2026-12-12"
+    },
+    {
+     "dest": "VIE",
+     "city": "Vienna",
+     "country": "Autriche",
+     "price": 59.85,
+     "out": "2026-12-06",
      "in": "2026-12-12"
     },
     {
      "dest": "ZAG",
      "city": "Zagreb",
      "country": "Croatie",
-     "price": 59.86,
+     "price": 60.18,
      "out": "2026-12-04",
      "in": "2026-12-06"
-    },
-    {
-     "dest": "VIE",
-     "city": "Vienna",
-     "country": "Autriche",
-     "price": 61.44,
-     "out": "2026-12-06",
-     "in": "2026-12-12"
     },
     {
      "dest": "TIA",
      "city": "Tirana",
      "country": "Albanie",
-     "price": 62.98,
+     "price": 60.98,
      "out": "2026-12-05",
      "in": "2026-12-07"
     },
     {
-     "dest": "NAP",
-     "city": "Naples",
-     "country": "Italie",
-     "price": 63.63,
-     "out": "2026-12-11",
+     "dest": "MLA",
+     "city": "Malte",
+     "country": "Malte",
+     "price": 62.15,
+     "out": "2026-12-13",
      "in": "2026-12-18"
     },
     {
-     "dest": "CPH",
-     "city": "Copenhagen",
-     "country": "Danemark",
-     "price": 67.46,
-     "out": "2026-12-05",
-     "in": "2026-12-12"
-    },
-    {
-     "dest": "RBA",
-     "city": "Rabat",
-     "country": "Maroc",
-     "price": 68.53,
-     "out": "2026-12-09",
-     "in": "2026-12-16"
-    },
-    {
-     "dest": "OTP",
-     "city": "Bucarest",
+     "dest": "CLJ",
+     "city": "Cluj",
      "country": "Roumanie",
-     "price": 70.77,
-     "out": "2026-12-10",
-     "in": "2026-12-17"
-    },
-    {
-     "dest": "OUD",
-     "city": "Oujda",
-     "country": "Maroc",
-     "price": 70.98,
+     "price": 63.98,
      "out": "2026-12-07",
-     "in": "2026-12-14"
+     "in": "2026-12-12"
     },
     {
      "dest": "LIS",
      "city": "Lisbonne",
      "country": "Portugal",
-     "price": 73.04,
+     "price": 67.83,
      "out": "2026-12-04",
-     "in": "2026-12-10"
-    },
-    {
-     "dest": "SKG",
-     "city": "Thessalonique",
-     "country": "Grèce",
-     "price": 74.98,
-     "out": "2026-12-04",
-     "in": "2026-12-06"
+     "in": "2026-12-09"
     },
     {
      "dest": "AGA",
      "city": "Agadir",
      "country": "Maroc",
-     "price": 77.98,
+     "price": 69.74,
+     "out": "2026-12-08",
+     "in": "2026-12-15"
+    },
+    {
+     "dest": "CPH",
+     "city": "Copenhagen",
+     "country": "Danemark",
+     "price": 72.66,
+     "out": "2026-12-05",
+     "in": "2026-12-12"
+    },
+    {
+     "dest": "SKG",
+     "city": "Thessalonique",
+     "country": "Grèce",
+     "price": 78.22,
      "out": "2026-12-04",
-     "in": "2026-12-11"
+     "in": "2026-12-06"
+    },
+    {
+     "dest": "OTP",
+     "city": "Bucarest",
+     "country": "Roumanie",
+     "price": 78.98,
+     "out": "2026-12-11",
+     "in": "2026-12-17"
+    },
+    {
+     "dest": "RBA",
+     "city": "Rabat",
+     "country": "Maroc",
+     "price": 80.78,
+     "out": "2026-12-07",
+     "in": "2026-12-14"
+    },
+    {
+     "dest": "OUD",
+     "city": "Oujda",
+     "country": "Maroc",
+     "price": 82.98,
+     "out": "2026-12-05",
+     "in": "2026-12-07"
     },
     {
      "dest": "ARN",
      "city": "Stockholm",
      "country": "Suède",
-     "price": 83.98,
+     "price": 82.98,
      "out": "2026-12-14",
      "in": "2026-12-18"
     },
@@ -3065,7 +3065,7 @@
      "dest": "VNO",
      "city": "Vilnius",
      "country": "Lituanie",
-     "price": 110.68,
+     "price": 108.68,
      "out": "2026-12-12",
      "in": "2026-12-14"
     },
@@ -3073,7 +3073,7 @@
      "dest": "RVN",
      "city": "Rovaniemi",
      "country": "Finlande",
-     "price": 189.68,
+     "price": 192.37,
      "out": "2026-12-10",
      "in": "2026-12-13"
     }
@@ -3096,12 +3096,12 @@
      "in": "2027-02-07"
     },
     {
-     "dest": "BGY",
-     "city": "Bergamo",
-     "country": "Italie",
-     "price": 38.98,
-     "out": "2027-01-29",
-     "in": "2027-02-03"
+     "dest": "BHX",
+     "city": "Birmingham",
+     "country": "Royaume-Uni",
+     "price": 37.98,
+     "out": "2027-01-15",
+     "in": "2027-01-22"
     },
     {
      "dest": "IAS",
@@ -3112,6 +3112,14 @@
      "in": "2027-02-02"
     },
     {
+     "dest": "FEZ",
+     "city": "Fes",
+     "country": "Maroc",
+     "price": 39.98,
+     "out": "2027-01-12",
+     "in": "2027-01-16"
+    },
+    {
      "dest": "CTA",
      "city": "Catane",
      "country": "Italie",
@@ -3120,12 +3128,12 @@
      "in": "2027-01-27"
     },
     {
-     "dest": "PSA",
-     "city": "Pise",
+     "dest": "BGY",
+     "city": "Bergamo",
      "country": "Italie",
      "price": 39.98,
-     "out": "2027-01-22",
-     "in": "2027-01-25"
+     "out": "2027-01-21",
+     "in": "2027-01-24"
     },
     {
      "dest": "TSF",
@@ -3134,14 +3142,6 @@
      "price": 39.98,
      "out": "2027-01-23",
      "in": "2027-01-30"
-    },
-    {
-     "dest": "BHX",
-     "city": "Birmingham",
-     "country": "Royaume-Uni",
-     "price": 39.98,
-     "out": "2027-01-22",
-     "in": "2027-01-29"
     },
     {
      "dest": "ORK",
@@ -3184,12 +3184,28 @@
      "in": "2027-01-28"
     },
     {
-     "dest": "FEZ",
-     "city": "Fes",
-     "country": "Maroc",
+     "dest": "PSA",
+     "city": "Pise",
+     "country": "Italie",
+     "price": 42.55,
+     "out": "2027-01-22",
+     "in": "2027-01-25"
+    },
+    {
+     "dest": "MXP",
+     "city": "Milan",
+     "country": "Italie",
      "price": 42.98,
-     "out": "2027-01-08",
-     "in": "2027-01-13"
+     "out": "2027-01-15",
+     "in": "2027-01-22"
+    },
+    {
+     "dest": "NAP",
+     "city": "Naples",
+     "country": "Italie",
+     "price": 42.98,
+     "out": "2027-01-23",
+     "in": "2027-01-30"
     },
     {
      "dest": "CLJ",
@@ -3200,36 +3216,28 @@
      "in": "2027-01-28"
     },
     {
-     "dest": "MXP",
-     "city": "Milan",
-     "country": "Italie",
-     "price": 43.98,
-     "out": "2027-01-15",
-     "in": "2027-01-22"
+     "dest": "VLC",
+     "city": "Valence",
+     "country": "Espagne",
+     "price": 44.98,
+     "out": "2027-01-29",
+     "in": "2027-02-05"
+    },
+    {
+     "dest": "PFO",
+     "city": "Paphos",
+     "country": "Chypre",
+     "price": 44.98,
+     "out": "2027-01-21",
+     "in": "2027-01-25"
     },
     {
      "dest": "BCN",
      "city": "Barcelone",
      "country": "Espagne",
-     "price": 45.18,
+     "price": 45.78,
      "out": "2027-01-16",
      "in": "2027-01-18"
-    },
-    {
-     "dest": "TNG",
-     "city": "Tanger",
-     "country": "Maroc",
-     "price": 45.98,
-     "out": "2027-01-12",
-     "in": "2027-01-19"
-    },
-    {
-     "dest": "NAP",
-     "city": "Naples",
-     "country": "Italie",
-     "price": 45.98,
-     "out": "2027-01-23",
-     "in": "2027-01-30"
     },
     {
      "dest": "OTP",
@@ -3240,42 +3248,26 @@
      "in": "2027-01-22"
     },
     {
-     "dest": "VLC",
-     "city": "Valence",
-     "country": "Espagne",
+     "dest": "RAK",
+     "city": "Marrakech",
+     "country": "Maroc",
      "price": 46.98,
-     "out": "2027-01-29",
-     "in": "2027-02-05"
+     "out": "2027-01-24",
+     "in": "2027-01-28"
     },
     {
      "dest": "CPH",
      "city": "Copenhagen",
      "country": "Danemark",
-     "price": 46.98,
-     "out": "2027-01-11",
-     "in": "2027-01-16"
-    },
-    {
-     "dest": "RAK",
-     "city": "Marrakech",
-     "country": "Maroc",
      "price": 47.98,
-     "out": "2027-01-24",
-     "in": "2027-01-28"
-    },
-    {
-     "dest": "PFO",
-     "city": "Paphos",
-     "country": "Chypre",
-     "price": 48.2,
-     "out": "2027-01-21",
-     "in": "2027-01-25"
+     "out": "2027-01-16",
+     "in": "2027-01-23"
     },
     {
      "dest": "MLA",
      "city": "Malte",
      "country": "Malte",
-     "price": 48.98,
+     "price": 47.98,
      "out": "2027-01-08",
      "in": "2027-01-15"
     },
@@ -3284,16 +3276,40 @@
      "city": "Nador",
      "country": "Maroc",
      "price": 49.98,
-     "out": "2027-01-08",
-     "in": "2027-01-15"
+     "out": "2027-01-29",
+     "in": "2027-02-05"
+    },
+    {
+     "dest": "TNG",
+     "city": "Tanger",
+     "country": "Maroc",
+     "price": 49.98,
+     "out": "2027-01-11",
+     "in": "2027-01-18"
+    },
+    {
+     "dest": "ALC",
+     "city": "Alicante",
+     "country": "Espagne",
+     "price": 49.98,
+     "out": "2027-01-18",
+     "in": "2027-01-25"
     },
     {
      "dest": "BLQ",
      "city": "Bologne",
      "country": "Italie",
-     "price": 50.98,
+     "price": 50.38,
      "out": "2027-01-30",
      "in": "2027-02-06"
+    },
+    {
+     "dest": "SVQ",
+     "city": "Séville",
+     "country": "Espagne",
+     "price": 50.98,
+     "out": "2027-01-18",
+     "in": "2027-01-21"
     },
     {
      "dest": "CAG",
@@ -3315,7 +3331,7 @@
      "dest": "BRI",
      "city": "Bari",
      "country": "Italie",
-     "price": 52.98,
+     "price": 51.98,
      "out": "2027-01-30",
      "in": "2027-02-02"
     },
@@ -3323,7 +3339,7 @@
      "dest": "FAO",
      "city": "Faro",
      "country": "Portugal",
-     "price": 52.98,
+     "price": 51.98,
      "out": "2027-01-24",
      "in": "2027-01-31"
     },
@@ -3331,17 +3347,9 @@
      "dest": "OPO",
      "city": "Porto",
      "country": "Portugal",
-     "price": 53.48,
+     "price": 51.98,
      "out": "2027-01-25",
      "in": "2027-02-01"
-    },
-    {
-     "dest": "ALC",
-     "city": "Alicante",
-     "country": "Espagne",
-     "price": 53.8,
-     "out": "2027-01-18",
-     "in": "2027-01-25"
     },
     {
      "dest": "EDI",
@@ -3352,42 +3360,34 @@
      "in": "2027-01-08"
     },
     {
-     "dest": "TIA",
-     "city": "Tirana",
-     "country": "Albanie",
-     "price": 55.03,
-     "out": "2027-01-29",
-     "in": "2027-02-05"
-    },
-    {
      "dest": "ZAG",
      "city": "Zagreb",
      "country": "Croatie",
-     "price": 55.51,
-     "out": "2027-01-01",
-     "in": "2027-01-08"
-    },
-    {
-     "dest": "SVQ",
-     "city": "Séville",
-     "country": "Espagne",
-     "price": 56.98,
-     "out": "2027-01-18",
-     "in": "2027-01-21"
+     "price": 53.98,
+     "out": "2027-01-22",
+     "in": "2027-01-25"
     },
     {
      "dest": "VIE",
      "city": "Vienna",
      "country": "Autriche",
-     "price": 56.98,
+     "price": 53.98,
      "out": "2027-01-29",
      "in": "2027-02-01"
+    },
+    {
+     "dest": "TIA",
+     "city": "Tirana",
+     "country": "Albanie",
+     "price": 54.44,
+     "out": "2027-01-29",
+     "in": "2027-02-05"
     },
     {
      "dest": "AGA",
      "city": "Agadir",
      "country": "Maroc",
-     "price": 58.98,
+     "price": 57.98,
      "out": "2027-01-25",
      "in": "2027-01-30"
     },
@@ -3395,9 +3395,9 @@
      "dest": "RBA",
      "city": "Rabat",
      "country": "Maroc",
-     "price": 58.98,
-     "out": "2027-01-14",
-     "in": "2027-01-20"
+     "price": 59.98,
+     "out": "2027-01-06",
+     "in": "2027-01-13"
     },
     {
      "dest": "ARN",
@@ -3408,28 +3408,20 @@
      "in": "2027-01-30"
     },
     {
-     "dest": "OUD",
-     "city": "Oujda",
-     "country": "Maroc",
-     "price": 62.75,
-     "out": "2027-01-23",
-     "in": "2027-01-25"
-    },
-    {
      "dest": "LIS",
      "city": "Lisbonne",
      "country": "Portugal",
-     "price": 62.98,
+     "price": 61.98,
      "out": "2027-01-21",
      "in": "2027-01-28"
     },
     {
-     "dest": "SKG",
-     "city": "Thessalonique",
-     "country": "Grèce",
+     "dest": "MAD",
+     "city": "Madrid",
+     "country": "Espagne",
      "price": 62.98,
-     "out": "2027-01-29",
-     "in": "2027-02-05"
+     "out": "2027-01-21",
+     "in": "2027-01-23"
     },
     {
      "dest": "BUD",
@@ -3440,18 +3432,26 @@
      "in": "2027-02-06"
     },
     {
-     "dest": "MAD",
-     "city": "Madrid",
-     "country": "Espagne",
-     "price": 64.92,
-     "out": "2027-01-16",
-     "in": "2027-01-21"
+     "dest": "OUD",
+     "city": "Oujda",
+     "country": "Maroc",
+     "price": 63.25,
+     "out": "2027-01-23",
+     "in": "2027-01-25"
+    },
+    {
+     "dest": "SKG",
+     "city": "Thessalonique",
+     "country": "Grèce",
+     "price": 67.11,
+     "out": "2027-01-29",
+     "in": "2027-02-05"
     },
     {
      "dest": "VNO",
      "city": "Vilnius",
      "country": "Lituanie",
-     "price": 79.98,
+     "price": 80.98,
      "out": "2027-01-16",
      "in": "2027-01-18"
     },
@@ -3459,7 +3459,7 @@
      "dest": "RVN",
      "city": "Rovaniemi",
      "country": "Finlande",
-     "price": 215.98,
+     "price": 227.98,
      "out": "2027-01-07",
      "in": "2027-01-14"
     }
@@ -3509,7 +3509,7 @@
      "dest": "MXP",
      "city": "Milan",
      "country": "Italie",
-     "price": 42.98,
+     "price": 41.98,
      "out": "2027-02-19",
      "in": "2027-02-26"
     },
@@ -3525,7 +3525,7 @@
      "dest": "CLJ",
      "city": "Cluj",
      "country": "Roumanie",
-     "price": 44.98,
+     "price": 43.98,
      "out": "2027-02-01",
      "in": "2027-02-08"
     },
@@ -3534,8 +3534,8 @@
      "city": "Dublin",
      "country": "Irlande",
      "price": 45.16,
-     "out": "2027-02-10",
-     "in": "2027-02-16"
+     "out": "2027-02-17",
+     "in": "2027-02-23"
     },
     {
      "dest": "TSF",
@@ -3546,6 +3546,22 @@
      "in": "2027-02-28"
     },
     {
+     "dest": "OPO",
+     "city": "Porto",
+     "country": "Portugal",
+     "price": 45.98,
+     "out": "2027-02-04",
+     "in": "2027-02-11"
+    },
+    {
+     "dest": "PSA",
+     "city": "Pise",
+     "country": "Italie",
+     "price": 46.22,
+     "out": "2027-02-04",
+     "in": "2027-02-06"
+    },
+    {
      "dest": "WRO",
      "city": "Wroclaw",
      "country": "Pologne",
@@ -3554,20 +3570,12 @@
      "in": "2027-02-15"
     },
     {
-     "dest": "PSA",
-     "city": "Pise",
+     "dest": "FCO",
+     "city": "Rome",
      "country": "Italie",
-     "price": 47.32,
-     "out": "2027-02-04",
-     "in": "2027-02-06"
-    },
-    {
-     "dest": "OPO",
-     "city": "Porto",
-     "country": "Portugal",
-     "price": 47.98,
-     "out": "2027-02-04",
-     "in": "2027-02-11"
+     "price": 47.63,
+     "out": "2027-02-18",
+     "in": "2027-02-23"
     },
     {
      "dest": "CTA",
@@ -3578,34 +3586,18 @@
      "in": "2027-02-07"
     },
     {
-     "dest": "FCO",
-     "city": "Rome",
-     "country": "Italie",
-     "price": 48.63,
-     "out": "2027-02-18",
-     "in": "2027-02-23"
+     "dest": "TIA",
+     "city": "Tirana",
+     "country": "Albanie",
+     "price": 48.98,
+     "out": "2027-02-27",
+     "in": "2027-03-01"
     },
     {
      "dest": "BLQ",
      "city": "Bologne",
      "country": "Italie",
-     "price": 49.34,
-     "out": "2027-02-01",
-     "in": "2027-02-07"
-    },
-    {
-     "dest": "TIA",
-     "city": "Tirana",
-     "country": "Albanie",
-     "price": 49.98,
-     "out": "2027-02-27",
-     "in": "2027-03-01"
-    },
-    {
-     "dest": "KRK",
-     "city": "Cracovie",
-     "country": "Pologne",
-     "price": 50.1,
+     "price": 49.56,
      "out": "2027-02-01",
      "in": "2027-02-07"
     },
@@ -3613,15 +3605,31 @@
      "dest": "BCN",
      "city": "Barcelone",
      "country": "Espagne",
-     "price": 52.22,
+     "price": 51.75,
      "out": "2027-02-01",
-     "in": "2027-02-06"
+     "in": "2027-02-04"
+    },
+    {
+     "dest": "KRK",
+     "city": "Cracovie",
+     "country": "Pologne",
+     "price": 52.1,
+     "out": "2027-02-01",
+     "in": "2027-02-07"
+    },
+    {
+     "dest": "ALC",
+     "city": "Alicante",
+     "country": "Espagne",
+     "price": 52.3,
+     "out": "2027-02-01",
+     "in": "2027-02-04"
     },
     {
      "dest": "VLC",
      "city": "Valence",
      "country": "Espagne",
-     "price": 53.39,
+     "price": 52.86,
      "out": "2027-02-12",
      "in": "2027-02-14"
     },
@@ -3629,17 +3637,9 @@
      "dest": "MAD",
      "city": "Madrid",
      "country": "Espagne",
-     "price": 53.63,
+     "price": 54.63,
      "out": "2027-02-19",
      "in": "2027-02-26"
-    },
-    {
-     "dest": "ALC",
-     "city": "Alicante",
-     "country": "Espagne",
-     "price": 54.14,
-     "out": "2027-02-01",
-     "in": "2027-02-04"
     },
     {
      "dest": "IAS",
@@ -3650,12 +3650,12 @@
      "in": "2027-02-12"
     },
     {
-     "dest": "PFO",
-     "city": "Paphos",
-     "country": "Chypre",
-     "price": 55.21,
-     "out": "2027-02-04",
-     "in": "2027-02-08"
+     "dest": "FEZ",
+     "city": "Fes",
+     "country": "Maroc",
+     "price": 54.98,
+     "out": "2027-02-16",
+     "in": "2027-02-23"
     },
     {
      "dest": "RAK",
@@ -3664,14 +3664,6 @@
      "price": 55.73,
      "out": "2027-02-02",
      "in": "2027-02-09"
-    },
-    {
-     "dest": "FEZ",
-     "city": "Fes",
-     "country": "Maroc",
-     "price": 55.98,
-     "out": "2027-02-16",
-     "in": "2027-02-23"
     },
     {
      "dest": "WMI",
@@ -3706,20 +3698,28 @@
      "in": "2027-02-05"
     },
     {
-     "dest": "TNG",
-     "city": "Tanger",
-     "country": "Maroc",
-     "price": 58.1,
-     "out": "2027-02-01",
-     "in": "2027-02-08"
-    },
-    {
      "dest": "EDI",
      "city": "Édimbourg",
      "country": "Royaume-Uni",
-     "price": 60.1,
+     "price": 58.63,
      "out": "2027-02-01",
      "in": "2027-02-05"
+    },
+    {
+     "dest": "TNG",
+     "city": "Tanger",
+     "country": "Maroc",
+     "price": 59.1,
+     "out": "2027-02-23",
+     "in": "2027-02-26"
+    },
+    {
+     "dest": "PFO",
+     "city": "Paphos",
+     "country": "Chypre",
+     "price": 59.72,
+     "out": "2027-02-04",
+     "in": "2027-02-08"
     },
     {
      "dest": "OTP",
@@ -3741,7 +3741,7 @@
      "dest": "NAP",
      "city": "Naples",
      "country": "Italie",
-     "price": 62.57,
+     "price": 61.57,
      "out": "2027-02-13",
      "in": "2027-02-19"
     },
@@ -3749,7 +3749,7 @@
      "dest": "CPH",
      "city": "Copenhagen",
      "country": "Danemark",
-     "price": 63.3,
+     "price": 64.3,
      "out": "2027-02-01",
      "in": "2027-02-08"
     },
@@ -3757,25 +3757,25 @@
      "dest": "LIS",
      "city": "Lisbonne",
      "country": "Portugal",
-     "price": 66.21,
-     "out": "2027-02-18",
-     "in": "2027-02-25"
-    },
-    {
-     "dest": "SKG",
-     "city": "Thessalonique",
-     "country": "Grèce",
-     "price": 67.62,
-     "out": "2027-02-05",
-     "in": "2027-02-07"
+     "price": 66.67,
+     "out": "2027-02-17",
+     "in": "2027-02-24"
     },
     {
      "dest": "MLA",
      "city": "Malte",
      "country": "Malte",
-     "price": 67.82,
+     "price": 67.51,
      "out": "2027-02-15",
      "in": "2027-02-22"
+    },
+    {
+     "dest": "SKG",
+     "city": "Thessalonique",
+     "country": "Grèce",
+     "price": 70.48,
+     "out": "2027-02-05",
+     "in": "2027-02-07"
     },
     {
      "dest": "RBA",
@@ -3789,17 +3789,9 @@
      "dest": "VIE",
      "city": "Vienna",
      "country": "Autriche",
-     "price": 71.82,
+     "price": 70.82,
      "out": "2027-02-07",
      "in": "2027-02-13"
-    },
-    {
-     "dest": "ARN",
-     "city": "Stockholm",
-     "country": "Suède",
-     "price": 73.11,
-     "out": "2027-02-13",
-     "in": "2027-02-15"
     },
     {
      "dest": "OUD",
@@ -3810,26 +3802,34 @@
      "in": "2027-02-08"
     },
     {
+     "dest": "ARN",
+     "city": "Stockholm",
+     "country": "Suède",
+     "price": 74.11,
+     "out": "2027-02-13",
+     "in": "2027-02-15"
+    },
+    {
      "dest": "AGA",
      "city": "Agadir",
      "country": "Maroc",
-     "price": 74.58,
-     "out": "2027-02-26",
-     "in": "2027-03-01"
+     "price": 75.4,
+     "out": "2027-02-02",
+     "in": "2027-02-09"
     },
     {
      "dest": "BUD",
      "city": "Budapest",
      "country": "Hongrie",
-     "price": 78.51,
-     "out": "2027-02-13",
-     "in": "2027-02-19"
+     "price": 79.18,
+     "out": "2027-02-04",
+     "in": "2027-02-06"
     },
     {
      "dest": "FAO",
      "city": "Faro",
      "country": "Portugal",
-     "price": 79.7,
+     "price": 79.36,
      "out": "2027-02-04",
      "in": "2027-02-07"
     },
@@ -3837,7 +3837,7 @@
      "dest": "VNO",
      "city": "Vilnius",
      "country": "Lituanie",
-     "price": 87.34,
+     "price": 86.34,
      "out": "2027-02-06",
      "in": "2027-02-08"
     },
@@ -3845,9 +3845,9 @@
      "dest": "RVN",
      "city": "Rovaniemi",
      "country": "Finlande",
-     "price": 309.98,
-     "out": "2027-02-18",
-     "in": "2027-02-21"
+     "price": 319.44,
+     "out": "2027-02-04",
+     "in": "2027-02-11"
     }
    ]
   }
