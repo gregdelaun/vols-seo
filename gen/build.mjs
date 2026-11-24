@@ -224,8 +224,18 @@ function layout(L, { path, altPath, title, desc, body, jsonld, breadcrumb }) {
   const hreflang = `<link rel="alternate" hreflang="fr" href="${alts.fr}">
 <link rel="alternate" hreflang="nl" href="${alts.nl}">
 <link rel="alternate" hreflang="x-default" href="${alts.fr}">`;
-  const ga = GA ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${GA}')</script>` : "";
+  // Google Analytics 4, chargé UNIQUEMENT après accord (bandeau cookies — obligatoire en Belgique/UE).
+  // Choix mémorisé dans localStorage ("vm_c" = 1 accepté / 0 refusé).
+  const ck = L === "nl"
+    ? ["We gebruiken cookies om anoniem het bezoek te meten.", "OK", "Weigeren"]
+    : ["On utilise des cookies pour mesurer l'audience, de façon anonyme.", "OK", "Refuser"];
+  const ga = GA ? `<div id="ck" hidden style="position:fixed;left:12px;right:12px;bottom:12px;z-index:99;background:#0f172a;color:#fff;padding:12px 14px;border-radius:14px;font:14px/1.4 Inter,system-ui,sans-serif;display:none;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;box-shadow:0 10px 40px rgba(0,0,0,.35)"><span>🍪 ${ck[0]}</span><span><button id="ck1" style="background:#22c55e;color:#fff;border:0;border-radius:10px;padding:8px 16px;font-weight:700;cursor:pointer">${ck[1]}</button> <button id="ck0" style="background:transparent;color:#cbd5e1;border:1px solid #475569;border-radius:10px;padding:8px 12px;cursor:pointer">${ck[2]}</button></span></div>
+<script>(function(){var k="vm_c",v=null;try{v=localStorage.getItem(k)}catch(e){}
+function go(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=${GA}";document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config","${GA}",{anonymize_ip:true})}
+if(v==="1"){go();return}if(v==="0")return;
+var b=document.getElementById("ck");b.hidden=false;b.style.display="flex";
+function set(x){try{localStorage.setItem(k,x)}catch(e){}b.remove();if(x==="1")go()}
+document.getElementById("ck1").onclick=function(){set("1")};document.getElementById("ck0").onclick=function(){set("0")}})()</script>` : "";
   return `<!DOCTYPE html>
 <html lang="${t.htmlLang}">
 <head>
@@ -248,7 +258,6 @@ ${hreflang}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="${BASE}/style.css">
-${ga}
 ${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join("\n")}
 </head>
 <body>
@@ -261,6 +270,7 @@ ${ld.map((x) => `<script type="application/ld+json">${JSON.stringify(x)}</script
 <p>${esc(t.disclaimer)}</p>
 <p><a href="${abs(homePath(L))}">${esc(t.home)}</a> · ${esc(t.updated)} ${esc(dLong(L, now.toISOString()))}${hasMarker() ? "" : esc(t.untracked)}</p>
 </footer>
+${ga}
 </body>
 </html>`;
 }
