@@ -22,8 +22,11 @@ export function flightLink(origin, dest, depart, retour, sub = "site") {
     ? `${origin}${ddmm(depart)}${dest}${ddmm(retour)}1`
     : `${origin}${ddmm(depart)}${dest}1`;
   const qs = new URLSearchParams({ currency: "eur" });
-  if (MARKER) qs.set("marker", `${MARKER}.${sub}`);
-  return `https://www.aviasales.com/search/${path}?${qs}`;
+  const url = `https://www.aviasales.com/search/${path}?${qs}`;
+  if (!MARKER) return url;
+  // Redirection officielle Travelpayouts (p=4114 / campaign_id=100 = Aviasales) : c'est elle qui COMPTE le clic
+  // dans le tableau de bord ; un lien direct aviasales.com?marker= attribue la réservation mais affiche 0 clic.
+  return `https://tp.media/r?${new URLSearchParams({ marker: `${MARKER}.${sub}`, trs: "594223", p: "4114", u: url, campaign_id: "100" })}`;
 }
 
 // Lien de recherche d'hôtels Hotellook (tracké).
