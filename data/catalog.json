@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T16:22:00.922Z",
+  "generatedAt": "2026-11-24T16:26:01.842Z",
   "count": 272,
   "withPrice": 187,
   "routes": [
@@ -2157,9 +2157,9 @@
       "iso3": "ESP",
       "lat": 39.4893,
       "lon": -0.481625,
-      "priceFrom": 51.98,
-      "departDate": "2026-12-06",
-      "returnDate": "2026-12-12",
+      "priceFrom": 52.56,
+      "departDate": "2027-01-11",
+      "returnDate": "2027-01-15",
       "roundTrip": true
     },
     {

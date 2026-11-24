@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T16:23:34.289Z",
+ "generatedAt": "2026-11-24T16:27:40.542Z",
  "months": [
   "2026-12",
   "2027-01",
@@ -197,7 +197,7 @@
      "dest": "VLC",
      "city": "Valence",
      "country": "Espagne",
-     "price": 51.98,
+     "price": 52.98,
      "out": "2026-12-06",
      "in": "2026-12-12"
     },
@@ -3520,20 +3520,20 @@
      "in": "2027-02-08"
     },
     {
-     "dest": "PFO",
-     "city": "Paphos",
-     "country": "Chypre",
-     "price": 53.98,
-     "out": "2027-02-11",
-     "in": "2027-02-15"
-    },
-    {
      "dest": "RAK",
      "city": "Marrakech",
      "country": "Maroc",
      "price": 54.98,
      "out": "2027-02-02",
      "in": "2027-02-09"
+    },
+    {
+     "dest": "PFO",
+     "city": "Paphos",
+     "country": "Chypre",
+     "price": 54.98,
+     "out": "2027-02-11",
+     "in": "2027-02-15"
     },
     {
      "dest": "TNG",
