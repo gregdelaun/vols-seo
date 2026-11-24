@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T16:07:17.283Z",
+  "generatedAt": "2026-11-24T16:22:00.922Z",
   "count": 272,
   "withPrice": 187,
   "routes": [
@@ -650,23 +650,6 @@
       "roundTrip": true
     },
     {
-      "origin": "BVA",
-      "originCity": "Paris",
-      "originName": "Paris-Beauvais",
-      "originSlug": "paris-beauvais",
-      "dest": "FEZ",
-      "destSeo": "fez",
-      "destCity": "Fez",
-      "country": "Morocco",
-      "iso3": "MAR",
-      "lat": 33.9273,
-      "lon": -4.97796,
-      "priceFrom": 36.98,
-      "departDate": "2027-01-07",
-      "returnDate": "2027-01-16",
-      "roundTrip": true
-    },
-    {
       "origin": "CRL",
       "originCity": "Charleroi",
       "originName": "Bruxelles-Charleroi",
@@ -701,20 +684,20 @@
       "roundTrip": true
     },
     {
-      "origin": "CRL",
-      "originCity": "Charleroi",
-      "originName": "Bruxelles-Charleroi",
-      "originSlug": "charleroi",
-      "dest": "ZAG",
-      "destSeo": "zagreb",
-      "destCity": "Zagreb",
-      "country": "Croatia",
-      "iso3": "HRV",
-      "lat": 45.7431,
-      "lon": 16.0689,
+      "origin": "BVA",
+      "originCity": "Paris",
+      "originName": "Paris-Beauvais",
+      "originSlug": "paris-beauvais",
+      "dest": "FEZ",
+      "destSeo": "fez",
+      "destCity": "Fez",
+      "country": "Morocco",
+      "iso3": "MAR",
+      "lat": 33.9273,
+      "lon": -4.97796,
       "priceFrom": 37.98,
-      "departDate": "2027-01-25",
-      "returnDate": "2027-01-30",
+      "departDate": "2027-01-07",
+      "returnDate": "2027-01-16",
       "roundTrip": true
     },
     {
@@ -749,6 +732,23 @@
       "priceFrom": 38.98,
       "departDate": "2027-01-22",
       "returnDate": "2027-01-28",
+      "roundTrip": true
+    },
+    {
+      "origin": "CRL",
+      "originCity": "Charleroi",
+      "originName": "Bruxelles-Charleroi",
+      "originSlug": "charleroi",
+      "dest": "ZAG",
+      "destSeo": "zagreb",
+      "destCity": "Zagreb",
+      "country": "Croatia",
+      "iso3": "HRV",
+      "lat": 45.7431,
+      "lon": 16.0689,
+      "priceFrom": 38.98,
+      "departDate": "2027-01-16",
+      "returnDate": "2027-01-18",
       "roundTrip": true
     },
     {
