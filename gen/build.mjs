@@ -129,9 +129,9 @@ const T = {
     faqQ2: (c) => `Quelle est la meilleure période pour partir à ${c} ?`,
     faqA2: (c, s) => s ? `La meilleure saison pour ${c} est en général ${s}.` : `${c} se visite toute l'année ; les tarifs sont souvent plus bas hors vacances scolaires et hors week-ends.`,
     otherDepartsTo: (c) => `Autres départs vers ${c}`, otherDealsFrom: (c) => `Autres bons plans depuis ${c}`,
-    destTitle: (c, p) => `Vols pas chers pour ${c} ${p ? `dès ${p}€` : ""} | ${NAME}`.replace(/\s+\|/, " |"),
-    destDesc: (c, country, p) => `Tous les vols pas chers vers ${c} (${country})${p ? ` à partir de ${p}€` : ""} : compare les départs et réserve au meilleur prix.`,
-    destH1: (c) => `Vols pas chers pour ${c}`, whichAirport: "Au départ de quel aéroport ?",
+    destTitle: (c, p) => `Vol ${c} pas cher${p ? ` dès ${p}€` : ""} : billets d'avion ${c} | ${NAME}`,
+    destDesc: (c, country, p) => `Billets d'avion pour ${c} (${country})${p ? ` dès ${p}€` : ""} : prix Ryanair du jour depuis Charleroi, Paris-Beauvais, Lille, Luxembourg… Dates les moins chères et meilleure saison.`,
+    destH1: (c) => `Vol ${c} pas cher : les billets d'avion du moment`, whichAirport: "Au départ de quel aéroport ?",
     departTitle: (c, p) => `Vols pas chers au départ de ${c} ${p ? `dès ${p}€` : ""} | ${NAME}`.replace(/\s+\|/, " |"),
     departDesc: (name, n, p) => `Les ${n} destinations les moins chères au départ de ${name}${p ? `, dès ${p}€` : ""}. Compare et réserve.`,
     departH1: (c) => `Vols pas chers depuis ${c}`, destinations: "destinations", airports: "aéroports", today: "prix du jour",
@@ -164,9 +164,9 @@ const T = {
     faqQ2: (c) => `Wat is de beste periode om naar ${c} te reizen?`,
     faqA2: (c, s) => s ? `De beste reisperiode voor ${c} is meestal ${s}.` : `${c} is het hele jaar te bezoeken; tarieven zijn vaak lager buiten de schoolvakanties en weekends.`,
     otherDepartsTo: (c) => `Andere vertrekpunten naar ${c}`, otherDealsFrom: (c) => `Andere deals vanuit ${c}`,
-    destTitle: (c, p) => `Goedkope vluchten naar ${c} ${p ? `vanaf ${p}€` : ""} | ${NAME}`.replace(/\s+\|/, " |"),
-    destDesc: (c, country, p) => `Alle goedkope vluchten naar ${c} (${country})${p ? ` vanaf ${p}€` : ""}: vergelijk de vertrekpunten en boek aan de beste prijs.`,
-    destH1: (c) => `Goedkope vluchten naar ${c}`, whichAirport: "Vanaf welke luchthaven?",
+    destTitle: (c, p) => `Vliegtickets ${c}${p ? ` vanaf ${p}€` : ""}: goedkope vluchten naar ${c} | ${NAME}`,
+    destDesc: (c, country, p) => `Goedkope vliegtickets naar ${c} (${country})${p ? ` vanaf ${p}€` : ""}: Ryanair-prijzen van vandaag vanuit Eindhoven, Charleroi, Weeze… Goedkoopste data en beste reisperiode.`,
+    destH1: (c) => `Vliegtickets ${c}: goedkope vluchten van dit moment`, whichAirport: "Vanaf welke luchthaven?",
     departTitle: (c, p) => `Goedkope vluchten vanuit ${c} ${p ? `vanaf ${p}€` : ""} | ${NAME}`.replace(/\s+\|/, " |"),
     departDesc: (name, n, p) => `De ${n} goedkoopste bestemmingen vanuit ${name}${p ? `, vanaf ${p}€` : ""}. Vergelijk en boek.`,
     departH1: (c) => `Goedkope vluchten vanuit ${c}`, destinations: "bestemmingen", airports: "luchthavens", today: "dagprijs",
@@ -389,17 +389,51 @@ ${related.length ? `<section class="prose"><h2>${esc(t.otherDealsFrom(r.originCi
     const r0 = list[0]; const city = cityName(L, r0); const country = countryName(L, r0);
     const bestRoute = list.filter((x) => x.priceFrom != null).sort((a, b) => a.priceFrom - b.priceFrom)[0];
     const best = bestRoute?.priceFrom ?? null;
-    const bt = blurbText(L, dest);
+    const bt = blurbText(L, dest), todo = blurbTodo(L, dest), season = blurbSeason(L, dest);
+    const nl = L === "nl";
+    const sorted = list.slice().sort((a, b) => (a.priceFrom ?? 9e9) - (b.priceFrom ?? 9e9));
+    const P = best ? euro(best) : null;
+    const trip = bestRoute ? tripLabel(L, bestRoute) : "";
+    const today = dLong(L, now.toISOString());
+    // Phrase-réponse (extraits Google / moteurs IA) + FAQ : contenu unique par destination
+    const keyfact = P ? (nl
+      ? `Het goedkoopste vliegticket naar ${city} kost vandaag ${P}€ ${trip}, vanuit ${bestRoute.originCity}${bestRoute.departDate ? ` (vertrek ${dLong(L, bestRoute.departDate)})` : ""}. We vergelijken ${list.length} vertrekluchthaven${list.length > 1 ? "s" : ""}; prijzen gecheckt bij Ryanair op ${today}.`
+      : `Le billet d'avion le moins cher pour ${city} coûte aujourd'hui ${P}€ ${trip}, au départ de ${bestRoute.originCity}${bestRoute.departDate ? ` (départ le ${dLong(L, bestRoute.departDate)})` : ""}. On compare ${list.length} aéroport${list.length > 1 ? "s" : ""} de départ ; prix relevés chez Ryanair le ${today}.`) : "";
+    const faq = [
+      P && { q: nl ? `Wat kost een vliegticket naar ${city}?` : `Combien coûte un vol pour ${city} ?`,
+        a: nl ? `Vanaf ${P}€ ${trip} vanuit ${bestRoute.originCity} (Ryanair, handbagage inbegrepen). De prijs verandert elke dag: we checken hem dagelijks.`
+              : `À partir de ${P}€ ${trip} depuis ${bestRoute.originCity} (Ryanair, bagage à main inclus). Le prix bouge chaque jour : on le relève quotidiennement.` },
+      sorted.length > 1 && { q: nl ? `Vanaf welke luchthaven vlieg je het goedkoopst naar ${city}?` : `De quel aéroport partir pour ${city} au meilleur prix ?`,
+        a: sorted.filter((x) => x.priceFrom != null).slice(0, 3).map((x) => `${x.originName} (${euro(x.priceFrom)}€)`).join(", ") + "." },
+      season && { q: nl ? `Wat is de beste periode om naar ${city} te gaan?` : `Quelle est la meilleure période pour aller à ${city} ?`, a: `${season}.` },
+      { q: nl ? `Welke maatschappij vliegt rechtstreeks naar ${city}?` : `Quelle compagnie propose des vols directs pour ${city} ?`,
+        a: nl ? `Ryanair vliegt rechtstreeks naar ${city} vanuit ${sorted.map((x) => x.originCity).join(", ")}.`
+              : `Ryanair relie ${city} en vol direct depuis ${sorted.map((x) => x.originCity).join(", ")}.` },
+    ].filter(Boolean);
+    const faqLd = { "@context": "https://schema.org", "@type": "FAQPage",
+      mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
     const body = `
 <nav class="crumbs"><a href="${abs(homePath(L))}">${esc(t.home)}</a> › ${esc(city)}</nav>
 <section class="hero"${heroBg(dest)}><h1>${esc(t.destH1(city))}</h1>
-  <p class="sub">${esc(country)} ${best ? priceBadge(L, best, bestRoute.roundTrip) : ""}</p></section>
-${bt ? `<section class="prose"><p>${esc(bt)}</p></section>` : ""}
+  <p class="sub">${esc(country)} ${best ? priceBadge(L, best, bestRoute.roundTrip) : ""}</p>
+  ${bestRoute ? ctaButtons(L, bestRoute) : ""}</section>
+${keyfact ? `<p class="keyfact">✈️ ${esc(keyfact)}</p>` : ""}
+<section class="prose"><h2>${esc(nl ? `Prijzen naar ${city} per vertrekluchthaven` : `Prix des vols pour ${city} par aéroport de départ`)}</h2>
+  <table class="info"><thead><tr><th>${nl ? "Vertrek" : "Départ"}</th><th>${nl ? "Prijs vanaf" : "Prix dès"}</th><th>${nl ? "Voorbeelddata" : "Exemple de dates"}</th><th></th></tr></thead><tbody>
+  ${sorted.filter((x) => x.priceFrom != null).map((x) => `<tr><td><a href="${abs(routePath(L, x))}">${esc(x.originName)}</a></td><td><strong>${euro(x.priceFrom)}€</strong> ${esc(tripLabel(L, x))}</td><td>${x.departDate ? esc(dLong(L, x.departDate)) : ""}${x.returnDate ? ` → ${esc(dLong(L, x.returnDate))}` : ""}</td><td><a href="${esc(flightLink(x.origin, x.dest, x.departDate, x.returnDate))}" rel="sponsored nofollow" target="_blank">${nl ? "Bekijk vlucht →" : "Voir le vol →"}</a></td></tr>`).join("")}
+  </tbody></table></section>
+${bt ? `<section class="prose"><h2>${esc(t.inBrief(city))}</h2><p>${esc(bt)}</p>
+  ${todo.length ? `<ul class="todo">${todo.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+  ${season ? `<p class="meta">🗓️ ${esc(t.bestSeason)} : <strong>${esc(season)}</strong></p>` : ""}</section>` : ""}
 <section class="prose"><h2>${esc(t.whichAirport)}</h2>
-  <div class="grid">${list.slice().sort((a, b) => (a.priceFrom ?? 9e9) - (b.priceFrom ?? 9e9)).map((x) => routeCard(L, x)).join("")}</div></section>`;
+  <div class="grid">${sorted.map((x) => routeCard(L, x)).join("")}</div></section>
+${bestRoute ? travelKit(L, bestRoute) : ""}
+<section class="prose"><h2>${esc(t.faqTitle)}</h2>
+  ${faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("")}
+</section>`;
     write(destPath(L, r0), layout(L, { path: destPath(L, r0),
       altPath: { fr: destPath("fr", r0), nl: destPath("nl", r0) },
-      title: t.destTitle(city, best ? euro(best) : 0), desc: t.destDesc(city, country, best ? euro(best) : 0), body,
+      title: t.destTitle(city, best ? euro(best) : 0), desc: t.destDesc(city, country, best ? euro(best) : 0), body, jsonld: [faqLd],
       breadcrumb: [{ name: t.home, path: homePath(L) }, { name: city, path: destPath(L, r0) }] }));
   }
 

@@ -57,7 +57,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<"
 const city = (r) => BL[r.dest]?.cityFr || r.destCity;
 const blocks = picks.map(({ r, now, prevAvg, pct, days }) => {
   const dates = r.departDate ? ` · ${frShort(r.departDate)}${r.returnDate ? ` → ${frShort(r.returnDate)}` : ""}` : "";
-  const link = flightLink(r.origin, r.dest, r.departDate, r.returnDate);
+  const link = flightLink(r.origin, r.dest, r.departDate, r.returnDate, "tg");
   return `📉 <b>${esc(city(r))}</b> — <b>${euro(now)}€</b> ${r.roundTrip ? "aller-retour" : "aller simple"}${dates}\n` +
     `   au lieu de ~${euro(prevAvg)}€ (−${Math.round(pct * 100)} %, plus bas vu en ${days} jours)\n` +
     `   👉 <a href="${link}">Réserver avant que ça remonte</a>`;

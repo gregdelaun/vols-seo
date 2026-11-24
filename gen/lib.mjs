@@ -16,19 +16,20 @@ export const esc = (s) =>
 const ddmm = (iso) => { if (!iso) return ""; const [, m, d] = iso.split("-"); return d + m; };
 
 // Lien de recherche de vol Aviasales (tracké). path = ORIGIN+DDMMaller+DEST+DDMMretour+pax
-export function flightLink(origin, dest, depart, retour) {
+// sub = SubID Travelpayouts (rapport « Group by SubID ») : d'où vient le clic — site, tg (Telegram), yt (YouTube)
+export function flightLink(origin, dest, depart, retour, sub = "site") {
   const path = retour
     ? `${origin}${ddmm(depart)}${dest}${ddmm(retour)}1`
     : `${origin}${ddmm(depart)}${dest}1`;
   const qs = new URLSearchParams({ currency: "eur" });
-  if (MARKER) qs.set("marker", MARKER);
+  if (MARKER) qs.set("marker", `${MARKER}.${sub}`);
   return `https://www.aviasales.com/search/${path}?${qs}`;
 }
 
 // Lien de recherche d'hôtels Hotellook (tracké).
-export function hotelLink(city) {
+export function hotelLink(city, sub = "site") {
   const base = `https://search.hotellook.com/?destination=${encodeURIComponent(city)}`;
-  return MARKER ? `${base}&marker=${MARKER}` : base;
+  return MARKER ? `${base}&marker=${MARKER}.${sub}` : base;
 }
 
 export const hasMarker = () => Boolean(MARKER);

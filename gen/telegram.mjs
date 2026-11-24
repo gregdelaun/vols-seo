@@ -47,7 +47,7 @@ const lines = deals.map((r, i) => {
   const dates = r.departDate
     ? ` · ${frShort(r.departDate)}${r.returnDate ? `→${frShort(r.returnDate)}` : ""}`
     : "";
-  const link = flightLink(r.origin, r.dest, r.departDate, r.returnDate);
+  const link = flightLink(r.origin, r.dest, r.departDate, r.returnDate, "tg");
   return `${["🥇", "🥈", "🥉", "✈️", "✈️", "✈️"][i] || "✈️"} <b>${esc(cityFr(r))}</b> (${esc(countryFr(r))}) — <b>dès ${euro(r.priceFrom)}€</b> ${trip}${dates}\n   👉 <a href="${link}">Voir / réserver</a>`;
 });
 
